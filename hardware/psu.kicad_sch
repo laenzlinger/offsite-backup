@@ -1,0 +1,22 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2029df63-3bdd-4192-afc0-d78380331c8b")
+	(paper "A4")
+	(title_block
+		(title "Offsite Backup Device - Power Supply")
+		(date "2026-04-07")
+		(rev "0.1")
+		(company "https://github.com/laenzlinger/offsite-backup")
+		(comment 1 "License: CERN Open Hardware Licence Version 2 - Permissive")
+		(comment 2 "Git commit hash: ${GIT_HASH}")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "2")
+		)
+	)
+	(embedded_fonts no)
+)
