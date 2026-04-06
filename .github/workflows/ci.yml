@@ -1,0 +1,37 @@
+name: "Generate output"
+
+on:
+  push:
+    paths:
+      - "hardware/*.kicad_sch"
+      - "hardware/*.kicad_pcb"
+      - ".github/workflows/ci.yml"
+      - "hardware/offsite-backup.kibot.yaml"
+  pull_request:
+    paths:
+      - "hardware/*.kicad_sch"
+      - "hardware/*.kicad_pcb"
+      - ".github/workflows/ci.yml"
+      - "hardware/offsite-backup.kibot.yaml"
+
+jobs:
+  kibot:
+    runs-on: ubuntu-latest
+    # TODO: switch to kicad10_auto when available
+    container: ghcr.io/inti-cmnb/kicad9_auto_full:latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: "0"
+
+      - name: Kibot Generator
+        working-directory: hardware
+        run: |
+          kibot -e offsite-backup.kicad_sch -d generated
+
+      - name: Retrieve results
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated_outputs
+          path: hardware/generated

@@ -1,0 +1,58 @@
+kibot:
+  version: 1
+
+global:
+  kicad_dnp_applies_to_3D: true
+
+import:
+  - file: JLCPCB
+  - file: PCBWay
+
+preflight:
+  erc:
+    enabled: true
+  drc:
+    enabled: true
+  check_zone_fills: true
+  set_text_variables:
+    name: GIT_HASH
+    command: git rev-parse --short HEAD
+
+outputs:
+  - name: basic_boardview
+    comment: Board View export
+    type: boardview
+    dir: Assembly
+
+  - name: generic_bom_html
+    comment: Generic Bill of Materials in HTML format
+    type: bom
+    dir: BoM
+    options:
+      format: HTML
+
+  - name: basic_ibom
+    comment: Interactive Bill of Materials
+    type: ibom
+    dir: Assembly
+
+  - name: basic_pdf_sch
+    comment: Schematic PDF
+    type: pdf_sch_print
+    dir: Schematic
+
+  - name: basic_pcb_print
+    comment: PCB print
+    type: pcb_print
+    dir: PCB
+    options:
+      pages:
+        - layers: [F.Cu, F.SilkS, Edge.Cuts]
+          sheet: Front
+        - layers: [B.Cu, B.SilkS, Edge.Cuts]
+          sheet: Back
+
+  - name: basic_navigate
+    comment: Web page to navigate the outputs
+    type: navigate_results
+    dir: Browse
