@@ -14,22 +14,27 @@ jobs:
   generate:
     name: Generate Outputs
     runs-on: ubuntu-latest
-    # TODO: switch to kicad10_auto when available and remove workaround
-    container: ghcr.io/inti-cmnb/kicad9_auto_full:latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: "0"
-      - name: KiCad 10 compatibility workaround
+
+      - name: Install KiCad 10
+        run: |
+          sudo add-apt-repository -y ppa:kicad/kicad-10.0-releases
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends kicad
+
+      - name: Generate schematic PDF
         working-directory: hardware
         run: |
-          # Strip KiCad 10 attributes not recognized by KiCad 9 KiBot
-          find . -name "*.kicad_sch" -o -name "*.kicad_sym" | \
-            xargs sed -i '/\bin_pos_files\b/d; /\bduplicate_pin_numbers_are_jumpers\b/d'
-      - name: KiBot
-        working-directory: hardware
-        run: |
-          kibot -e granit.kicad_sch -b granit.kicad_pcb -d generated
+          GIT_HASH=$(git rev-parse --short HEAD)
+          mkdir -p generated
+          kicad-cli sch export pdf \
+            --define-var GIT_HASH=$GIT_HASH \
+            --output generated/granit-schematic.pdf \
+            granit.kicad_sch
+
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
