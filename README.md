@@ -105,6 +105,20 @@ The device runs Raspberry Pi OS Lite (headless).
 - LUKS full-disk encryption on the backup drive
 - Automatic drive mount and health monitoring
 
+## Enclosure
+
+Metal enclosure designed for a plug-and-forget deployment. The device should be installable
+by a non-technical person: plug in Ethernet, plug in power, done.
+
+### Requirements
+
+- Aluminum or steel enclosure (shielding, durability, passive heatsinking)
+- Internal mounting for 2.5" or 3.5" HDD
+- Cutouts: barrel jack (12V), RJ45 (Ethernet)
+- No user-facing controls or displays needed
+- Compact form factor suitable for a shelf or behind a router
+- 3D-printable or off-the-shelf enclosure (e.g. Hammond 1455 series)
+
 ## Generated Hardware Documentation
 
 Interactive [KiCanvas](https://kicanvas.org/) viewer (link TBD after first CI run).
