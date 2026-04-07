@@ -2,10 +2,10 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "53d53a9d-e3c9-48b6-ae77-578604c8535d")
+	(uuid "0a0b2779-cb91-4d84-a2b7-605ebe7f04e6")
 	(paper "A4")
 	(title_block
-		(title "Granit — CM4/CM5 + Ethernet")
+		(title "Granit — cm-conn2")
 		(date "2026-04-07")
 		(rev "0.1")
 		(company "https://github.com/laenzlinger/granit")
@@ -15,7 +15,7 @@
 	(lib_symbols)
 	(sheet_instances
 		(path "/"
-			(page "3")
+			(page "")
 		)
 	)
 	(embedded_fonts no)

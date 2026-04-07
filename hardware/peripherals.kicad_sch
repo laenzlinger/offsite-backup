@@ -1,0 +1,22 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "66006da1-6150-4313-b0c6-f5edb3785b9b")
+	(paper "A4")
+	(title_block
+		(title "Granit — peripherals")
+		(date "2026-04-07")
+		(rev "0.1")
+		(company "https://github.com/laenzlinger/granit")
+		(comment 1 "License: CERN Open Hardware Licence Version 2 - Permissive")
+		(comment 2 "Git commit hash: ${GIT_HASH}")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "")
+		)
+	)
+	(embedded_fonts no)
+)

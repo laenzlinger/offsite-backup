@@ -1,0 +1,22 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "880202e7-348a-46e4-97a2-b7d8967b1c46")
+	(paper "A4")
+	(title_block
+		(title "Granit — cm-conn1")
+		(date "2026-04-07")
+		(rev "0.1")
+		(company "https://github.com/laenzlinger/granit")
+		(comment 1 "License: CERN Open Hardware Licence Version 2 - Permissive")
+		(comment 2 "Git commit hash: ${GIT_HASH}")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "")
+		)
+	)
+	(embedded_fonts no)
+)

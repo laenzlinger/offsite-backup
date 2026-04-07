@@ -14,52 +14,6 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 100.33 30.48)
-		(size 50.8 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16")
-		(property "Sheetname" "CM4/CM5 + Ethernet"
-			(at 100.33 29.7684 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "cm.kicad_sch"
-			(at 100.33 56.4646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "granit"
-				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 30.48 30.48)
 		(size 50.8 25.4)
 		(exclude_from_sim no)
@@ -106,7 +60,99 @@
 		)
 	)
 	(sheet
+		(at 100.33 30.48)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16")
+		(property "Sheetname" "CM4 Connector 1"
+			(at 100.33 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cm-conn1.kicad_sch"
+			(at 100.33 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 170.18 30.48)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d")
+		(property "Sheetname" "CM4 Connector 2"
+			(at 170.18 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cm-conn2.kicad_sch"
+			(at 170.18 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 70.48)
 		(size 50.8 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -122,7 +168,7 @@
 		)
 		(uuid "b486f39b-2401-4245-9dd6-e411236f99dc")
 		(property "Sheetname" "SATA Bridge"
-			(at 170.18 29.7684 0)
+			(at 30.48 69.7684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -133,7 +179,7 @@
 			)
 		)
 		(property "Sheetfile" "sata.kicad_sch"
-			(at 170.18 56.4646 0)
+			(at 30.48 96.4646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -146,7 +192,53 @@
 		(instances
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
-					(page "4")
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 100.33 70.48)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80")
+		(property "Sheetname" "Peripherals"
+			(at 100.33 69.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 100.33 96.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
+					(page "6")
 				)
 			)
 		)
