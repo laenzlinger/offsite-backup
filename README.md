@@ -54,6 +54,8 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 - **ASM1061 over USB-to-SATA bridges**: Native PCIe SATA controller using the standard Linux
   `ahci` driver. No proprietary firmware blob required — the SPI flash footprint can be left
   unpopulated. SMART works natively (`smartctl /dev/sda`) without SAT translation hacks.
+  Both CM4 and CM5 have PCIe Gen 2 x1, so full SATA III throughput is available on either
+  module — unlike USB-to-SATA, which would be bottlenecked by CM4's USB 2.0 (~35 MB/s).
 - **12V DC input**: Required for 3.5" HDD support (spindle motor needs 12V).
   12V is passed through directly to the SATA power connector.
   AP64501SP-13 accepts 3.8–28V input, so 12V is well within range.
