@@ -162,14 +162,14 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "offsite-backup"
+      "granit"
     ],
     "pinned_symbol_libs": [
-      "offsite-backup"
+      "granit"
     ]
   },
   "meta": {
-    "filename": "offsite-backup.kicad_pro",
+    "filename": "granit.kicad_pro",
     "version": 3
   },
   "net_settings": {

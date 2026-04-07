@@ -8,10 +8,10 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "Offsite Backup Device")
+		(title "Granit — Offsite Backup Device")
 		(date "2026-04-07")
 		(rev "0.1")
-		(company "https://github.com/laenzlinger/offsite-backup")
+		(company "https://github.com/laenzlinger/granit")
 		(comment 1 "License: CERN Open Hardware Licence Version 2 - Permissive")
 		(comment 2 "Git commit hash: ${GIT_HASH}")
 	)

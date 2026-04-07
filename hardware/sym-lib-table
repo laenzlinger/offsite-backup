@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "offsite-backup")(type "KiCad")(uri "${KIPRJMOD}/offsite-backup.kicad_sym")(options "")(descr ""))
+  (lib (name "granit")(type "KiCad")(uri "${KIPRJMOD}/granit.kicad_sym")(options "")(descr ""))
 )

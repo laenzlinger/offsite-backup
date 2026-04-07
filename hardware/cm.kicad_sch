@@ -5,10 +5,10 @@
 	(uuid "53d53a9d-e3c9-48b6-ae77-578604c8535d")
 	(paper "A4")
 	(title_block
-		(title "Offsite Backup Device - CM4/CM5 + Ethernet")
+		(title "Granit — CM4/CM5 + Ethernet")
 		(date "2026-04-07")
 		(rev "0.1")
-		(company "https://github.com/laenzlinger/offsite-backup")
+		(company "https://github.com/laenzlinger/granit")
 		(comment 1 "License: CERN Open Hardware Licence Version 2 - Permissive")
 		(comment 2 "Git commit hash: ${GIT_HASH}")
 	)

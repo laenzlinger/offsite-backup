@@ -1,4 +1,4 @@
-# Offsite Backup Device
+# Granit — Offsite Backup Device
 
 Custom carrier board for the Raspberry Pi CM4/CM5 Compute Module, designed as a minimal offsite backup appliance.
 
@@ -79,14 +79,14 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 
 ```
 hardware/
-├── offsite-backup.kicad_pro       # KiCad 10 project
-├── offsite-backup.kicad_sch       # Top-level schematic
+├── granit.kicad_pro       # KiCad 10 project
+├── granit.kicad_sch       # Top-level schematic
 ├── psu.kicad_sch                  # Power supply (from pedalboard-hw)
 ├── cm.kicad_sch                   # CM4/CM5 connector + Ethernet
 ├── sata.kicad_sch                 # ASM1061 PCIe-to-SATA bridge
-├── offsite-backup.kicad_pcb       # PCB layout
+├── granit.kicad_pcb       # PCB layout
 ├── Library.pretty/                # Custom footprints
-├── offsite-backup.kicad_sym       # Custom symbols
+├── granit.kicad_sym       # Custom symbols
 ├── 3d-models/                     # 3D models for components
 └── fabrication/                   # Gerber output
 ```

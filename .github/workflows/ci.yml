@@ -6,13 +6,13 @@ on:
       - "hardware/*.kicad_sch"
       - "hardware/*.kicad_pcb"
       - ".github/workflows/ci.yml"
-      - "hardware/offsite-backup.kibot.yaml"
+      - "hardware/granit.kibot.yaml"
   pull_request:
     paths:
       - "hardware/*.kicad_sch"
       - "hardware/*.kicad_pcb"
       - ".github/workflows/ci.yml"
-      - "hardware/offsite-backup.kibot.yaml"
+      - "hardware/granit.kibot.yaml"
 
 jobs:
   kibot:
@@ -28,7 +28,7 @@ jobs:
       - name: Kibot Generator
         working-directory: hardware
         run: |
-          kibot -e offsite-backup.kicad_sch -d generated
+          kibot -e granit.kicad_sch -d generated
 
       - name: Retrieve results
         uses: actions/upload-artifact@v4

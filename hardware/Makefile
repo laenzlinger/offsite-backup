@@ -2,7 +2,7 @@
 .PHONY: test step pdf clean
 
 GIT_HASH = $(shell git rev-parse --short HEAD)
-PROJECT_NAME = offsite-backup
+PROJECT_NAME = granit
 
 test: ## Run ERC and DRC checks
 	mkdir -p out
