@@ -144,12 +144,9 @@ by a non-technical person: plug in Ethernet, plug in power, done.
 
 ## Generated Hardware Documentation
 
-Interactive [KiCanvas](https://kicanvas.org/) viewer (link TBD after first CI run).
+Browse the latest generated outputs at **[laenzlinger.github.io/granit](https://laenzlinger.github.io/granit/)**.
 
-Downloadable assets are generated with [KiBot](https://github.com/INTI-CMNB/KiBot).
-
-> **Note**: KiBot CI currently uses `ghcr.io/inti-cmnb/kicad9_auto`. A `kicad10_auto` image
-> is expected soon. KiCad 10 files are forward-compatible for most KiBot operations.
+Includes schematic PDF, interactive BOM, HTML BOM, and PCB prints — auto-generated on every push with [KiBot](https://github.com/INTI-CMNB/KiBot) (dev branch) running inside the official [kicad/kicad:10.0](https://hub.docker.com/r/kicad/kicad) container.
 
 ## License
 
