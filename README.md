@@ -81,6 +81,9 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 - **Ethernet**: CM4 has built-in Ethernet PHY — route differential pairs to RJ45 with magnetics
 - **SATA power**: 12V passthrough for 3.5" HDD, 5V from buck converter, 3.3V from LDO
 - **Power budget**: 12V @ 2A (3.5" HDD spin-up) + 5V @ 2.3A peak (CM4 + electronics) — use a 12V/3A+ PSU
+- **Boot and storage strategy**: Full OS on CM4 eMMC (no SD card slot), SATA HDD dedicated
+  to LUKS-encrypted backup storage only. HDD can spin down when idle. No SD card — eMMC is
+  more reliable for a deploy-and-forget device. Reflashing via `nRPIBOOT` + USB-C if needed.
 
 ## PCB Design
 
