@@ -112,6 +112,16 @@ The device runs Raspberry Pi OS Lite (headless).
 3. Plug in Ethernet + power — done
 4. Subsequent backups are incremental and run automatically over WireGuard
 
+### Monitoring & Alerting
+
+Monitoring must live outside the Granit device — if the device fails, it can't alert about
+its own failure. The device reports in after each backup run using a dead man's switch pattern:
+
+- After each successful backup, Granit pings a healthcheck endpoint (e.g. self-hosted or healthchecks.io)
+- If the expected ping doesn't arrive, an alert is triggered (email, push notification)
+- Reported metrics: backup success/failure, SMART disk health, disk space remaining
+- WireGuard connectivity is implicitly monitored — no tunnel means no ping
+
 ## Enclosure
 
 Metal enclosure designed for a plug-and-forget deployment. The device should be installable
