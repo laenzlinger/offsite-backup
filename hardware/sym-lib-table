@@ -1,5 +1,4 @@
 (sym_lib_table
   (version 7)
   (lib (name "granit")(type "KiCad")(uri "${KIPRJMOD}/granit.kicad_sym")(options "")(descr ""))
-  (lib (name "pedalboard")(type "KiCad")(uri "${KIPRJMOD}/../../pedalboard/pedalboard-hw/pedalboard.kicad_sym")(options "")(descr ""))
 )

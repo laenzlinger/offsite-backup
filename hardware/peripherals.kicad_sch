@@ -15,7 +15,7 @@
 	(lib_symbols)
 	(sheet_instances
 		(path "/"
-			(page "")
+			(page "#")
 		)
 	)
 	(embedded_fonts no)

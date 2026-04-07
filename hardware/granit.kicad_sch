@@ -14,52 +14,6 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 30.48 30.48)
-		(size 50.8 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "5c34f141-50d5-4609-a101-f9d94643eff8")
-		(property "Sheetname" "Power Supply"
-			(at 30.48 29.7684 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "psu.kicad_sch"
-			(at 30.48 56.4646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "granit"
-				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 100.33 30.48)
 		(size 50.8 25.4)
 		(exclude_from_sim no)
@@ -101,6 +55,52 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 30.48)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5c34f141-50d5-4609-a101-f9d94643eff8")
+		(property "Sheetname" "Power Supply"
+			(at 30.48 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "psu.kicad_sch"
+			(at 30.48 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
+					(page "2")
 				)
 			)
 		)
