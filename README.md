@@ -70,6 +70,9 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
   are provided — populate one at assembly time.
 - **Reuse from pedalboard-hw**: CM connector, power supply (AP64501SP-13 buck + NCP1117 LDO),
   USB power switch (AP2553W6), KiCad symbol/footprint library, CI pipeline.
+- **USB-C OTG**: Single USB-C connector for eMMC flashing (`rpiboot`) and USB mass storage
+  gadget mode (initial backup seeding over USB). USB 2.0 device mode only, with USBLC6-2SC6
+  ESD protection.
 
 ### Design Considerations
 
