@@ -22,6 +22,8 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 | RJ45 + Ethernet magnetics | Gigabit Ethernet |
 | DS3231 RTC | Battery-backed real-time clock with alarm wake (I2C) |
 | CR2032 coin cell | RTC backup battery |
+| RGB LED | Status indicator (idle/backup/error/maintenance) |
+| Tactile button | Manual shutdown, trigger backup, enter maintenance mode on boot |
 | Hirose DF40C-100DS-0.4V(51) | 2x CM4/CM5 board-to-board connectors |
 | AP64501SP-13 | 3.5A DC-DC buck converter (reused from [pedalboard-hw](https://github.com/pedalboard/pedalboard-hw)) |
 
