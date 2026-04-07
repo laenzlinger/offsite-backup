@@ -5,7 +5,7 @@
 	(uuid "1dff28ad-dc42-42d3-a1d7-be639a46580a")
 	(paper "A4")
 	(title_block
-		(title "Offsite Backup Device - SATA Bridge")
+		(title "Offsite Backup Device - ASM1061 PCIe-to-SATA")
 		(date "2026-04-07")
 		(rev "0.1")
 		(company "https://github.com/laenzlinger/offsite-backup")

@@ -15,8 +15,8 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 
 | Component | Description |
 |---|---|
-| Raspberry Pi CM4 or CM5 | Compute module (CM5 preferred for native USB 3.0) |
-| JMS578 | USB 3.0 to SATA 6Gbps bridge with SMART passthrough |
+| Raspberry Pi CM4 or CM5 | Compute module (both have PCIe Gen 2 x1) |
+| ASM1061 | PCIe Gen 2 x1 to 2-port SATA III controller (no firmware blob required) |
 | 2.5" or 3.5" SATA HDD/SSD | Backup storage |
 | 22-pin SATA connector | Combined data (7-pin) + power (15-pin) |
 | RJ45 + Ethernet magnetics | Gigabit Ethernet |
@@ -37,37 +37,36 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
   RJ45 ─────────►│  Raspberry Pi CM4/CM5        │
   (GbE)           │  (2x 100-pin connectors)     │
                   └──────────┬───────────────────┘
-                             │ USB 3.0
+                             │ PCIe Gen 2 x1
                   ┌──────────▼───────────────────┐
-                  │  JMS578 USB-to-SATA bridge   │
-                  │  + 25MHz XTAL                │
-                  │  + SPI Flash (firmware)       │
+                  │  ASM1061 PCIe-to-SATA        │
+                  │  (QFN-64, native AHCI)       │
                   └──────────┬───────────────────┘
                              │ SATA (data + power)
                   ┌──────────▼───────────────────┐
                   │  2.5" or 3.5" HDD/SSD        │
-                  │  (SMART monitoring via SAT)   │
+                  │  (native SMART via AHCI)     │
                   └──────────────────────────────┘
 ```
 
 ### Key Design Decisions
 
+- **ASM1061 over USB-to-SATA bridges**: Native PCIe SATA controller using the standard Linux
+  `ahci` driver. No proprietary firmware blob required — the SPI flash footprint can be left
+  unpopulated. SMART works natively (`smartctl /dev/sda`) without SAT translation hacks.
 - **12V DC input**: Required for 3.5" HDD support (spindle motor needs 12V).
   12V is passed through directly to the SATA power connector.
   AP64501SP-13 accepts 3.8–28V input, so 12V is well within range.
-- **JMS578 over ASM1153E**: JMS578 provides reliable SMART passthrough via SAT (SCSI/ATA Translation),
-  which is crucial for monitoring backup disk health with `smartctl -d sat`.
-- **CM5 preferred**: Native USB 3.0 on the SoC, no PCIe bridge needed.
 - **Reuse from pedalboard-hw**: CM connector, power supply (AP64501SP-13 buck + NCP1117 LDO),
   USB power switch (AP2553W6), KiCad symbol/footprint library, CI pipeline.
 
 ### Design Considerations
 
-- **USB 3.0 routing**: 90Ω differential impedance for SuperSpeed pairs, matched length
+- **PCIe routing**: 100Ω differential impedance for PCIe Gen 2 lanes, matched length,
+  minimize vias and stubs. 4-layer PCB recommended (signal/GND/power/signal).
 - **Ethernet**: CM4/CM5 has built-in Ethernet PHY — route differential pairs to RJ45 with magnetics
 - **SATA power**: 12V passthrough for 3.5" HDD, 5V from buck converter, 3.3V from LDO
 - **Power budget**: 12V @ 2A (3.5" HDD spin-up) + 5V @ 2A (CM5 + electronics) — use a 12V/3A+ PSU
-- **JMS578 firmware**: One-time SPI flash during production (tools: `jms578fwupdate`)
 
 ## PCB Design
 
@@ -79,7 +78,7 @@ hardware/
 ├── offsite-backup.kicad_sch       # Top-level schematic
 ├── psu.kicad_sch                  # Power supply (from pedalboard-hw)
 ├── cm.kicad_sch                   # CM4/CM5 connector + Ethernet
-├── sata.kicad_sch                 # JMS578 USB-to-SATA bridge
+├── sata.kicad_sch                 # ASM1061 PCIe-to-SATA bridge
 ├── offsite-backup.kicad_pcb       # PCB layout
 ├── Library.pretty/                # Custom footprints
 ├── offsite-backup.kicad_sym       # Custom symbols
@@ -94,7 +93,7 @@ The device runs Raspberry Pi OS Lite (headless).
 ### Planned Stack
 
 - LUKS full-disk encryption on the backup drive
-- `smartmontools` for disk health monitoring (`smartctl -d sat`)
+- `smartmontools` for disk health monitoring (`smartctl /dev/sda`)
 - Backup receiver (rsync/restic/borg — TBD)
 - WireGuard VPN for remote management
 - Automatic drive mount and health monitoring
