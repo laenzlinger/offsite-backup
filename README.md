@@ -20,6 +20,8 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 | 2.5" or 3.5" SATA HDD/SSD | Backup storage |
 | 22-pin SATA connector | Combined data (7-pin) + power (15-pin) |
 | RJ45 + Ethernet magnetics | Gigabit Ethernet |
+| DS3231 RTC | Battery-backed real-time clock with alarm wake (I2C) |
+| CR2032 coin cell | RTC backup battery |
 | Hirose DF40C-100DS-0.4V(51) | 2x CM4/CM5 board-to-board connectors |
 | AP64501SP-13 | 3.5A DC-DC buck converter (reused from [pedalboard-hw](https://github.com/pedalboard/pedalboard-hw)) |
 
@@ -33,10 +35,11 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
                   │  NCP1117 → 3.3V              │
                   └──────────┬───────────────────┘
                              │ 5V / 3.3V
-                  ┌──────────▼───────────────────┐
-  RJ45 ─────────►│  Raspberry Pi CM4/CM5        │
-  (GbE)           │  (2x 100-pin connectors)     │
-                  └──────────┬───────────────────┘
+  ┌───────────┐   ┌──────────▼───────────────────┐
+  │ DS3231 RTC├──►│  Raspberry Pi CM4/CM5        │
+  │ (CR2032)  │I2C│  (2x 100-pin connectors)     │
+  │  alarm────┼──►│  GLOBAL_EN (wake)            │
+  └───────────┘   └──────────┬───────────────────┘
                              │ PCIe Gen 2 x1
                   ┌──────────▼───────────────────┐
                   │  ASM1061 PCIe-to-SATA        │
@@ -94,10 +97,12 @@ The device runs Raspberry Pi OS Lite (headless).
 
 ### Planned Stack
 
-- LUKS full-disk encryption on the backup drive
+- Restic backup repository (encryption built-in)
+- rsync to receive backups from NAS
 - `smartmontools` for disk health monitoring (`smartctl /dev/sda`)
-- Backup receiver (rsync/restic/borg — TBD)
 - WireGuard VPN for remote management
+- RTC-based scheduled wake: DS3231 alarm → `GLOBAL_EN` → CM boots → backup runs → shutdown
+- LUKS full-disk encryption on the backup drive
 - Automatic drive mount and health monitoring
 
 ## Generated Hardware Documentation
