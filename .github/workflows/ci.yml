@@ -37,6 +37,11 @@ jobs:
         run: |
           kibot -e granit.kicad_sch -b granit.kicad_pcb -d generated
 
+      - name: Add index redirect
+        working-directory: hardware/generated
+        run: |
+          echo '<meta http-equiv="refresh" content="0;url=Browse/granit-navigate.html">' > index.html
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v5
         with:
