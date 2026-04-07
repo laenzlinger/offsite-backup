@@ -1,36 +1,30 @@
-name: "Generate output"
+name: "Hardware CI"
 
 on:
   push:
     paths:
-      - "hardware/*.kicad_sch"
-      - "hardware/*.kicad_pcb"
+      - "hardware/**"
       - ".github/workflows/ci.yml"
-      - "hardware/granit.kibot.yaml"
   pull_request:
     paths:
-      - "hardware/*.kicad_sch"
-      - "hardware/*.kicad_pcb"
+      - "hardware/**"
       - ".github/workflows/ci.yml"
-      - "hardware/granit.kibot.yaml"
 
 jobs:
-  kibot:
+  generate:
+    name: Generate Outputs
     runs-on: ubuntu-latest
     # TODO: switch to kicad10_auto when available
     container: ghcr.io/inti-cmnb/kicad9_auto_full:latest
-
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: "0"
-
-      - name: Kibot Generator
+      - name: KiBot
         working-directory: hardware
         run: |
-          kibot -e granit.kicad_sch -d generated
-
-      - name: Retrieve results
+          kibot -e granit.kicad_sch -b granit.kicad_pcb -d generated
+      - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
           name: generated_outputs
