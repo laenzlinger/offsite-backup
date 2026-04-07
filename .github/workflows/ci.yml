@@ -10,6 +10,9 @@ on:
       - "hardware/**"
       - ".github/workflows/ci.yml"
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     name: Generate Outputs
@@ -35,8 +38,15 @@ jobs:
             --output generated/granit-schematic.pdf \
             granit.kicad_sch
 
-      - name: Upload outputs
+      - name: Upload artifacts
         uses: actions/upload-artifact@v5
         with:
           name: generated_outputs
           path: hardware/generated
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: hardware/generated
