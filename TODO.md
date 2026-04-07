@@ -25,6 +25,22 @@
 - [ ] Assign footprints to all components
 - [ ] Review component values (resistors, caps)
 
+### Missing Footprints
+- [ ] BT1 (Battery_Cell) — CR2032 holder
+- [ ] D1, D2 (LED R, LED G) — 0805 LED
+- [ ] J1 (Conn_01x02) — 2-pin header (nRPIBOOT)
+- [ ] J2 (Conn_01x03) — 3-pin header (UART)
+- [ ] R1, R2 (2K2) — 0805 resistor
+- [ ] R3 (220R) — 0805 resistor
+- [ ] R4, R7, R8 (10K) — 0805 resistor
+- [ ] R5, R6 (4K7) — 0805 resistor
+- [ ] SW1 (SW_Push) — tactile switch
+- [ ] U1 (74AHCT1G125) — SOT-23-5
+
+### Fixes
+- [ ] CM1 footprint still references `Pedalboard Library` — change to `granit:`
+- [ ] F1 still says "Polyfuse 1.8A" — replace with 3A slow-blow SMD fuse (2410 package)
+
 ## PCB Layout
 - [ ] Define board outline and mounting holes
 - [ ] 4-layer stackup (signal/GND/power/signal)
