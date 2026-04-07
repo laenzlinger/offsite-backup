@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "d2c135e3-a983-4cd4-8cff-b50ca3c7671a")
@@ -14,48 +14,6 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 30.48 30.48)
-		(size 50.8 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "5c34f141-50d5-4609-a101-f9d94643eff8")
-		(property "Sheetname" "Power Supply"
-			(at 30.48 29.7684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "psu.kicad_sch"
-			(at 30.48 56.4646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "granit"
-				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 100.33 30.48)
 		(size 50.8 25.4)
 		(exclude_from_sim no)
@@ -68,11 +26,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16")
 		(property "Sheetname" "CM4/CM5 + Ethernet"
 			(at 100.33 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -82,6 +42,8 @@
 		)
 		(property "Sheetfile" "cm.kicad_sch"
 			(at 100.33 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -93,6 +55,52 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 30.48)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5c34f141-50d5-4609-a101-f9d94643eff8")
+		(property "Sheetname" "Power Supply"
+			(at 30.48 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "psu.kicad_sch"
+			(at 30.48 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a"
+					(page "2")
 				)
 			)
 		)
@@ -110,11 +118,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "b486f39b-2401-4245-9dd6-e411236f99dc")
 		(property "Sheetname" "SATA Bridge"
 			(at 170.18 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -124,6 +134,8 @@
 		)
 		(property "Sheetfile" "sata.kicad_sch"
 			(at 170.18 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
