@@ -14,12 +14,18 @@ jobs:
   generate:
     name: Generate Outputs
     runs-on: ubuntu-latest
-    # TODO: switch to kicad10_auto when available
+    # TODO: switch to kicad10_auto when available and remove workaround
     container: ghcr.io/inti-cmnb/kicad9_auto_full:latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: "0"
+      - name: KiCad 10 compatibility workaround
+        working-directory: hardware
+        run: |
+          # Strip KiCad 10 attributes not recognized by KiCad 9 KiBot
+          find . -name "*.kicad_sch" -o -name "*.kicad_sym" | \
+            xargs sed -i '/\bin_pos_files\b/d; /\bduplicate_pin_numbers_are_jumpers\b/d'
       - name: KiBot
         working-directory: hardware
         run: |
