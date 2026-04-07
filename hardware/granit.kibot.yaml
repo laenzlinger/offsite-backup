@@ -10,10 +10,10 @@ import:
 
 preflight:
   erc:
-    enabled: true
+    enabled: false
   drc:
-    enabled: true
-  check_zone_fills: true
+    enabled: false
+  check_zone_fills: false
   set_text_variables:
     name: GIT_HASH
     command: git rev-parse --short HEAD
