@@ -105,6 +105,13 @@ The device runs Raspberry Pi OS Lite (headless).
 - LUKS full-disk encryption on the backup drive
 - Automatic drive mount and health monitoring
 
+### Deployment
+
+1. Initial backup on-site: connect Granit to local network, run full backup over LAN
+2. Move device to offsite location (friend's house, office, etc.)
+3. Plug in Ethernet + power — done
+4. Subsequent backups are incremental and run automatically over WireGuard
+
 ## Enclosure
 
 Metal enclosure designed for a plug-and-forget deployment. The device should be installable
