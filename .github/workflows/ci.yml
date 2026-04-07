@@ -22,21 +22,17 @@ jobs:
         with:
           fetch-depth: "0"
 
-      - name: Install KiCad 10
+      - name: Install KiCad 10 + KiBot dev
         run: |
           sudo add-apt-repository -y ppa:kicad/kicad-10.0-releases
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends kicad
+          sudo apt-get install -y --no-install-recommends kicad python3-lxml
+          pip install --break-system-packages --no-compile git+https://github.com/INTI-CMNB/KiBot.git@dev
 
-      - name: Generate schematic PDF
+      - name: KiBot
         working-directory: hardware
         run: |
-          GIT_HASH=$(git rev-parse --short HEAD)
-          mkdir -p generated
-          kicad-cli sch export pdf \
-            --define-var GIT_HASH=$GIT_HASH \
-            --output generated/granit-schematic.pdf \
-            granit.kicad_sch
+          kibot -e granit.kicad_sch -b granit.kicad_pcb -d generated
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v5

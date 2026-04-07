@@ -13,7 +13,7 @@
 		(comment 2 "Git commit hash: ${GIT_HASH}")
 	)
 	(lib_symbols
-		(symbol "granit:CM4"
+		(symbol "pedalboard:CM4"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -39,7 +39,7 @@
 					)
 				)
 			)
-			(property "Footprint" "granit:Raspberry-Pi-4-Compute-Module"
+			(property "Footprint" "Pedalboard Library:Raspberry-Pi-4-Compute-Module"
 				(at 142.24 -26.67 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4771,7 +4771,7 @@
 		)
 	)
 	(symbol
-		(lib_id "granit:CM4")
+		(lib_id "pedalboard:CM4")
 		(at -50.8 104.14 0)
 		(unit 2)
 		(body_style 1)
@@ -4802,7 +4802,7 @@
 				)
 			)
 		)
-		(property "Footprint" "granit:Raspberry-Pi-4-Compute-Module"
+		(property "Footprint" "Pedalboard Library:Raspberry-Pi-4-Compute-Module"
 			(at 91.44 130.81 0)
 			(hide yes)
 			(show_name no)

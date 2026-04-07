@@ -13,7 +13,7 @@
 		(comment 2 "Git commit hash: ${GIT_HASH}")
 	)
 	(lib_symbols
-		(symbol "granit:CM4"
+		(symbol "pedalboard:CM4"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -39,7 +39,7 @@
 					)
 				)
 			)
-			(property "Footprint" "granit:Raspberry-Pi-4-Compute-Module"
+			(property "Footprint" "Pedalboard Library:Raspberry-Pi-4-Compute-Module"
 				(at 142.24 -26.67 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4149,6 +4149,12 @@
 		(color 0 0 0 0)
 		(uuid "f258d51d-784f-4c22-8860-0ba4f89f3ec9")
 	)
+	(junction
+		(at 52.07 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2f5737c-f5b0-45d5-b67d-821dac901dd3")
+	)
 	(wire
 		(pts
 			(xy 121.92 137.16) (xy 121.92 139.7)
@@ -4261,6 +4267,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 137.16) (xy 52.07 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45289f05-835f-4531-81bb-656a26b92efc")
+	)
+	(wire
+		(pts
 			(xy 45.72 104.14) (xy 45.72 114.3)
 		)
 		(stroke
@@ -4321,6 +4337,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 147.32) (xy 52.07 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a157bc3-baeb-469d-b54f-debc0d5f96fb")
+	)
+	(wire
+		(pts
 			(xy 115.57 144.78) (xy 121.92 144.78)
 		)
 		(stroke
@@ -4348,6 +4374,16 @@
 			(type default)
 		)
 		(uuid "67962683-3985-48ba-9dac-4d9bab511ee7")
+	)
+	(wire
+		(pts
+			(xy 52.07 147.32) (xy 52.07 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aec1576-b289-4ee0-9c75-d9328f027b5e")
 	)
 	(wire
 		(pts
@@ -4388,6 +4424,16 @@
 			(type default)
 		)
 		(uuid "7a0eb6ef-7c3b-4f99-9d12-9d9ce2053fdd")
+	)
+	(wire
+		(pts
+			(xy 52.07 144.78) (xy 54.61 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86c51ef9-b293-4c98-972a-18d5623add2b")
 	)
 	(wire
 		(pts
@@ -4448,6 +4494,16 @@
 			(type default)
 		)
 		(uuid "9f030c42-3dc4-4c0d-a002-98acd417d9f9")
+	)
+	(wire
+		(pts
+			(xy 52.07 137.16) (xy 52.07 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3c18449-856c-4169-9c9c-f7b6473a3287")
 	)
 	(wire
 		(pts
@@ -4748,7 +4804,7 @@
 		)
 	)
 	(symbol
-		(lib_id "granit:CM4")
+		(lib_id "pedalboard:CM4")
 		(at 87.63 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -4779,7 +4835,7 @@
 				)
 			)
 		)
-		(property "Footprint" "granit:Raspberry-Pi-4-Compute-Module"
+		(property "Footprint" "Pedalboard Library:Raspberry-Pi-4-Compute-Module"
 			(at 229.87 123.19 0)
 			(hide yes)
 			(show_name no)
