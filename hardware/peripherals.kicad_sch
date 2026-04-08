@@ -5614,7 +5614,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB ESD protection, 2-channel"
 			(at 97.79 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7710,7 +7710,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB addressable LED (NeoPixel compatible)"
 			(at 228.6 134.62 0)
 			(hide yes)
 			(show_name no)

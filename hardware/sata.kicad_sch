@@ -4666,7 +4666,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SATA power connector (12V, 5V, 3.3V)"
 			(at 133.35 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -5672,7 +5672,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "25MHz crystal for ASM1061"
 			(at 144.78 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -6175,7 +6175,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PCIe Gen 2 x1 to 2-port SATA III controller"
 			(at 113.03 162.56 0)
 			(hide yes)
 			(show_name no)

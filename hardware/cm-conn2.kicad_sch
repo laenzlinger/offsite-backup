@@ -5436,7 +5436,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Raspberry Pi CM4 Compute Module"
 			(at -50.8 104.14 0)
 			(hide yes)
 			(show_name no)

@@ -4758,7 +4758,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100µF output capacitor, tantalum"
 			(at 251.46 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -5424,7 +5424,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "3.5A DC-DC buck converter, 5V output"
 			(at 142.24 127 0)
 			(hide yes)
 			(show_name no)
@@ -7267,7 +7267,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "3A slow-blow SMD fuse"
 			(at 86.36 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -7652,7 +7652,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "12V DC screw terminal input"
 			(at 36.83 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -7899,7 +7899,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "P-Channel MOSFET, reverse polarity protection"
 			(at 93.98 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8558,7 +8558,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "3.3V LDO regulator, 1A"
 			(at 229.87 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -8934,7 +8934,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "3.3µH power inductor"
 			(at 170.18 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9036,7 +9036,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "12V DC barrel jack input (DNP option)"
 			(at 38.1 50.8 0)
 			(hide yes)
 			(show_name no)
