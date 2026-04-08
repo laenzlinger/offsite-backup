@@ -3194,7 +3194,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "pedalboard:CM4"
+		(symbol "granit:CM4"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7673,10 +7673,6 @@
 		(uuid "e9801571-560a-452a-8b09-7e1d0702fc0d")
 	)
 	(no_connect
-		(at 77.47 139.7)
-		(uuid "ed4cb688-ad79-4bc1-9564-abf530b7e8bb")
-	)
-	(no_connect
 		(at 115.57 127)
 		(uuid "efbccac7-4055-4065-bfb8-b076e87b54af")
 	)
@@ -9727,7 +9723,7 @@
 		)
 	)
 	(symbol
-		(lib_id "pedalboard:CM4")
+		(lib_id "granit:CM4")
 		(at 87.63 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -9758,7 +9754,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Pedalboard Library:Raspberry-Pi-4-Compute-Module"
+		(property "Footprint" "granit:Raspberry-Pi-4-Compute-Module"
 			(at 229.87 123.19 0)
 			(hide yes)
 			(show_name no)
