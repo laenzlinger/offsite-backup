@@ -3861,6 +3861,12 @@
 		(uuid "3ae3d08e-55a7-44a7-9d7e-98c688eb7623")
 	)
 	(junction
+		(at 161.29 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3dd84b27-05a1-4bb1-9f84-95c439e87b53")
+	)
+	(junction
 		(at 24.13 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4250,6 +4256,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 82.55) (xy 154.94 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "728a3b33-c5bb-469f-9cd1-f486b38e6885")
+	)
+	(wire
+		(pts
 			(xy 173.99 83.82) (xy 181.61 83.82)
 		)
 		(stroke
@@ -4437,6 +4453,16 @@
 			(type default)
 		)
 		(uuid "b9d871c7-3712-43b5-ae4c-32162743f5c4")
+	)
+	(wire
+		(pts
+			(xy 154.94 81.28) (xy 161.29 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c051b467-4a0b-43c6-a383-96a2a424a864")
 	)
 	(wire
 		(pts
@@ -6321,6 +6347,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 154.94 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "481e1ac5-8c03-4673-8ae6-9a32c75d2285")
+		(property "Reference" "#PWR073"
+			(at 154.94 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21c3de65-3049-4730-9da5-1f583c168ec2")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 91.44 29.21 0)
 		(unit 1)
 		(body_style 1)
@@ -6964,6 +7068,120 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 154.94 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "77e31f5e-3ca5-475b-b28e-08120ed088ef")
+		(property "Reference" "C36"
+			(at 159.258 83.058 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 158.75 86.614 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 155.9052 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 154.94 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB addressable LED (NeoPixel compatible)"
+			(at 154.94 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 154.94 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 154.94 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 154.94 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05af42d2-1385-45f4-addd-5bc896ff63b8")
+		)
+		(pin "2"
+			(uuid "67494445-5858-4005-a492-2bc9599e65a5")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+					(reference "C36")
 					(unit 1)
 				)
 			)
