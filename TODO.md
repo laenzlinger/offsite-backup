@@ -12,18 +12,22 @@
 - [x] Peripherals: nRPIBOOT 2-pin header
 - [x] Peripherals: UART debug 3-pin header
 - [x] Peripherals: DS3231MZ RTC + CR2032 battery
+- [x] Peripherals: USB-C OTG + USBLC6-2SC6 ESD protection
+- [x] Peripherals: USB_OTG_ID solder jumper (device/host mode)
+- [x] Ethernet: RB1-125B8G1A Gigabit MagJack + LEDs
+- [x] SATA: ASM1061 PCIe-to-SATA bridge (QFN-48+EP)
+- [x] SATA: 25MHz crystal + load caps
+- [x] SATA: 7-pin data connector (Port A)
+- [x] SATA: PCIe global labels (CLK, TX, RX, nRST)
+- [x] ERC: 0 errors, 0 warnings
 
 ### TODO
-- [ ] PSU: replace polyfuse with 3A slow-blow SMD fuse
-- [ ] SATA: ASM1061 PCIe-to-SATA bridge (QFN-64)
-- [ ] SATA: 22-pin SATA connector (data + power)
-- [ ] SATA: 12V passthrough to SATA power
-- [ ] Ethernet: RJ45 connector + magnetics
-- [ ] USB-C: OTG connector + USBLC6-2SC6 ESD protection
+- [ ] PSU: replace polyfuse with 3A slow-blow SMD fuse (2410 package)
+- [ ] SATA: 15-pin SATA power connector (12V passthrough, 5V, 3.3V)
 - [ ] RTC alarm → GLOBAL_EN wake circuit
-- [ ] Resolve remaining ERC errors (8 undriven inputs)
 - [ ] Assign footprints to all components
 - [ ] Review component values (resistors, caps)
+- [ ] Re-enable ERC check in CI
 
 ### Missing Footprints
 - [ ] BT1 (Battery_Cell) — CR2032 holder
@@ -34,12 +38,14 @@
 - [ ] R3 (220R) — 0805 resistor
 - [ ] R4, R7, R8 (10K) — 0805 resistor
 - [ ] R5, R6 (4K7) — 0805 resistor
+- [ ] R9, R10 (5K1) — 0805 resistor
 - [ ] SW1 (SW_Push) — tactile switch
 - [ ] U1 (74AHCT1G125) — SOT-23-5
-
-### Fixes
-- [ ] CM1 footprint still references `Pedalboard Library` — change to `granit:`
-- [ ] F1 still says "Polyfuse 1.8A" — replace with 3A slow-blow SMD fuse (2410 package)
+- [ ] JP1 (SolderJumper_2_Bridged) — solder jumper
+- [ ] J3 (USB_C_Receptacle) — USB-C connector
+- [ ] U3 (USBLC6-2SC6) — SOT-23-6
+- [ ] Y1 (Crystal 25MHz) — crystal footprint
+- [ ] J5 (SATA data) — 7-pin SATA data connector
 
 ## PCB Layout
 - [ ] Define board outline and mounting holes
@@ -49,6 +55,7 @@
 - [ ] Route PCIe differential pairs (100Ω impedance)
 - [ ] Route Ethernet differential pairs
 - [ ] Route USB differential pairs
+- [ ] Route SATA differential pairs
 - [ ] Power planes
 - [ ] DRC clean
 
