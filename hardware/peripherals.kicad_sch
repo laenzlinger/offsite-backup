@@ -5708,7 +5708,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "2ea78e29-dde6-4e61-b6af-4bbe674dff6b")
 		(property "Reference" "R18"
