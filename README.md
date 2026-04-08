@@ -62,24 +62,6 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
   to LUKS-encrypted backup storage only. HDD can spin down when idle. No SD card — eMMC is
   more reliable for a deploy-and-forget device. Reflashing via `nRPIBOOT` + USB-C if needed.
 
-## PCB Design
-
-### Project Structure
-
-```
-hardware/
-├── granit.kicad_pro       # KiCad 10 project
-├── granit.kicad_sch       # Top-level schematic
-├── psu.kicad_sch                  # Power supply (from pedalboard-hw)
-├── cm.kicad_sch                   # CM4 connector + Ethernet
-├── sata.kicad_sch                 # ASM1061 PCIe-to-SATA bridge
-├── granit.kicad_pcb       # PCB layout
-├── Library.pretty/                # Custom footprints
-├── granit.kicad_sym       # Custom symbols
-├── 3d-models/                     # 3D models for components
-└── fabrication/                   # Gerber output
-```
-
 ## Software
 
 The device runs Raspberry Pi OS Lite (headless).
