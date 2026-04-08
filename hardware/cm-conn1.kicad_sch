@@ -7405,6 +7405,12 @@
 		(uuid "75cd307c-0cf6-40af-8b38-c05561353379")
 	)
 	(junction
+		(at 153.67 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77e5b0fe-18e3-4706-9c4e-b64056821de4")
+	)
+	(junction
 		(at 121.92 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7579,10 +7585,6 @@
 		(uuid "9003be9f-f63e-48b2-9b86-a103d921c649")
 	)
 	(no_connect
-		(at 54.61 76.2)
-		(uuid "9242a196-b30f-4a2a-a0af-67662560b590")
-	)
-	(no_connect
 		(at 115.57 162.56)
 		(uuid "98a8dd4d-a043-481f-ac8a-bdeaa73251d1")
 	)
@@ -7738,6 +7740,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 165.1) (xy 153.67 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "080adfd2-576b-43e6-9cb7-b1daa0bd7251")
+	)
+	(wire
+		(pts
 			(xy 229.87 110.49) (xy 234.95 110.49)
 		)
 		(stroke
@@ -7835,6 +7847,16 @@
 			(type default)
 		)
 		(uuid "2270b01a-6be6-427c-8b2f-9bae1f0c6045")
+	)
+	(wire
+		(pts
+			(xy 41.91 76.2) (xy 54.61 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22ac4cb6-eacf-4780-98e0-b8d6581956ad")
 	)
 	(wire
 		(pts
@@ -8025,6 +8047,16 @@
 			(type default)
 		)
 		(uuid "54ee7e01-e16f-4ab6-85ce-c4e221d58327")
+	)
+	(wire
+		(pts
+			(xy 153.67 165.1) (xy 161.29 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55212559-dfe7-4a78-9fb2-876a891fc504")
 	)
 	(wire
 		(pts
@@ -8335,16 +8367,6 @@
 			(type default)
 		)
 		(uuid "9372c48b-ea70-41e9-b3d9-e345bdf8541c")
-	)
-	(wire
-		(pts
-			(xy 115.57 165.1) (xy 153.67 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93a63ddc-1764-42f4-9139-7182e2230959")
 	)
 	(wire
 		(pts
@@ -9072,6 +9094,30 @@
 			)
 		)
 	)
+	(global_label "GPIO_HOLD"
+		(shape bidirectional)
+		(at 41.91 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "33330fb1-3ad8-422b-bdf2-e2d1532a7a20")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 27.4115 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "ETH_P3_P"
 		(shape input)
 		(at 214.63 96.52 180)
@@ -9253,6 +9299,30 @@
 		(uuid "7c97562c-a405-44e5-9bf3-94ae715f0c0e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 141.3168 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GLOBAL_EN"
+		(shape input)
+		(at 161.29 165.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7fc6f07f-5c59-4822-ba92-01bf6134dba6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 174.7376 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
