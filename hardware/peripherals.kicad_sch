@@ -5069,7 +5069,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2K2"
+		(property "Value" "330R"
 			(at 36.83 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6498,7 +6498,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2K2"
+		(property "Value" "330R"
 			(at 26.67 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7105,7 +7105,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 110.49 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
