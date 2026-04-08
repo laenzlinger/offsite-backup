@@ -113,7 +113,9 @@ The device runs Raspberry Pi OS Lite (headless).
 - rsync to receive backups from NAS
 - `smartmontools` for disk health monitoring (`smartctl /dev/sda`)
 - WireGuard VPN for remote management
-- RTC-based scheduled wake: DS3231 alarm → `GLOBAL_EN` → CM boots → backup runs → shutdown
+- RTC-based scheduled wake: DS3231 alarm → GPIO4 interrupt → CM wakes from suspend → backup runs → suspend
+  (`GLOBAL_EN` tied high via pull-up, CM4 uses Linux `rtcwake` for suspend/resume.
+  Hardware power-off wake via MOSFET latch on `GLOBAL_EN` planned for v2.)
 - LUKS full-disk encryption on the backup drive
 - Automatic drive mount and health monitoring
 
