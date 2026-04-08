@@ -2821,6 +2821,12 @@
 		(uuid "403866b3-9911-4eb4-9177-4a430d531482")
 	)
 	(junction
+		(at 60.96 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4417b75c-b279-4dcd-a1bc-a93e3762bff8")
+	)
+	(junction
 		(at 218.44 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3076,7 +3082,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 77.47) (xy 80.01 77.47)
+			(xy 52.07 77.47) (xy 60.96 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3153,6 +3159,16 @@
 			(type default)
 		)
 		(uuid "18261f90-ecd8-44ed-bb9c-2bc07f89010f")
+	)
+	(wire
+		(pts
+			(xy 237.49 48.26) (xy 247.65 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18609372-70ec-42e1-8e8f-75391bfced9e")
 	)
 	(wire
 		(pts
@@ -3383,16 +3399,6 @@
 			(type default)
 		)
 		(uuid "3ffd98da-12ab-4858-9324-94a85a044197")
-	)
-	(wire
-		(pts
-			(xy 237.49 48.26) (xy 247.65 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "429c0843-aafb-4fa6-b21f-8354755b01dc")
 	)
 	(wire
 		(pts
@@ -3633,6 +3639,16 @@
 			(type default)
 		)
 		(uuid "74b76ff3-d17f-4411-a03d-b03eb92420f3")
+	)
+	(wire
+		(pts
+			(xy 60.96 77.47) (xy 80.01 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76734e7b-513e-4bf5-ac2c-e2890e40d87e")
 	)
 	(wire
 		(pts
@@ -6617,6 +6633,84 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/5c34f141-50d5-4609-a101-f9d94643eff8"
 					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 60.96 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c1a0d26-7daa-449d-9122-30331b014395")
+		(property "Reference" "#FLG05"
+			(at 60.96 75.565 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 60.96 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 60.96 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "243adc27-7427-4f58-88b8-c5061d54635d")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/5c34f141-50d5-4609-a101-f9d94643eff8"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)

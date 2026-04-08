@@ -3866,6 +3866,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "PCIe clk is always required\n"
+		(exclude_from_sim no)
+		(at 44.196 41.656 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "71cd5bd6-0799-4c05-9e45-c7797191dbac")
+	)
 	(junction
 		(at 52.07 149.86)
 		(diameter 0)
@@ -3895,6 +3905,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5bf232d7-62fa-4649-96f0-7b3a4b370bbe")
+	)
+	(junction
+		(at 52.07 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "602d7d7f-978b-4b89-acf6-e5ef8c837e77")
 	)
 	(junction
 		(at 52.07 157.48)
@@ -4582,7 +4598,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 43.18) (xy 58.42 43.18)
+			(xy 52.07 43.18) (xy 58.42 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4639,6 +4655,16 @@
 			(type default)
 		)
 		(uuid "8f4db479-f876-4fbe-8593-c2df0838549b")
+	)
+	(wire
+		(pts
+			(xy 52.07 43.18) (xy 52.07 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9291f65e-aa9e-4761-879a-3ec36ec44911")
 	)
 	(wire
 		(pts
@@ -4973,30 +4999,6 @@
 		(uuid "08afdafc-2f7f-4252-a73e-61276297731f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 29.2259 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "PCIE_CLK_nREQ"
-		(shape bidirectional)
-		(at 44.45 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3471ad87-9b8f-466a-bcb7-3ef9079b450b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.6579 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
