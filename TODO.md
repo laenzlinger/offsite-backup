@@ -25,6 +25,7 @@
 - [ ] PSU: replace polyfuse with 3A slow-blow SMD fuse (2410 package)
 - [ ] SATA: 15-pin SATA power connector (12V passthrough, 5V, 3.3V)
 - [ ] RTC alarm → GLOBAL_EN wake circuit
+- [ ] FIXME: design alternative MOSFET latch for hardware power-off wake (populate instead of GLOBAL_EN pull-up)
 - [ ] Assign footprints to all components
 - [ ] Review component values (resistors, caps)
 - [ ] Re-enable ERC check in CI

@@ -3407,7 +3407,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "09b4f5ea-16c3-4a44-bf54-45bc06103e92")
+			(uuid "09b4f5ea-16c3-4a44-bf54-45bc06103e93")
 		)
 		(instances
 			(project "granit"
@@ -4724,7 +4724,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "63f5b7ae-8e6f-4974-8513-bcaab18b22af")
+			(uuid "63f5b7ae-8e6f-4974-8513-bcaab18b22b0")
 		)
 		(instances
 			(project "granit"
@@ -5113,7 +5113,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "dabe6462-3e6b-4e5c-b3a9-e8c5d277664e")
+			(uuid "dabe6462-3e6b-4e5c-b3a9-e8c5d277664f")
 		)
 		(instances
 			(project "granit"
@@ -5191,7 +5191,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "63f5b7ae-8e6f-4974-8513-bcaab18b22af")
+			(uuid "63f5b7ae-8e6f-4974-8513-bcaab18b22b1")
 		)
 		(instances
 			(project "granit"
@@ -5383,7 +5383,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "dabe6462-3e6b-4e5c-b3a9-e8c5d277664e")
+			(uuid "dabe6462-3e6b-4e5c-b3a9-e8c5d2776650")
 		)
 		(instances
 			(project "granit"
@@ -5575,7 +5575,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e326918a-09c0-47cb-a79b-45a444fb1923")
+			(uuid "e326918a-09c0-47cb-a79b-45a444fb1924")
 		)
 		(instances
 			(project "granit"
@@ -5652,7 +5652,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "41e0ff46-d49b-4a4d-88ef-577acd7b8411")
+			(uuid "41e0ff46-d49b-4a4d-88ef-577acd7b8412")
 		)
 		(instances
 			(project "granit"
@@ -6037,7 +6037,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "63f5b7ae-8e6f-4974-8513-bcaab18b22af")
+			(uuid "63f5b7ae-8e6f-4974-8513-bcaab18b22b2")
 		)
 		(instances
 			(project "granit"
