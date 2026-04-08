@@ -26,11 +26,13 @@
 - [x] ERC enabled in CI
 
 ## PCB Layout
-- [ ] Define board outline and mounting holes
+- [ ] Board outline: ~102 x 147mm (matches 3.5" HDD form factor, PCB mounts below drive)
+- [ ] Mounting holes aligned with 3.5" HDD bottom holes (101.6 x 76.2mm, M3)
 - [ ] 4-layer stackup (signal/GND/power/signal)
-- [ ] Place connectors (SATA, RJ45, USB-C, barrel jack, screw terminal)
-- [ ] Place CM4 connectors
-- [ ] Place ASM1061 + decoupling
+- [ ] Place SATA connector on edge aligned with drive connector above
+- [ ] Place RJ45, USB-C, barrel jack on accessible edges
+- [ ] Place CM4 module center, components facing down (away from drive)
+- [ ] Place ASM1061 near SATA connector (short differential pairs)
 - [ ] Route PCIe differential pairs (100Ω impedance)
 - [ ] Route SATA differential pairs
 - [ ] Route Ethernet differential pairs
