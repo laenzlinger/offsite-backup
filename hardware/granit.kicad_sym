@@ -28,7 +28,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Pedalboard Library:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
+		(property "Footprint" "granit:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5064,7 +5064,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Pedalboard Library:SO08-E3"
+		(property "Footprint" "granit:SO08-E3"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
