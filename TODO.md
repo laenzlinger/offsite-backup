@@ -28,8 +28,13 @@
 ## PCB Layout
 - [ ] Board outline: ~102 x 147mm (matches 3.5" HDD form factor, PCB mounts below drive)
 - [ ] Mounting holes aligned with 3.5" HDD bottom holes (101.6 x 76.2mm, M3)
+- [ ] HDD mounting holes: M4 (4.3mm drill, `MountingHole:MountingHole_4.3mm_M4_Pad_Via`)
+- [ ] PCB standoff holes: M3 (3.2mm drill, `MountingHole:MountingHole_3.2mm_M3_Pad_Via`)
+- [ ] Mounting hole keepout: 7.0mm clearance on pads (prevent screw heads shorting 12V traces)
 - [ ] 4-layer stackup (signal/GND/power/signal)
 - [ ] Place SATA connector on edge aligned with drive connector above
+  - SATA footprint: `Connector_SATA:SATA_7-15_Plug_Vertical` (Molex 87779-1001)
+  - Verify "L" key orientation matches male plug — may need to flip to bottom layer
 - [ ] Place RJ45, USB-C, barrel jack on accessible edges
 - [ ] Place CM4 module center, components facing down (away from drive)
 - [ ] Place ASM1061 near SATA connector (short differential pairs)
@@ -37,8 +42,18 @@
 - [ ] Route SATA differential pairs
 - [ ] Route Ethernet differential pairs
 - [ ] Route USB differential pairs
+- [ ] Power trace width: ≥1.0mm (40 mil) for 12V and 5V paths (3.5" HDD spin-up current)
 - [ ] Power planes
 - [ ] DRC clean
+
+## Enclosure
+- [ ] Choose case: Hammond 1455L2201 (slim, 30.5mm) or 1455N2201 (roomy, 53mm)
+  - Both share 103mm width — PCB is cross-compatible
+  - 1455L: zero clearance with 3.5" HDD — mount PCB + HDD to belly plate
+  - 1455N: 20mm+ extra height — fits 40mm fan or tall CM4 heatsink
+- [ ] Design end panel cutouts (barrel jack, RJ45, USB-C, button, LED)
+- [ ] Thermal pad from CM4 SoC to enclosure lid
+- [ ] Include Hammond 1455L2201 as default 3D reference model in KiCad
 
 ## Future Improvements
 - [ ] TPM/crypto chip (e.g. ATECC608) for secure LUKS key storage (I2C)

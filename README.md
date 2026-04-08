@@ -18,7 +18,7 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 | Raspberry Pi CM4 | Compute module (PCIe Gen 2 x1). CM5 mechanically compatible but not validated for power budget |
 | ASM1061 | PCIe Gen 2 x1 to 2-port SATA III controller (no firmware blob required) |
 | 2.5" or 3.5" SATA HDD/SSD | Backup storage |
-| 22-pin SATA connector | Combined data (7-pin) + power (15-pin) |
+| Molex 87779-1001 | 22-pin SATA connector (data 7-pin + power 15-pin), vertical mount |
 | RJ45 + Ethernet magnetics | Gigabit Ethernet |
 | DS3231 RTC | Battery-backed real-time clock with alarm wake (I2C) |
 | CR2032 coin cell | RTC backup battery |
@@ -100,16 +100,30 @@ its own failure. The device reports in after each backup run using a dead man's 
 Metal enclosure designed for a plug-and-forget deployment. The device should be installable
 by a non-technical person: plug in Ethernet, plug in power, done.
 
+### Hammond 1455 Series
+
+Two case options share the same 103mm width, so the PCB is cross-compatible:
+
+| | 1455L2201 (Slim) | 1455N2201 (Roomy) |
+|---|---|---|
+| Dimensions | 220 × 103 × 30.5 mm | 220 × 103 × 53.0 mm |
+| Internal height | 26.5 mm | 49.0 mm |
+| Material | Extruded aluminium (1.5mm min) | Extruded aluminium (1.5mm min) |
+| HDD clearance | Tight — zero clearance with 3.5" HDD (26.1mm) | Plenty — 20mm+ above components |
+| Heatsink/fan | No room for tall heatsinks | Fits 40mm fan or tall CM4 heatsink |
+| Price (approx.) | ~27 CHF | ~33 CHF |
+| Colors | Natural, Black, Blue, Red | Natural, Black, Blue, Red |
+
+The **1455L2201 (Slim)** is the default reference — if it fits the L, it fits the N.
+
 ### Requirements
 
-- Aluminum or steel enclosure (shielding, durability, passive heatsinking)
-- Internal mounting for 2.5" or 3.5" HDD
 - Cutouts: barrel jack or screw terminal (12V), RJ45 (Ethernet), USB-C
 - Tactile button accessible from outside (recessed to prevent accidental press)
 - RGB LED visible through enclosure (light pipe or translucent window)
 - Thermal pad or heatsink contact for CM4 SoC to enclosure lid
-- Compact form factor suitable for a shelf or behind a router
-- 3D-printable or off-the-shelf enclosure (e.g. Hammond 1455 series)
+- Internal mounting for 2.5" or 3.5" HDD (M4 mounting holes)
+- PCB standoffs (M3 mounting holes)
 
 ## Generated Hardware Documentation
 
