@@ -26,6 +26,8 @@
 - [ ] SATA: 15-pin SATA power connector (12V passthrough, 5V, 3.3V)
 - [ ] RTC alarm → GLOBAL_EN wake circuit
 - [ ] FIXME: design alternative MOSFET latch for hardware power-off wake (populate instead of GLOBAL_EN pull-up)
+- [ ] FIXME: SATA power switching (cut 12V/5V to HDD during sleep via GPIO-controlled load switch)
+- [ ] FIXME: TPM/crypto chip (e.g. ATECC608) for secure LUKS key storage (I2C, v2)
 - [ ] Assign footprints to all components
 - [ ] Review component values (resistors, caps)
 - [ ] Re-enable ERC check in CI
