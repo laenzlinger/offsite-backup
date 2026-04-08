@@ -4320,16 +4320,34 @@
 		(uuid "c92fd485-43fd-447c-8d4a-1cdf3d93c2dc")
 	)
 	(junction
+		(at 92.71 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2880328-42ed-4a3e-b981-ead6d7873311")
+	)
+	(junction
 		(at 113.03 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db1790f0-5c18-4cf5-a81c-df51e4c7666a")
 	)
 	(junction
+		(at 127 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4bf936e-cbfc-4517-b9d4-694f7392801f")
+	)
+	(junction
 		(at 181.61 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5037237-663a-45f5-9fbb-076d76aecc12")
+	)
+	(junction
+		(at 87.63 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9e0d48e-6ba2-4750-aea9-44a844fb8332")
 	)
 	(no_connect
 		(at 134.62 39.37)
@@ -4551,6 +4569,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 26.67) (xy 87.63 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32958ad8-8ba8-48e3-b1de-1d40ddbfbc37")
+	)
+	(wire
+		(pts
 			(xy 67.31 167.64) (xy 77.47 167.64)
 		)
 		(stroke
@@ -4601,6 +4629,26 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 26.67) (xy 87.63 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "454ada1c-e11f-4c84-be07-3e65d348e018")
+	)
+	(wire
+		(pts
+			(xy 92.71 143.51) (xy 92.71 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e2b3f4-187a-48ae-80f3-568716faa96c")
+	)
+	(wire
+		(pts
 			(xy 71.12 36.83) (xy 72.39 36.83)
 		)
 		(stroke
@@ -4608,6 +4656,16 @@
 			(type default)
 		)
 		(uuid "49c0028c-57c0-4c17-98c4-3461bb7595c5")
+	)
+	(wire
+		(pts
+			(xy 127 22.86) (xy 127 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4edcce6e-bca2-419a-beff-1b9708d4fe71")
 	)
 	(wire
 		(pts
@@ -4751,6 +4809,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 27.94) (xy 96.52 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "823c813e-9a9a-4364-8a82-dcb517b4ab81")
+	)
+	(wire
+		(pts
 			(xy 143.51 106.68) (xy 156.21 106.68)
 		)
 		(stroke
@@ -4841,6 +4909,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 22.86) (xy 87.63 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2454bd9-a603-4846-a64d-809bc10b54be")
+	)
+	(wire
+		(pts
 			(xy 201.93 104.14) (xy 201.93 106.68)
 		)
 		(stroke
@@ -4861,6 +4939,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 147.32) (xy 92.71 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8f5b01d-eeb9-4af2-87b7-9b8f384faadd")
+	)
+	(wire
+		(pts
 			(xy 181.61 92.71) (xy 181.61 96.52)
 		)
 		(stroke
@@ -4878,6 +4966,16 @@
 			(type default)
 		)
 		(uuid "af0ce667-53bc-4da9-b07d-7c8c10378edc")
+	)
+	(wire
+		(pts
+			(xy 92.71 147.32) (xy 92.71 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af21f1e3-0848-4476-be48-1e5a355e72a6")
 	)
 	(wire
 		(pts
@@ -4938,6 +5036,16 @@
 			(type default)
 		)
 		(uuid "c051b467-4a0b-43c6-a383-96a2a424a864")
+	)
+	(wire
+		(pts
+			(xy 127 22.86) (xy 137.16 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c60e73ae-f1ef-4a1e-a559-8a2e247db266")
 	)
 	(wire
 		(pts
@@ -5031,7 +5139,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 165.1) (xy 113.03 165.1)
+			(xy 105.41 165.1) (xy 111.76 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5068,6 +5176,16 @@
 			(type default)
 		)
 		(uuid "e7e57843-347e-48be-90d2-34280a655410")
+	)
+	(wire
+		(pts
+			(xy 137.16 22.86) (xy 137.16 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9055980-6019-4b88-ac7e-3171fee8b650")
 	)
 	(wire
 		(pts
@@ -5399,7 +5517,7 @@
 	)
 	(global_label "GLOBAL_EN"
 		(shape output)
-		(at 113.03 165.1 0)
+		(at 111.76 165.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5409,7 +5527,7 @@
 		)
 		(uuid "bf20c8c6-3d20-4d59-a6e9-20f971fd0ba8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.4776 165.1 0)
+			(at 125.2076 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5702,6 +5820,120 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 99.06 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f5cfd0c-6cfa-435d-a910-f324f5abb178")
+		(property "Reference" "C39"
+			(at 102.108 148.082 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 102.108 150.876 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 100.0252 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 99.06 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB ESD protection, 2-channel"
+			(at 99.06 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 99.06 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 99.06 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 99.06 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33e09b93-7f50-400a-8567-80415ecf5217")
+		)
+		(pin "2"
+			(uuid "165ee27e-f971-4fbe-957f-4b7ba1381fcf")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -6414,7 +6646,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VP")
-		(at 127 31.75 0)
+		(at 127 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6425,7 +6657,7 @@
 		(fields_autoplaced yes)
 		(uuid "32295229-d98c-4c3e-9ffe-efabe77fe7d6")
 		(property "Reference" "#PWR054"
-			(at 127 35.56 0)
+			(at 127 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6436,7 +6668,7 @@
 			)
 		)
 		(property "Value" "+5VP"
-			(at 127 26.67 0)
+			(at 127 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6446,7 +6678,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 31.75 0)
+			(at 127 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6457,7 +6689,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 31.75 0)
+			(at 127 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6468,7 +6700,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 127 31.75 0)
+			(at 127 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6978,7 +7210,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 92.71 154.94 0)
+		(at 92.71 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6989,7 +7221,7 @@
 		(fields_autoplaced yes)
 		(uuid "457d0323-0785-4be8-9436-c7fa31ff48d6")
 		(property "Reference" "#PWR075"
-			(at 92.71 158.75 0)
+			(at 92.71 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7000,7 +7232,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 92.71 149.86 0)
+			(at 92.71 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7010,7 +7242,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 154.94 0)
+			(at 92.71 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7021,7 +7253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 154.94 0)
+			(at 92.71 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7032,7 +7264,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 92.71 154.94 0)
+			(at 92.71 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7127,6 +7359,120 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
 					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 96.52 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4982bbac-37d0-4712-bec7-87d4e5f8cbf5")
+		(property "Reference" "C37"
+			(at 99.568 28.702 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 99.568 31.496 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 97.4852 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 96.52 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB ESD protection, 2-channel"
+			(at 96.52 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 96.52 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 96.52 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 96.52 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4813594-e770-4fd6-a6f5-e16f39fb35c1")
+		)
+		(pin "2"
+			(uuid "1c137c51-f3b1-4736-b9cc-21e20a83faa7")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -7714,10 +8060,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6e5d5dc8-6109-4780-9d97-d95ec19be247")
 		(property "Reference" "D1"
-			(at 140.97 32.9498 0)
+			(at 135.382 44.704 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7787,6 +8132,83 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6f95d95d-a501-4e33-97f6-9ce2e40f3021")
+		(property "Reference" "#PWR077"
+			(at 99.06 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b0df02b-5fab-4532-a85e-243c857d9963")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -8509,6 +8931,120 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
 					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 137.16 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a92dd5d9-8ce8-4e35-985e-e35fba78582c")
+		(property "Reference" "C38"
+			(at 140.208 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 140.208 27.686 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 138.1252 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 137.16 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB ESD protection, 2-channel"
+			(at 137.16 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 137.16 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 137.16 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 137.16 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60dba02f-57a4-47de-9c03-78ffe37e9772")
+		)
+		(pin "2"
+			(uuid "18bf88c9-a3fd-4d43-8524-4171c3ad8097")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -9401,6 +9937,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 137.16 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e1e74bff-2166-41ba-b507-09ab9c10ec11")
+		(property "Reference" "#PWR079"
+			(at 137.16 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.604 30.988 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24329b50-3cb4-4359-aae8-13a213a01697")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 152.4 135.89 90)
 		(unit 1)
@@ -9722,7 +10335,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VP")
-		(at 87.63 29.21 0)
+		(at 87.63 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9733,7 +10346,7 @@
 		(fields_autoplaced yes)
 		(uuid "f12cdfde-a48b-43dd-a13c-f9490654e9b3")
 		(property "Reference" "#PWR052"
-			(at 87.63 33.02 0)
+			(at 87.63 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9744,7 +10357,7 @@
 			)
 		)
 		(property "Value" "+5VP"
-			(at 87.63 24.13 0)
+			(at 87.63 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9754,7 +10367,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 29.21 0)
+			(at 87.63 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9765,7 +10378,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 29.21 0)
+			(at 87.63 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9776,7 +10389,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 87.63 29.21 0)
+			(at 87.63 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10187,6 +10800,83 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 96.52 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb0b3656-b262-4530-8014-2984ae7107bb")
+		(property "Reference" "#PWR078"
+			(at 96.52 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.076 35.306 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f27cfa54-c5c1-4b13-9bbb-0b3cec9f6a11")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
