@@ -4509,16 +4509,6 @@
 		)
 		(uuid "6152d4ba-9093-4ecc-989a-0acbc119aba8")
 	)
-	(label "polarity_checked"
-		(at 44.45 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a09842c9-cd50-4313-bcb1-3913eebfe9d3")
-	)
 	(label "unfused"
 		(at 54.61 44.45 0)
 		(effects
@@ -4528,16 +4518,6 @@
 			(justify left bottom)
 		)
 		(uuid "c2a0b5f8-c7e6-41e0-bfc5-4b8cee120701")
-	)
-	(label "polarity_checked"
-		(at 127 44.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "fffd5867-5749-432d-a92b-ef295d8e7244")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -5010,6 +4990,84 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/5c34f141-50d5-4609-a101-f9d94643eff8"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 44.45 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26edb860-7374-4f3e-b028-b702f7222d24")
+		(property "Reference" "#PWR072"
+			(at 44.45 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VP"
+			(at 44.45 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 44.45 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec2f0c5b-175f-4502-85aa-0534a66ce3ce")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/5c34f141-50d5-4609-a101-f9d94643eff8"
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
