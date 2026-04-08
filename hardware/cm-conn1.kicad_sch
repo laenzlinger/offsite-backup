@@ -7567,10 +7567,6 @@
 		(uuid "73c5dbda-602f-4f3e-a7d3-ba678f592333")
 	)
 	(no_connect
-		(at 54.61 81.28)
-		(uuid "805d1594-0f24-4dd5-887c-b273d355e066")
-	)
-	(no_connect
 		(at 115.57 71.12)
 		(uuid "83786cf1-863a-41d9-bd10-28be93e67066")
 	)
@@ -8502,6 +8498,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 81.28) (xy 54.61 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb163140-0a0f-4298-9666-3d6d0f845adc")
+	)
+	(wire
+		(pts
 			(xy 232.41 52.07) (xy 229.87 52.07)
 		)
 		(stroke
@@ -9271,6 +9277,30 @@
 		(uuid "8706a003-e50a-4038-a5d4-f36b62970a37")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 28.6817 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SATA_PWR_EN"
+		(shape bidirectional)
+		(at 41.91 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "92ce42df-7546-47ff-b862-cdf9c3b11b71")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.0531 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
