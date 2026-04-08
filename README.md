@@ -31,32 +31,7 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 
 ### Block Diagram
 
-```
-                  ┌──────────────────────────────┐
-  12V DC In ─────►│  Power Supply                │
-  (barrel jack    │  12V passthrough → SATA 12V  │
-   or screw       │                              │
-   terminal)      │                              │
-                  │  AP64501SP-13 → 5V → SATA 5V │
-                  │  NCP1117 → 3.3V              │
-                  └──────────┬───────────────────┘
-                             │ 5V / 3.3V
-  ┌───────────┐   ┌──────────▼───────────────────┐
-  │ DS3231 RTC├──►│  Raspberry Pi CM4            │
-  │ (CR2032)  │I2C│  (2x 100-pin connectors)     │
-  │  alarm────┼──►│  GLOBAL_EN (wake)            │
-  └───────────┘   └──────────┬───────────────────┘
-                             │ PCIe Gen 2 x1
-                  ┌──────────▼───────────────────┐
-                  │  ASM1061 PCIe-to-SATA        │
-                  │  (QFN-64, native AHCI)       │
-                  └──────────┬───────────────────┘
-                             │ SATA (data + power)
-                  ┌──────────▼───────────────────┐
-                  │  2.5" or 3.5" HDD/SSD        │
-                  │  (native SMART via AHCI)     │
-                  └──────────────────────────────┘
-```
+![Architecture Diagram](diagram/architecture.drawio.svg)
 
 ### Key Design Decisions
 
