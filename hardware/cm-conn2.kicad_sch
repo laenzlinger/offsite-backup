@@ -5238,7 +5238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55d14393-5850-4918-9fa9-03614f1cb94e")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR024"
 			(at 133.35 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -5298,7 +5298,7 @@
 		(instances
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
-					(reference "#PWR05")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5316,7 +5316,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "678bc9db-187e-453f-baff-f5f86ad4ed39")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR023"
 			(at 52.07 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -5376,7 +5376,7 @@
 		(instances
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
-					(reference "#PWR04")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
