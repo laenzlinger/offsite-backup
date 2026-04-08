@@ -10,7 +10,7 @@ import:
 
 preflight:
   erc:
-    enabled: false
+    enabled: true
   drc:
     enabled: false
   check_zone_fills: false
