@@ -1,77 +1,60 @@
 # Granit — TODO
 
-## Schematic
+## Schematic ✅
 
 ### Done
-- [x] PSU: AP64501SP-13 buck + NCP1117 LDO + FDS4435BZ reverse polarity (from pedalboard-hw)
-- [x] CM4 Connector 1: power, GND, NC flags, global labels
-- [x] CM4 Connector 2: power, GND, NC flags, global labels
+- [x] PSU: AP64501SP-13 buck + NCP1117 LDO + FDS4435BZ reverse polarity + 3A SMD fuse
+- [x] CM4 Connector 1: power, GND, NC flags, global labels, Ethernet, GLOBAL_EN
+- [x] CM4 Connector 2: power, GND, NC flags, global labels, USB, PCIe
+- [x] Peripherals: SK6812MINI-E NeoPixel + 74AHCT1G32 level shifter
 - [x] Peripherals: status LEDs (nLED_PWR, nLED_ACT, DNP)
-- [x] Peripherals: SK6812MINI-E NeoPixel + 74AHCT1G125 level shifter
 - [x] Peripherals: tactile button (GPIO17) + pull-up
 - [x] Peripherals: nRPIBOOT 2-pin header
 - [x] Peripherals: UART debug 3-pin header
 - [x] Peripherals: DS3231MZ RTC + CR2032 battery
-- [x] Peripherals: USB-C OTG + USBLC6-2SC6 ESD protection
-- [x] Peripherals: USB_OTG_ID solder jumper (device/host mode)
+- [x] Peripherals: USB-C OTG + USBLC6-2SC6 ESD protection + solder jumper
 - [x] Ethernet: RB1-125B8G1A Gigabit MagJack + LEDs
-- [x] SATA: ASM1061 PCIe-to-SATA bridge (QFN-48+EP)
-- [x] SATA: 25MHz crystal + load caps
-- [x] SATA: 7-pin data connector (Port A)
-- [x] SATA: PCIe global labels (CLK, TX, RX, nRST)
+- [x] SATA: ASM1061 PCIe-to-SATA bridge + 25MHz crystal
+- [x] SATA: 7-pin data connector + 4-pin power connector
+- [x] SATA: power switching (FDS4435BZ on 5V/12V, GPIO5 controlled, solder jumper bypass)
+- [x] Wake: hardware power-off wake (2N7002 + 74AHCT1G32 OR gate, DNP for v1)
+- [x] All footprints assigned
+- [x] All component descriptions filled
+- [x] Resistor values consolidated (9 unique)
+- [x] All decoupling caps verified
 - [x] ERC: 0 errors, 0 warnings
-
-### TODO
-- [ ] PSU: replace polyfuse with 3A slow-blow SMD fuse (2410 package)
-- [ ] SATA: 15-pin SATA power connector (12V passthrough, 5V, 3.3V)
-- [ ] RTC alarm → GLOBAL_EN wake circuit
-- [ ] FIXME: design alternative MOSFET latch for hardware power-off wake (populate instead of GLOBAL_EN pull-up)
-- [ ] FIXME: SATA power switching (cut 12V/5V to HDD during sleep via GPIO-controlled load switch)
-- [ ] FIXME: TPM/crypto chip (e.g. ATECC608) for secure LUKS key storage (I2C, v2)
-- [x] Assign footprints to all components
-- [x] Review component values (resistors, caps)
-- [x] Re-enable ERC check in CI
-
-### Missing Footprints
-- [ ] BT1 (Battery_Cell) — CR2032 holder
-- [ ] D1, D2 (LED R, LED G) — 0805 LED
-- [ ] J1 (Conn_01x02) — 2-pin header (nRPIBOOT)
-- [ ] J2 (Conn_01x03) — 3-pin header (UART)
-- [ ] R1, R2 (2K2) — 0805 resistor
-- [ ] R3 (220R) — 0805 resistor
-- [ ] R4, R7, R8 (10K) — 0805 resistor
-- [ ] R5, R6 (4K7) — 0805 resistor
-- [ ] R9, R10 (5K1) — 0805 resistor
-- [ ] SW1 (SW_Push) — tactile switch
-- [ ] U1 (74AHCT1G125) — SOT-23-5
-- [ ] JP1 (SolderJumper_2_Bridged) — solder jumper
-- [ ] J3 (USB_C_Receptacle) — USB-C connector
-- [ ] U3 (USBLC6-2SC6) — SOT-23-6
-- [ ] Y1 (Crystal 25MHz) — crystal footprint
-- [ ] J5 (SATA data) — 7-pin SATA data connector
+- [x] ERC enabled in CI
 
 ## PCB Layout
 - [ ] Define board outline and mounting holes
 - [ ] 4-layer stackup (signal/GND/power/signal)
 - [ ] Place connectors (SATA, RJ45, USB-C, barrel jack, screw terminal)
 - [ ] Place CM4 connectors
+- [ ] Place ASM1061 + decoupling
 - [ ] Route PCIe differential pairs (100Ω impedance)
+- [ ] Route SATA differential pairs
 - [ ] Route Ethernet differential pairs
 - [ ] Route USB differential pairs
-- [ ] Route SATA differential pairs
 - [ ] Power planes
 - [ ] DRC clean
 
+## Future Improvements
+- [ ] TPM/crypto chip (e.g. ATECC608) for secure LUKS key storage (I2C)
+- [ ] Evaluate CM5 compatibility (power budget validation)
+
 ## CI/CD
 - [x] KiBot artifact generation with KiCad 10
-- [x] GitHub Pages deployment
-- [ ] Re-enable ERC/DRC checks when schematics are complete
+- [x] GitHub Pages deployment (https://laenzlinger.github.io/granit/)
+- [x] ERC check in KiBot preflight
+- [ ] Enable DRC check when PCB layout is complete
 - [ ] Switch to kicad10_auto container when available
 
 ## Software
 - [ ] Raspberry Pi OS Lite base image
 - [ ] Device tree overlay for ASM1061
-- [ ] DS3231 RTC driver + alarm wake
+- [ ] DS3231 RTC driver + alarm configuration
+- [ ] GPIO_HOLD (GPIO6) assertion on boot
+- [ ] SATA_PWR_EN (GPIO5) control
 - [ ] NeoPixel status daemon
 - [ ] Button handler (shutdown/backup/maintenance)
 - [ ] WireGuard VPN configuration
@@ -79,3 +62,4 @@
 - [ ] LUKS encrypted backup partition
 - [ ] Healthcheck dead man's switch
 - [ ] SMART disk monitoring
+- [ ] rtcwake integration for scheduled power-off/wake

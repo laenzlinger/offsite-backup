@@ -26,6 +26,8 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 | Tactile button | Manual shutdown, trigger backup, enter maintenance mode on boot |
 | Hirose DF40C-100DS-0.4V(51) | 2x CM4 board-to-board connectors |
 | AP64501SP-13 | 3.5A DC-DC buck converter (reused from [pedalboard-hw](https://github.com/pedalboard/pedalboard-hw)) |
+| USB-C | USB 2.0 OTG connector with USBLC6-2SC6 ESD protection |
+| 2N7002 + 74AHCT1G32 | Hardware wake circuit (RTC alarm → GLOBAL_EN) |
 
 ### Block Diagram
 
