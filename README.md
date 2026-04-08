@@ -104,8 +104,10 @@ by a non-technical person: plug in Ethernet, plug in power, done.
 
 - Aluminum or steel enclosure (shielding, durability, passive heatsinking)
 - Internal mounting for 2.5" or 3.5" HDD
-- Cutouts: barrel jack or screw terminal (12V), RJ45 (Ethernet)
-- No user-facing controls or displays needed
+- Cutouts: barrel jack or screw terminal (12V), RJ45 (Ethernet), USB-C
+- Tactile button accessible from outside (recessed to prevent accidental press)
+- RGB LED visible through enclosure (light pipe or translucent window)
+- Thermal pad or heatsink contact for CM4 SoC to enclosure lid
 - Compact form factor suitable for a shelf or behind a router
 - 3D-printable or off-the-shelf enclosure (e.g. Hammond 1455 series)
 
