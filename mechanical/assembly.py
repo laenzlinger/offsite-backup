@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Granit mechanical assembly — FreeCAD script.
 
-Run with: freecadcmd -c mechanical/assembly.py
+Run with: freecadcmd mechanical/assembly.py
 Produces: mechanical/assembly.step and mechanical/assembly.FCStd
 """
 
@@ -10,60 +10,78 @@ import Part
 import Import
 
 # === Dimensions (mm) ===
-case_wall = 1.5
-belly_plate = 1.0
 standoff_height = 3.0
 pcb_length = 71
 pcb_width = 101
 gap = 2
 
-# === File paths ===
+# === Hammond 1455L2201 model orientation (from STEP) ===
+# X = width (103), centered at 0 → -51.5..51.5
+# Y = height (30.5), belly at -30.5, lid at 0
+# Z = length (220), centered at 0 → -110..110
+# We want: X=length, Y=width, Z=height, origin at belly plate corner
+
 case_file = "hardware/3d-models/1455L2201.stp"
 pcb_file = "mechanical/granit-pcb.step"
 hdd_file = "mechanical/3.5inch_HDD_NAS.step"
 output_step = "mechanical/assembly.step"
 output_fcstd = "mechanical/assembly.FCStd"
 
-# === Create document ===
 doc = FreeCAD.newDocument("GranitAssembly")
 
-def import_and_move(filepath, label, placement):
-    """Import STEP, group all new objects, apply placement."""
+
+def import_step(filepath):
+    """Import STEP, return list of new Part::Feature objects."""
     before = set(obj.Name for obj in doc.Objects)
     Import.insert(filepath, doc.Name)
-    after = set(obj.Name for obj in doc.Objects)
-    new_names = after - before
+    new_objs = []
+    for obj in doc.Objects:
+        if obj.Name not in before and hasattr(obj, "Shape") and obj.Shape.Solids:
+            new_objs.append(obj)
+    return new_objs
 
-    for name in new_names:
-        obj = doc.getObject(name)
-        if hasattr(obj, "Shape") and obj.Shape.Solids:
-            obj.Label = label + "_" + obj.Label
-            obj.Placement = placement
-    return new_names
 
-# === Import case (at origin) ===
-import_and_move(case_file, "Case",
-    FreeCAD.Placement(FreeCAD.Vector(0, 0, 0), FreeCAD.Rotation(0, 0, 0)))
+def move_objects(objs, placement):
+    """Apply placement to all objects."""
+    for obj in objs:
+        obj.Placement = placement
 
-# === Import PCB ===
-# KiCad exports PCB in XY plane. Position inside case on standoffs.
-# Connector edge (RJ45 etc) at x=0, SATA edge at x=71
-pcb_offset = FreeCAD.Vector(
-    0,                                    # connector edge at case front
-    case_wall + (100 - pcb_width) / 2,   # centered in width
-    belly_plate + standoff_height         # on standoffs
+
+# === Import and position case ===
+# Rotate so: Z(length)→X, X(width)→Y, Y(height)→Z
+# Then translate so belly plate corner is at origin
+case_parts = import_step(case_file)
+case_rot = FreeCAD.Rotation(FreeCAD.Vector(0, 0, 1), 90)  # Z→X swap
+case_rot2 = FreeCAD.Rotation(FreeCAD.Vector(1, 0, 0), 90)  # then tilt up
+case_placement = FreeCAD.Placement(
+    FreeCAD.Vector(110, 51.5, 30.5),  # shift to positive quadrant
+    case_rot2.multiply(case_rot)
 )
-import_and_move(pcb_file, "PCB",
-    FreeCAD.Placement(pcb_offset, FreeCAD.Rotation(0, 0, 0)))
+move_objects(case_parts, case_placement)
+for p in case_parts:
+    p.Label = "Case_" + p.Label
 
-# === Import HDD ===
-hdd_offset = FreeCAD.Vector(
-    pcb_length + gap,                     # after PCB + gap
-    case_wall + (100 - 101.6) / 2,       # centered in width
-    belly_plate                           # flat on belly plate
+# === Import and position PCB ===
+# KiCad PCB: origin at (20,20), board is 71x101 in XY plane
+# Need to place at connector edge of case
+pcb_parts = import_step(pcb_file)
+pcb_placement = FreeCAD.Placement(
+    FreeCAD.Vector(-20, -20, standoff_height),  # compensate KiCad origin offset
+    FreeCAD.Rotation(0, 0, 0)
 )
-import_and_move(hdd_file, "HDD",
-    FreeCAD.Placement(hdd_offset, FreeCAD.Rotation(0, 0, 0)))
+move_objects(pcb_parts, pcb_placement)
+for p in pcb_parts:
+    p.Label = "PCB_" + p.Label
+
+# === Import and position HDD ===
+hdd_parts = import_step(hdd_file)
+hdd_placement = FreeCAD.Placement(
+    FreeCAD.Vector(pcb_length + gap, 0, 0),  # next to PCB, flat on belly plate
+    FreeCAD.Rotation(0, 0, 0)
+)
+move_objects(hdd_parts, hdd_placement)
+for p in hdd_parts:
+    p.Label = "HDD_" + p.Label
 
 # === Recompute and save ===
 doc.recompute()
@@ -73,5 +91,3 @@ Part.export(shapes, output_step)
 doc.saveAs(output_fcstd)
 
 print(f"Assembly saved: {len(shapes)} solid parts")
-print(f"PCB at: {pcb_offset}")
-print(f"HDD at: {hdd_offset}")
