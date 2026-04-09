@@ -74,6 +74,11 @@ hdd.Placement = FreeCAD.Placement(
 # === Recompute ===
 doc.recompute()
 
+# Make all parts visible
+for obj in doc.Objects:
+    if hasattr(obj, "Visibility"):
+        obj.Visibility = True
+
 # === Export ===
 shapes = [obj for obj in doc.Objects if hasattr(obj, "Shape") and obj.Shape.Solids]
 Part.export(shapes, output_step)
