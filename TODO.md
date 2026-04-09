@@ -35,6 +35,40 @@ Side-by-side layout inside Hammond 1455L2201 (220mm length):
 Max PCB size: **71 × 101mm** (220 - 147 - 2mm gap = 71mm length, 103mm internal width - ~2mm wall clearance)
 
 Both PCB and HDD mount to the belly plate (slide-out for servicing).
+
+### Component floorplan
+
+```
+                    SATA edge (faces HDD)
+    ┌─────────────────────────────────────────┐
+    │                                         │
+    │   ASM1061        SATA connector         │
+    │   (7×7mm)        (42mm wide, edge)      │
+    │      ↕ short SATA diff pairs            │
+    │                                         │
+    │   ────── PCIe diff pairs (~20mm) ────── │
+    │                                         │
+    │          CM4 module (55×40mm)            │
+    │          (center of board)              │
+    │                                         │
+    │   ↕ short ETH     ↕ USB        PSU     │
+    │   diff pairs       diff        area    │
+    │                                         │
+    │  RJ45  USB-C  Barrel  BTN  LED  CR2032 │
+    │                                         │
+    └─────────────────────────────────────────┘
+                 Connector edge (end plate)
+```
+
+Placement rationale:
+- ASM1061 near SATA edge → shortest SATA differential pairs
+- CM4 center → PCIe north to ASM1061, Ethernet south to RJ45
+- RJ45 + USB-C on connector edge → short diff pairs from CM4
+- PSU in corner → switching noise away from high-speed signals
+- DS3231 + CR2032 → quiet area near CM4 I2C pins
+- Button + LED → connector edge, accessible through end plate
+
+### Checklist
 PCB standoff height must match HDD SATA connector vertical position (~3.5mm above belly plate).
 
 - [ ] Board outline: 71 × 101mm
