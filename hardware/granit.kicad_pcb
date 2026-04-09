@@ -12496,15 +12496,15 @@
 			(uuid "8344f655-ac94-4420-9d5b-f0eecea24225")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_UDE_RB1-125B8G1A.step"
+		(model "${KIPRJMOD}/3d-models/RJ45_UDE_RB1-125B8G1A.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 5.7 -19.75 6.75)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
