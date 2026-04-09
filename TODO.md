@@ -111,10 +111,16 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [ ] Board outline: 71 × 101mm
 - [ ] Verify PCB standoff height aligns SATA connector with HDD receptacle
 - [ ] 4-layer stackup (signal/GND/power/signal)
-- [ ] SATA connector: replace J4+J5 with single 22-pin Molex 87779-1001
-  - Download/create footprint → `Library.pretty/`
-  - Create 22-pin symbol → `granit.kicad_sym`
+- [ ] SATA connector: replace J4+J5 with single 22-pin Amphenol 10029364-001LF (horizontal/right-angle)
+  - Footprint exists: `Connector_SATA_SAS:SATA_Amphenol_10029364-001LF_Horizontal`
+  - Create symbol in `granit.kicad_sym` with pins:
+    - S1,S4,S7: GND (data)
+    - S2/S3: TX+/TX- (SATA_A_TX_P/N)
+    - S5/S6: RX-/RX+ (SATA_A_RX_N/P)
+    - P1-P3: +3.3V, P4-P6: GND, P7-P9: +5V, P10-P12: GND, P13-P15: +12V
+    - MP: shield/GND
   - Rewire in sata.kicad_sch
+  - Verify "L" key orientation matches HDD receptacle
 - [ ] External connectors (RJ45, USB-C, barrel jack, button, LED) on opposite edge
 - [ ] Place CM4 module and all components on top side (facing lid, for thermal contact)
 - [ ] SATA connector vertical alignment: HDD connector center is 3.50mm above mounting surface (SFF-8301)
