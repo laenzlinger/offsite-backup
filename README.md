@@ -115,6 +115,8 @@ Same PCB (71 × 99mm) fits both cases:
 
 Side-by-side layout: PCB at one end, HDD at the other, SATA connector direct-mates between them.
 
+![Mechanical Assembly](mechanical/assembly.png)
+
 ### Requirements
 
 - Cutouts: barrel jack or screw terminal (12V), RJ45 (Ethernet), USB-C
