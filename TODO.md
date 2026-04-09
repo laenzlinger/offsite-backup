@@ -3,6 +3,7 @@
 ## Schematic ✅
 
 ### Done
+
 - [x] PSU: AP64501SP-13 buck + NCP1117 LDO + FDS4435BZ reverse polarity + 3A SMD fuse
 - [x] CM4 Connector 1: power, GND, NC flags, global labels, Ethernet, GLOBAL_EN
 - [x] CM4 Connector 2: power, GND, NC flags, global labels, USB, PCIe
@@ -28,6 +29,7 @@
 ## PCB Layout
 
 Side-by-side layout inside Hammond 1455L2201 (220mm length):
+
 - HDD occupies 147mm, PCB sits in the remaining space
 - SATA connector on PCB edge mates directly with HDD
 - External connectors (RJ45, USB-C, barrel jack, button) on opposite end panel
@@ -61,6 +63,7 @@ Both PCB and HDD mount to the belly plate (slide-out for servicing).
 ```
 
 Placement rationale:
+
 - ASM1061 near SATA edge → shortest SATA differential pairs
 - CM4 center → PCIe north to ASM1061, Ethernet south to RJ45
 - RJ45 + USB-C on connector edge → short diff pairs from CM4
@@ -82,25 +85,25 @@ Placement rationale:
 | Prepreg | 7628 | 0.2104mm | 4.6 |
 | L4 (Bottom signal) | Copper | 35µm (1oz) | — |
 
-Calculated trace geometry (L1 signal, L2 GND reference, 0.2104mm dielectric).
-Use [JLCPCB impedance calculator](https://jlcpcb.com/impedance) to verify:
-- 100Ω differential (PCIe, SATA, Ethernet): **0.127mm trace, 0.152mm gap**
-- 90Ω differential (USB): **0.160mm trace, 0.152mm gap**
-- 50Ω single-ended: **0.224mm trace**
+Trace geometry from [JLCPCB impedance calculator](https://jlcpcb.com/impedance)
+(L1 signal, L2 GND reference, 0.2104mm prepreg, Er=4.6, 1oz outer / 0.5oz inner copper):
+- 100Ω differential (PCIe, SATA, Ethernet): **0.2205mm trace, 0.2032mm gap**
+- 90Ω differential (USB): **0.2860mm trace, 0.2032mm gap**
 
 [JLCPCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities):
 min 0.09mm trace/space, 0.2mm drill, 0.13mm annular ring.
 
 - [x] Choose fab house: JLCPCB (prototype)
-- [ ] Update KiCad net classes with calculated values:
-  - PCIe: diff_pair_width=0.127, diff_pair_gap=0.152
-  - SATA: diff_pair_width=0.127, diff_pair_gap=0.152
-  - Ethernet: diff_pair_width=0.127, diff_pair_gap=0.152
-  - USB: diff_pair_width=0.160, diff_pair_gap=0.152
+- [x] Update KiCad net classes with calculated values:
+  - PCIe: diff_pair_width=0.2205, diff_pair_gap=0.2032
+  - SATA: diff_pair_width=0.2205, diff_pair_gap=0.2032
+  - Ethernet: diff_pair_width=0.2205, diff_pair_gap=0.2032
+  - USB: diff_pair_width=0.2860, diff_pair_gap=0.2032
 - [ ] Select impedance control when ordering (+~$10)
 - [ ] PCB thickness: 1.6mm (standard)
 
 ### Checklist
+
 PCB standoff height must match HDD SATA connector vertical position (~3.5mm above belly plate).
 
 - [ ] Board outline: 71 × 101mm
@@ -130,6 +133,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [ ] DRC clean
 
 ## Enclosure
+
 - [ ] Choose case: Hammond 1455L2201 (slim, 30.5mm) or 1455N2201 (roomy, 53mm)
   - Both share 103mm width — PCB is cross-compatible
   - 1455L: zero clearance with 3.5" HDD — mount PCB + HDD to belly plate
@@ -140,17 +144,20 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [ ] Include Hammond 1455L2201 as default 3D reference model in KiCad
 
 ## Future Improvements
+
 - [ ] TPM/crypto chip (e.g. ATECC608) for secure LUKS key storage (I2C)
 - [ ] Evaluate CM5 compatibility (power budget validation)
 
 ## CI/CD
+
 - [x] KiBot artifact generation with KiCad 10
-- [x] GitHub Pages deployment (https://laenzlinger.github.io/granit/)
+- [x] GitHub Pages deployment (<https://laenzlinger.github.io/granit/>)
 - [x] ERC check in KiBot preflight
 - [ ] Enable DRC check when PCB layout is complete
 - [ ] Switch to kicad10_auto container when available
 
 ## Software
+
 - [ ] Raspberry Pi OS Lite base image
 - [ ] Device tree overlay for ASM1061
 - [ ] DS3231 RTC driver + alarm configuration
