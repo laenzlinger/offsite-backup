@@ -44,7 +44,8 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
   - Verify "L" key orientation matches male plug — may need to flip to bottom layer
 - [ ] External connectors (RJ45, USB-C, barrel jack, button, LED) on opposite edge
 - [ ] Place CM4 module and all components on top side (facing lid, for thermal contact)
-- [ ] PCB standoffs: ~3.5mm (only solder joints underneath)
+- [ ] PCB standoffs: ~3mm (verify with calipers on actual HDD — SATA connector center must align)
+- [ ] CR2032 holder on top side (doesn't fit under 3mm standoffs)
 - [ ] Place ASM1061 near SATA connector (short differential pairs)
 - [ ] HDD mounting holes: M4 (4.3mm drill, `MountingHole:MountingHole_4.3mm_M4_Pad_Via`)
 - [ ] PCB standoff holes: M3 (3.2mm drill, `MountingHole:MountingHole_3.2mm_M3_Pad_Via`)
