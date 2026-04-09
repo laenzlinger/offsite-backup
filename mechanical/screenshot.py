@@ -29,13 +29,11 @@ for obj in doc.Objects:
 
 view = FreeCADGui.ActiveDocument.ActiveView
 
-# Set camera to show case lying flat on a table
-# Case Y axis is height — we want to look from above-front
+# Set camera to show case lying flat on a table, viewed from front-top
 from pivy import coin
 cam = view.getCameraNode()
-# Look from top-front-right: rotate so Y(height) points up on screen
-rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), -1.2)  # tilt to see top
-rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 0.5)   # rotate for 3/4 view
+rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), -0.3)  # mostly from top
+rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 0.3)   # slight rotation
 cam.orientation.setValue(rot)
 view.fitAll()
 
