@@ -279,7 +279,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "QFN50P700X700X90-49N-D"
+		(property "Footprint" "granit:QFN50P700X700X90-49N-D"
 			(at 41.91 -82.22 0)
 			(show_name no)
 			(do_not_autoplace no)
