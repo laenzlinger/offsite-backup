@@ -3,24 +3,29 @@
 
 Run with: freecadcmd mechanical/assembly.py
 Produces: mechanical/assembly.step and mechanical/assembly.FCStd
+
+Case native orientation (Hammond 1455L2201 STEP):
+  X = width (103mm), centered: -51.5 to 51.5
+  Y = height (30.5mm): belly=-30.5, lid=0
+  Z = length (220mm), centered: -110 to 110
 """
 
 import FreeCAD
 import Part
 import Import
 
-# === Dimensions (mm) ===
+# === Layout parameters ===
 standoff_height = 3.0
+belly_y = -30.5  # belly plate inner surface
 pcb_length = 71
-pcb_width = 101
-gap = 2
+gap = 2  # between PCB and HDD
 
-# === Hammond 1455L2201 model orientation (from STEP) ===
-# X = width (103), centered at 0 → -51.5..51.5
-# Y = height (30.5), belly at -30.5, lid at 0
-# Z = length (220), centered at 0 → -110..110
-# We want: X=length, Y=width, Z=height, origin at belly plate corner
+# PCB sits at one end (Z=-110 side = connector edge)
+# HDD sits next to it (toward Z=+110)
+pcb_z_start = -110  # connector edge at case end
+hdd_z_start = pcb_z_start + pcb_length + gap
 
+# === File paths ===
 case_file = "hardware/3d-models/1455L2201.stp"
 pcb_file = "mechanical/granit-pcb.step"
 hdd_file = "mechanical/3.5inch_HDD_NAS.step"
@@ -31,61 +36,63 @@ doc = FreeCAD.newDocument("GranitAssembly")
 
 
 def import_step(filepath):
-    """Import STEP, return list of new Part::Feature objects."""
     before = set(obj.Name for obj in doc.Objects)
     Import.insert(filepath, doc.Name)
-    new_objs = []
-    for obj in doc.Objects:
-        if obj.Name not in before and hasattr(obj, "Shape") and obj.Shape.Solids:
-            new_objs.append(obj)
-    return new_objs
+    return [obj for obj in doc.Objects
+            if obj.Name not in before and hasattr(obj, "Shape") and obj.Shape.Solids]
 
 
 def move_objects(objs, placement):
-    """Apply placement to all objects."""
     for obj in objs:
         obj.Placement = placement
 
 
-# === Import and position case ===
-# Rotate so: Z(length)→X, X(width)→Y, Y(height)→Z
-# Then translate so belly plate corner is at origin
+# === Case: keep at native position ===
 case_parts = import_step(case_file)
-case_rot = FreeCAD.Rotation(FreeCAD.Vector(0, 0, 1), 90)  # Z→X swap
-case_rot2 = FreeCAD.Rotation(FreeCAD.Vector(1, 0, 0), 90)  # then tilt up
-case_placement = FreeCAD.Placement(
-    FreeCAD.Vector(110, 51.5, 30.5),  # shift to positive quadrant
-    case_rot2.multiply(case_rot)
-)
-move_objects(case_parts, case_placement)
 for p in case_parts:
     p.Label = "Case_" + p.Label
 
-# === Import and position PCB ===
-# KiCad PCB: origin at (20,20), board is 71x101 in XY plane
-# Need to place at connector edge of case
+# === PCB ===
+# KiCad exports PCB in XY plane, origin at (20,20), board 71x101
+# Need to rotate into case orientation:
+#   PCB X (0..71 length) → case Z
+#   PCB Y (0..101 width) → case X
+#   PCB Z (thickness) → case Y (up)
+# Then position inside case
 pcb_parts = import_step(pcb_file)
+pcb_rot = FreeCAD.Rotation(FreeCAD.Vector(1, 0, 0), -90)  # tilt PCB up (Y→Z)
+pcb_rot2 = FreeCAD.Rotation(FreeCAD.Vector(0, 0, 1), -90)  # rotate in plane
 pcb_placement = FreeCAD.Placement(
-    FreeCAD.Vector(-20, -20, standoff_height),  # compensate KiCad origin offset
-    FreeCAD.Rotation(0, 0, 0)
+    FreeCAD.Vector(
+        50.5,                          # center PCB in case width (shift from KiCad Y)
+        belly_y + standoff_height,     # on standoffs above belly
+        pcb_z_start + 20               # compensate KiCad origin offset (board starts at 20)
+    ),
+    pcb_rot
 )
 move_objects(pcb_parts, pcb_placement)
 for p in pcb_parts:
     p.Label = "PCB_" + p.Label
 
-# === Import and position HDD ===
+# === HDD ===
+# HDD model: X=length(147), Y=width(101.6), Z=height(26.1), origin at corner
+# Need: X(length)→Z(case), Y(width)→X(case), Z(height)→Y(case)
 hdd_parts = import_step(hdd_file)
+hdd_rot = FreeCAD.Rotation(FreeCAD.Vector(1, 0, 0), -90)
 hdd_placement = FreeCAD.Placement(
-    FreeCAD.Vector(pcb_length + gap, 0, 0),  # next to PCB, flat on belly plate
-    FreeCAD.Rotation(0, 0, 0)
+    FreeCAD.Vector(
+        50.8,                          # center HDD in case width
+        belly_y,                       # flat on belly plate
+        hdd_z_start                    # after PCB + gap
+    ),
+    hdd_rot
 )
 move_objects(hdd_parts, hdd_placement)
 for p in hdd_parts:
     p.Label = "HDD_" + p.Label
 
-# === Recompute and save ===
+# === Save ===
 doc.recompute()
-
 shapes = [obj for obj in doc.Objects if hasattr(obj, "Shape") and obj.Shape.Solids]
 Part.export(shapes, output_step)
 doc.saveAs(output_fcstd)
