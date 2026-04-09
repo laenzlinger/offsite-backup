@@ -68,6 +68,23 @@ Placement rationale:
 - DS3231 + CR2032 → quiet area near CM4 I2C pins
 - Button + LED → connector edge, accessible through end plate
 
+### Pre-routing: stackup and impedance
+
+Before starting any routing, confirm fab house stackup and update KiCad net classes.
+
+- [ ] Choose fab house (PCBWay or JLCPCB) and get exact 4-layer stackup
+- [ ] Calculate trace geometry using fab stackup (or request impedance control):
+  - 100Ω differential (PCIe, SATA, Ethernet): ~0.13mm trace, ~0.15mm gap (JLCPCB standard)
+  - 90Ω differential (USB): ~0.16mm trace, ~0.15mm gap
+  - 50Ω single-ended (clock, reset): ~0.22mm trace
+- [ ] Update KiCad net classes with calculated values:
+  - PCIe: diff_pair_width, diff_pair_gap
+  - SATA: diff_pair_width, diff_pair_gap
+  - Ethernet: diff_pair_width, diff_pair_gap
+  - USB: diff_pair_width, diff_pair_gap
+- [ ] Verify fab minimum capabilities (min trace/space, min drill, min annular ring)
+- [ ] Decide PCB thickness (1.6mm standard or 1.0mm for SATA alignment)
+
 ### Checklist
 PCB standoff height must match HDD SATA connector vertical position (~3.5mm above belly plate).
 
