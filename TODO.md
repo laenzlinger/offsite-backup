@@ -77,13 +77,15 @@ Placement rationale:
 
 | Layer | Material | Thickness | Er |
 |---|---|---|---|
+| Solder mask | — | 0.6mil above trace | 3.8 |
 | L1 (Top signal) | Copper | 35µm (1oz) | — |
-| Prepreg | 7628 | 0.2104mm | 4.6 |
+| Prepreg | 7628 | 0.2104mm | 4.4 |
 | L2 (GND plane) | Copper | 35µm (1oz) | — |
 | Core | — | 1.065mm | 4.6 |
 | L3 (Power plane) | Copper | 35µm (1oz) | — |
-| Prepreg | 7628 | 0.2104mm | 4.6 |
+| Prepreg | 7628 | 0.2104mm | 4.4 |
 | L4 (Bottom signal) | Copper | 35µm (1oz) | — |
+| Solder mask | — | 0.6mil above trace | 3.8 |
 
 Trace geometry from [JLCPCB impedance calculator](https://jlcpcb.com/impedance)
 (L1 signal, L2 GND reference, 0.2104mm prepreg, Er=4.6, 1oz outer / 0.5oz inner copper):
