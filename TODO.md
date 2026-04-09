@@ -32,9 +32,13 @@ Side-by-side layout inside Hammond 1455L2201 (220mm length):
 - SATA connector on PCB edge mates directly with HDD
 - External connectors (RJ45, USB-C, barrel jack, button) on opposite end panel
 
-Max PCB size: **71 × 99mm** (220 - 147 - 2mm gap = 71mm length, 99.5mm card guide width - 0.5mm margin)
+Max PCB size: **71 × 101mm** (220 - 147 - 2mm gap = 71mm length, 103mm internal width - ~2mm wall clearance)
 
-- [ ] Board outline: 71 × 99mm
+Both PCB and HDD mount to the belly plate (slide-out for servicing).
+PCB standoff height must match HDD SATA connector vertical position (~3.5mm above belly plate).
+
+- [ ] Board outline: 71 × 101mm
+- [ ] Verify PCB standoff height aligns SATA connector with HDD receptacle
 - [ ] 4-layer stackup (signal/GND/power/signal)
 - [ ] SATA connector on HDD-facing edge (`Connector_SATA:SATA_7-15_Plug_Vertical`, Molex 87779-1001)
   - Verify "L" key orientation matches male plug — may need to flip to bottom layer
