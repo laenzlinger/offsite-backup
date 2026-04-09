@@ -13,7 +13,7 @@ assembly: pcb-step ## Build FreeCAD assembly (STEP + FCStd)
 	cd .. && freecadcmd mechanical/assembly.py
 
 screenshot: assembly ## Render assembly screenshot
-	cd .. && unset WAYLAND_DISPLAY && xvfb-run -a -s "-screen 0 1920x1080x24" freecad mechanical/screenshot.py
+	cd .. && unset WAYLAND_DISPLAY && xvfb-run -a -s "-screen 0 1920x1080x24" freecad mechanical/screenshot.py; true
 
 clean:
 	rm -f granit-pcb.step assembly.step assembly.FCStd
