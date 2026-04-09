@@ -102,19 +102,16 @@ by a non-technical person: plug in Ethernet, plug in power, done.
 
 ### Hammond 1455 Series
 
-Two case options share the same 103mm width, so the PCB is cross-compatible:
+| | 1455T2201 (Default) |
+|---|---|
+| Dimensions | 220 × 160 × 51.5 mm |
+| Internal width | ~157 mm |
+| Internal height | ~48 mm |
+| Material | Extruded aluminium |
+| HDD clearance | Fits 3.5" HDD (101.6mm) with 55mm spare width |
+| Colors | Natural, Black, Blue, Red |
 
-| | 1455L2201 (Slim) | 1455N2201 (Roomy) |
-|---|---|---|
-| Dimensions | 220 × 103 × 30.5 mm | 220 × 103 × 53.0 mm |
-| Internal height | 26.5 mm | 49.0 mm |
-| Material | Extruded aluminium (1.5mm min) | Extruded aluminium (1.5mm min) |
-| HDD clearance | Tight — zero clearance with 3.5" HDD (26.1mm) | Plenty — 20mm+ above components |
-| Heatsink/fan | No room for tall heatsinks | Fits 40mm fan or tall CM4 heatsink |
-| Price (approx.) | ~27 CHF | ~33 CHF |
-| Colors | Natural, Black, Blue, Red | Natural, Black, Blue, Red |
-
-The **1455L2201 (Slim)** is the default reference — if it fits the L, it fits the N.
+Side-by-side layout: PCB (71 × 155mm) at one end, HDD (147mm) at the other, SATA connector direct-mates between them.
 
 ### Requirements
 

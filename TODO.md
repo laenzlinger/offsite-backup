@@ -34,7 +34,7 @@ Side-by-side layout inside Hammond 1455L2201 (220mm length):
 - SATA connector on PCB edge mates directly with HDD
 - External connectors (RJ45, USB-C, barrel jack, button) on opposite end panel
 
-Max PCB size: **71 × 101mm** (220 - 147 - 2mm gap = 71mm length, 103mm internal width - ~2mm wall clearance)
+Max PCB size: **71 × 155mm** (220 - 147 - 2mm gap = 71mm length, 157mm internal width - ~2mm clearance)
 
 Both PCB and HDD mount to the belly plate (slide-out for servicing).
 
@@ -108,7 +108,7 @@ min 0.09mm trace/space, 0.2mm drill, 0.13mm annular ring.
 
 PCB standoff height must match HDD SATA connector vertical position (~3.5mm above belly plate).
 
-- [ ] Board outline: 71 × 101mm
+- [ ] Board outline: 71 × 155mm
 - [ ] Verify PCB standoff height aligns SATA connector with HDD receptacle
 - [ ] 4-layer stackup (signal/GND/power/signal)
 - [x] SATA connector: replaced J4+J5 with single 22-pin Amphenol 10029364-001LF (horizontal/right-angle)
@@ -137,10 +137,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 
 ## Enclosure
 
-- [ ] Choose case: Hammond 1455L2201 (slim, 30.5mm) or 1455N2201 (roomy, 53mm)
-  - Both share 103mm width — PCB is cross-compatible
-  - 1455L: zero clearance with 3.5" HDD — mount PCB + HDD to belly plate
-  - 1455N: 20mm+ extra height — fits 40mm fan or tall CM4 heatsink
+- [ ] Case: Hammond 1455T2201 (220 × 160 × 51.5mm, fits 3.5" HDD widthwise)
 - [ ] CNC belly plate: drill M3 holes for PCB standoffs + M4 holes for HDD mounts
 - [ ] CNC end plate: cutouts for RJ45, USB-C, barrel jack, button, LED
 - [ ] Thermal pad from CM4 SoC to enclosure lid

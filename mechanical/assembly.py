@@ -16,7 +16,7 @@ import FreeCAD
 import Part
 import Import
 
-case_file = "hardware/3d-models/1455L2201.stp"
+case_file = "hardware/3d-models/1455T2201.stp"
 pcb_file = "mechanical/granit-pcb.step"
 hdd_file = "mechanical/3.5inch_HDD_NAS.step"
 output_step = "mechanical/assembly.step"
