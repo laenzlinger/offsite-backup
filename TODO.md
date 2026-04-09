@@ -138,11 +138,13 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 
 ## Enclosure
 
-- [ ] Case: Hammond 1455T2201 (220 × 160 × 51.5mm, fits 3.5" HDD widthwise)
-- [ ] CNC belly plate: drill M3 holes for PCB standoffs + M4 holes for HDD mounts
+- [x] Case: Hammond 1455T2201 (3.5" HDD) or 1455L2201 (2.5" HDD only)
+- [ ] 3D-printed internal frame (slides into case card guide grooves)
+  - Holds PCB and HDD at correct height (5mm standoff equivalent)
+  - Different frame variants for 2.5" vs 3.5" HDD
+  - No belly plate drilling, no standoffs, no CNC needed
 - [ ] CNC end plate: cutouts for RJ45, USB-C, barrel jack, button, LED
 - [ ] Thermal pad from CM4 SoC to enclosure lid
-- [ ] Include Hammond 1455L2201 as default 3D reference model in KiCad
 
 ## Future Improvements
 
