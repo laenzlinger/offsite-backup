@@ -4893,6 +4893,46 @@
 			)
 		)
 	)
+	(label "SATA_A_TX_P"
+		(at 185.42 120.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4fa459d-0999-42cb-890e-58c305f77e68")
+	)
+	(label "SATA_A_TX_N"
+		(at 187.96 118.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "565222e1-f6df-4134-a15b-20ce205e15db")
+	)
+	(label "SATA_A_RX_P"
+		(at 195.58 114.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2034eef4-8a38-422c-a6ba-fba0989ed3cf")
+	)
+	(label "SATA_A_RX_N"
+		(at 193.04 116.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1200127e-dbfe-46c7-8b0e-458d99398bbd")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 172.72 139.7 0)

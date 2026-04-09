@@ -544,22 +544,6 @@
         "pattern": "PCIE_*"
       },
       {
-        "netclass": "SATA",
-        "pattern": "STXP_*"
-      },
-      {
-        "netclass": "SATA",
-        "pattern": "STXN_*"
-      },
-      {
-        "netclass": "SATA",
-        "pattern": "SRXP_*"
-      },
-      {
-        "netclass": "SATA",
-        "pattern": "SRXN_*"
-      },
-      {
         "netclass": "Ethernet",
         "pattern": "ETH_P*"
       },
@@ -586,6 +570,14 @@
       {
         "netclass": "Power",
         "pattern": "+12V*"
+      },
+      {
+        "netclass": "SATA",
+        "pattern": "SATA_A_*"
+      },
+      {
+        "netclass": "SATA",
+        "pattern": "SATA_B_*"
       }
     ]
   },
