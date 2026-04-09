@@ -70,7 +70,7 @@ Placement rationale:
 
 ### Pre-routing: stackup and impedance (JLCPCB 4-layer)
 
-JLCPCB JLC04161H-7628 standard 4-layer stackup (1.6mm):
+[JLCPCB JLC04161H-7628 standard 4-layer stackup](https://jlcpcb.com/impedance) (1.6mm):
 
 | Layer | Material | Thickness | Er |
 |---|---|---|---|
@@ -82,12 +82,14 @@ JLCPCB JLC04161H-7628 standard 4-layer stackup (1.6mm):
 | Prepreg | 7628 | 0.2104mm | 4.6 |
 | L4 (Bottom signal) | Copper | 35µm (1oz) | — |
 
-Calculated trace geometry (L1 signal, L2 GND reference, 0.2104mm dielectric):
+Calculated trace geometry (L1 signal, L2 GND reference, 0.2104mm dielectric).
+Use [JLCPCB impedance calculator](https://jlcpcb.com/impedance) to verify:
 - 100Ω differential (PCIe, SATA, Ethernet): **0.127mm trace, 0.152mm gap**
 - 90Ω differential (USB): **0.160mm trace, 0.152mm gap**
 - 50Ω single-ended: **0.224mm trace**
 
-JLCPCB minimums: 0.09mm trace/space, 0.2mm drill, 0.13mm annular ring.
+[JLCPCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities):
+min 0.09mm trace/space, 0.2mm drill, 0.13mm annular ring.
 
 - [x] Choose fab house: JLCPCB (prototype)
 - [ ] Update KiCad net classes with calculated values:
