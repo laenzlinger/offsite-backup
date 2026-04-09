@@ -26,18 +26,24 @@
 - [x] ERC enabled in CI
 
 ## PCB Layout
-- [ ] Board outline: ~102 x 147mm (matches 3.5" HDD form factor, PCB mounts below drive)
-- [ ] Mounting holes aligned with 3.5" HDD bottom holes (101.6 x 76.2mm, M3)
+
+Side-by-side layout inside Hammond 1455L2201 (220mm length):
+- HDD occupies 147mm, PCB sits in the remaining space
+- SATA connector on PCB edge mates directly with HDD
+- External connectors (RJ45, USB-C, barrel jack, button) on opposite end panel
+
+Max PCB size: **71 × 99mm** (220 - 147 - 2mm gap = 71mm length, 99.5mm card guide width - 0.5mm margin)
+
+- [ ] Board outline: 71 × 99mm
+- [ ] 4-layer stackup (signal/GND/power/signal)
+- [ ] SATA connector on HDD-facing edge (`Connector_SATA:SATA_7-15_Plug_Vertical`, Molex 87779-1001)
+  - Verify "L" key orientation matches male plug — may need to flip to bottom layer
+- [ ] External connectors (RJ45, USB-C, barrel jack, button, LED) on opposite edge
+- [ ] Place CM4 module center, components facing down (toward belly plate)
+- [ ] Place ASM1061 near SATA connector (short differential pairs)
 - [ ] HDD mounting holes: M4 (4.3mm drill, `MountingHole:MountingHole_4.3mm_M4_Pad_Via`)
 - [ ] PCB standoff holes: M3 (3.2mm drill, `MountingHole:MountingHole_3.2mm_M3_Pad_Via`)
 - [ ] Mounting hole keepout: 7.0mm clearance on pads (prevent screw heads shorting 12V traces)
-- [ ] 4-layer stackup (signal/GND/power/signal)
-- [ ] Place SATA connector on edge aligned with drive connector above
-  - SATA footprint: `Connector_SATA:SATA_7-15_Plug_Vertical` (Molex 87779-1001)
-  - Verify "L" key orientation matches male plug — may need to flip to bottom layer
-- [ ] Place RJ45, USB-C, barrel jack on accessible edges
-- [ ] Place CM4 module center, components facing down (away from drive)
-- [ ] Place ASM1061 near SATA connector (short differential pairs)
 - [ ] Route PCIe differential pairs (100Ω impedance)
 - [ ] Route SATA differential pairs
 - [ ] Route Ethernet differential pairs
