@@ -18717,7 +18717,7 @@
 			(uuid "929b2145-0177-4039-ad02-69cbf46f36cd")
 		)
 		(embedded_fonts no)
-		(model "ASM1061.stp"
+		(model "${KIPRJMOD}/3d-models/ASM1061.stp"
 			(offset
 				(xyz 0 0 0)
 			)
