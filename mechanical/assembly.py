@@ -39,8 +39,13 @@ def import_step(filepath, label_prefix):
     return parts
 
 
-# === Case at origin ===
-import_step(case_file, "Case")
+# === Case at origin (skip lid for visibility) ===
+case_parts = import_step(case_file, "Case")
+# Remove the top extrusion cap to see inside
+for p in list(case_parts):
+    if "Cap" in p.Label:
+        doc.removeObject(p.Name)
+        case_parts.remove(p)
 
 # === PCB ===
 # After rotation: X=20..121(101), Y=0..1.5, Z=-91..-20(71)
