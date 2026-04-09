@@ -102,20 +102,20 @@ by a non-technical person: plug in Ethernet, plug in power, done.
 
 ### Hammond 1455 Series
 
-Same PCB (71 × 99mm) fits both cases:
+Same PCB (92 × 100mm) fits both cases, held by a 3D printed internal frame.
+PCB and HDD sit side-by-side along the enclosure length, SATA connector direct-mates between them.
 
-| | 1455L2201 (Slim) | 1455T2201 (Wide) |
+| | 1455L2201 (Slim) | 1455T2601 (Wide) |
 |---|---|---|
-| Dimensions | 220 × 103 × 30.5 mm | 220 × 160 × 51.5 mm |
+| Dimensions | 220 × 103 × 30.5 mm | 260 × 160 × 51.5 mm |
 | Internal width | ~100 mm | ~157 mm |
 | Internal height | ~27 mm | ~48 mm |
 | HDD support | 2.5" only | 2.5" or 3.5" |
 | Material | Extruded aluminium | Extruded aluminium |
 | Colors | Natural, Black, Blue, Red | Natural, Black, Blue, Red |
 
-Side-by-side layout: PCB at one end, HDD at the other, SATA connector direct-mates between them.
-
-![Mechanical Assembly](mechanical/assembly.png)
+![Slim Assembly — 1455L2201 + 2.5" HDD](mechanical/assembly-slim.png)
+![Wide Assembly — 1455T2601 + 3.5" HDD](mechanical/assembly-wide.png)
 
 ### Requirements
 

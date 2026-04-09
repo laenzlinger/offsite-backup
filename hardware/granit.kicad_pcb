@@ -160,7 +160,7 @@
 	(property "GIT_HASH" "6af6277")
 	(gr_rect
 		(start 20 20)
-		(end 91 119)
+		(end 112 120)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -210,7 +210,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "f5cf5f76-04a0-4670-9155-729f14edb8e5")
-		(at 87 24)
+		(at 108 24)
 		(property "Reference" "H2"
 			(at 0 -3.2 0)
 			(layer "F.SilkS")
@@ -246,7 +246,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "e0f33bee-0006-4d7e-b082-27faa8492084")
-		(at 24 115)
+		(at 24 116)
 		(property "Reference" "H3"
 			(at 0 -3.2 0)
 			(layer "F.SilkS")
@@ -282,7 +282,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "f1b7aa6d-5af5-40fc-bb49-8c367c80c251")
-		(at 87 115)
+		(at 108 116)
 		(property "Reference" "H4"
 			(at 0 -3.2 0)
 			(layer "F.SilkS")

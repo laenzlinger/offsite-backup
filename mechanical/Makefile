@@ -9,14 +9,18 @@ pcb-step: ## Export PCB STEP from KiCad
 		--output ../mechanical/granit-pcb.step \
 		--subst-models --force granit.kicad_pcb
 
-assembly: pcb-step ## Build FreeCAD assembly (STEP + FCStd)
+assembly: pcb-step ## Build FreeCAD assemblies (slim + wide variants)
 	cd .. && freecadcmd mechanical/assembly.py
 
-screenshot: assembly ## Render assembly screenshot
-	cd .. && unset WAYLAND_DISPLAY && xvfb-run -a -s "-screen 0 1920x1080x24" freecad mechanical/screenshot.py; true
+screenshot: assembly ## Render assembly screenshots
+	cd .. && unset WAYLAND_DISPLAY && \
+	for f in mechanical/assembly-slim.step mechanical/assembly-wide.step; do \
+		LIBGL_ALWAYS_SOFTWARE=1 ASSEMBLY_FILE=$$f \
+		xvfb-run -a -s "-screen 0 3840x2160x24" freecad mechanical/screenshot.py; \
+	done; true
 
 clean:
-	rm -f granit-pcb.step assembly.step assembly.FCStd
+	rm -f granit-pcb.step assembly-slim.step assembly-wide.step assembly-slim.png assembly-wide.png
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

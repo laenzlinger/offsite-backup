@@ -364,7 +364,7 @@
 		(layers "F.Cu" "F.Paste")
 		(uuid "6114e979-3304-4d34-b486-3a4a19a0f14c")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.wrl"
+	(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -70,7 +70,7 @@
   (pad 47 smd rect (at -2.25 -3.45 0) (size 0.3 0.85) (layers F.Cu F.Paste F.Mask))
   (pad 48 smd rect (at -2.75 -3.45 0) (size 0.3 0.85) (layers F.Cu F.Paste F.Mask))
   (pad 49 smd rect (at 0 0 0) (size 4.2 4.2) (layers F.Cu F.Paste F.Mask))
-  (model ASM1061.stp
+  (model "${KIPRJMOD}/3d-models/ASM1061.stp"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
