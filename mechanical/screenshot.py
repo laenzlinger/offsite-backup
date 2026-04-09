@@ -44,7 +44,7 @@ view = FreeCADGui.ActiveDocument.ActiveView
 from pivy import coin
 cam = view.getCameraNode()
 rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), 0.15)   # slight tilt from below
-rot *= coin.SbRotation(coin.SbVec3f(0, 1, 0), -0.4)   # rotate to 3/4 view
+rot *= coin.SbRotation(coin.SbVec3f(0, 1, 0), 2.7)    # rotate to see PCB side
 cam.orientation.setValue(rot)
 view.fitAll()
 
