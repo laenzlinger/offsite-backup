@@ -104,7 +104,7 @@
 		(pad_to_mask_clearance 0.05)
 		(solder_mask_min_width 0.1)
 		(pad_to_paste_clearance 0)
-		(pad_to_paste_clearance_ratio -0.1)
+		(pad_to_paste_clearance_ratio -0.15)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting
 			(front yes)
