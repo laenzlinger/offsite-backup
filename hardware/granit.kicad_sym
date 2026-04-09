@@ -5470,7 +5470,7 @@
 			(symbol "SATA_22pin_1_1"
 				(rectangle
 					(start -7.62 15.24)
-					(end 7.62 -20.32)
+					(end 10.16 -20.32)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -5550,7 +5550,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 12.7 180)
+					(at 12.7 12.7 180)
 					(length 2.54)
 					(name "+3.3V"
 						(effects (font (size 1.27 1.27)))
@@ -5560,7 +5560,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 12.7 180)
+					(at 12.7 12.7 180)
 					(length 2.54)
 					(hide yes)
 					(name "+3.3V"
@@ -5571,7 +5571,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 12.7 180)
+					(at 12.7 12.7 180)
 					(length 2.54)
 					(hide yes)
 					(name "+3.3V"
@@ -5582,7 +5582,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 7.62 180)
+					(at 12.7 7.62 180)
 					(length 2.54)
 					(name "GND"
 						(effects (font (size 1.27 1.27)))
@@ -5592,7 +5592,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 7.62 180)
+					(at 12.7 7.62 180)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -5603,7 +5603,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 7.62 180)
+					(at 12.7 7.62 180)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -5614,7 +5614,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 2.54 180)
+					(at 12.7 2.54 180)
 					(length 2.54)
 					(name "+5V"
 						(effects (font (size 1.27 1.27)))
@@ -5624,7 +5624,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 2.54 180)
+					(at 12.7 2.54 180)
 					(length 2.54)
 					(hide yes)
 					(name "+5V"
@@ -5635,7 +5635,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 2.54 180)
+					(at 12.7 2.54 180)
 					(length 2.54)
 					(hide yes)
 					(name "+5V"
@@ -5646,7 +5646,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 -2.54 180)
+					(at 12.7 -2.54 180)
 					(length 2.54)
 					(name "GND"
 						(effects (font (size 1.27 1.27)))
@@ -5656,7 +5656,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -2.54 180)
+					(at 12.7 -2.54 180)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -5667,7 +5667,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -2.54 180)
+					(at 12.7 -2.54 180)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -5678,7 +5678,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 -7.62 180)
+					(at 12.7 -7.62 180)
 					(length 2.54)
 					(name "+12V"
 						(effects (font (size 1.27 1.27)))
@@ -5688,7 +5688,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -7.62 180)
+					(at 12.7 -7.62 180)
 					(length 2.54)
 					(hide yes)
 					(name "+12V"
@@ -5699,7 +5699,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -7.62 180)
+					(at 12.7 -7.62 180)
 					(length 2.54)
 					(hide yes)
 					(name "+12V"
@@ -5710,7 +5710,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -15.24 180)
+					(at 12.7 -15.24 180)
 					(length 2.54)
 					(name "SHIELD"
 						(effects (font (size 1.27 1.27)))
