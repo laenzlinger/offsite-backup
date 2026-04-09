@@ -11509,7 +11509,7 @@
 		(property "Reference" "J3"
 			(at 6 -3.5 90)
 			(layer "F.SilkS")
-			(uuid "bfcd1f94-1c73-4fd2-b6c9-813c89290e40")
+			(uuid "92d21468-c72f-41df-91ce-832a15a2fe70")
 			(effects
 				(font
 					(size 1 1)
@@ -11520,7 +11520,7 @@
 		(property "Value" "RJ45_RB1-125B8G1A"
 			(at 5.5 21 90)
 			(layer "F.Fab")
-			(uuid "42b73d12-959a-4036-91ec-c398fd36f64c")
+			(uuid "a9ceb0f4-540b-4de7-b912-11a23faaf95e")
 			(effects
 				(font
 					(size 1 1)
@@ -11533,7 +11533,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "014a2a59-5cd6-49fe-ad44-6cb2c25a6178")
+			(uuid "d0b6be86-5a87-431c-88bd-56747dbeafa8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11546,7 +11546,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "edc82990-c898-47ee-9f32-708abde200c2")
+			(uuid "7636bd8b-96a4-48b0-9d48-cc1983fbd172")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15266,14 +15266,14 @@
 	(footprint "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 		(layer "F.Cu")
 		(uuid "8f8ad25c-7b33-4360-a13d-b5914f66b8f8")
-		(at 108.5 51.5 90)
+		(at 109.81 51.308 90)
 		(descr "USB 2.0 Type C Receptacle, GCT, 16P, top mounted, horizontal, 5A: https://gct.co/files/drawings/usb4105.pdf")
 		(tags "USB C Type-C Receptacle SMD USB 2.0 16P 16C USB4105-15-A USB4105-15-A-060 USB4105-15-A-120 USB4105-GF-A USB4105-GF-A-060 USB4105-GF-A-120")
 		(property "Reference" "J7"
 			(at 0 -5.5 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "05a1869c-7151-4037-b097-b258897bd150")
+			(uuid "4071a814-f2bb-4bbd-a044-dd5f6e1ee8fa")
 			(effects
 				(font
 					(size 1 1)
@@ -15285,7 +15285,7 @@
 			(at 0 5 90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "b3c324f7-dba3-4a44-b7a9-b80aff1cb258")
+			(uuid "32baee2d-a687-4ff5-b8fe-f699da997c95")
 			(effects
 				(font
 					(size 1 1)
@@ -15298,7 +15298,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "72f0ccad-a5bc-47de-af1a-400933f92f50")
+			(uuid "a9b46e23-5886-4456-9f76-de94cedf77cb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15311,7 +15311,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "08b95283-bfaa-44b1-b6ca-76e600dc9de2")
+			(uuid "1edb1937-4564-4684-98a1-712a51f20fad")
 			(effects
 				(font
 					(size 1.27 1.27)
