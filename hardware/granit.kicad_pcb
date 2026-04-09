@@ -174,7 +174,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "10eb4ad5-0b11-40ac-bd46-86da087e1781")
-		(at 23 23)
+		(at 24 24)
 		(property "Reference" "H1"
 			(at 0 -3.2 0)
 			(layer "F.SilkS")
@@ -210,7 +210,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "f5cf5f76-04a0-4670-9155-729f14edb8e5")
-		(at 88 23)
+		(at 87 24)
 		(property "Reference" "H2"
 			(at 0 -3.2 0)
 			(layer "F.SilkS")
@@ -246,7 +246,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "e0f33bee-0006-4d7e-b082-27faa8492084")
-		(at 23 118)
+		(at 24 117)
 		(property "Reference" "H3"
 			(at 0 -3.2 0)
 			(layer "F.SilkS")
@@ -282,7 +282,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "f1b7aa6d-5af5-40fc-bb49-8c367c80c251")
-		(at 88 118)
+		(at 87 117)
 		(property "Reference" "H4"
 			(at 0 -3.2 0)
 			(layer "F.SilkS")
