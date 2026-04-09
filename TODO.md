@@ -91,8 +91,10 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [ ] Route SATA differential pairs
 - [ ] Route Ethernet differential pairs
 - [ ] Route USB differential pairs
-- [ ] Power trace width: ≥1.0mm (40 mil) for 12V and 5V paths (3.5" HDD spin-up current)
-- [ ] Power planes
+- [ ] Power trace width: ≥1.0mm (40 mil) for short branches to pads
+- [ ] Power planes on L3: split into 5V and 3.3V zones
+- [ ] 12V: copper pour on L4 from barrel jack to SATA power (2A+ spin-up)
+- [ ] GND: solid plane on L2, stitching vias throughout
 - [ ] DRC clean
 
 ## Enclosure
