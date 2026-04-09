@@ -68,22 +68,35 @@ Placement rationale:
 - DS3231 + CR2032 → quiet area near CM4 I2C pins
 - Button + LED → connector edge, accessible through end plate
 
-### Pre-routing: stackup and impedance
+### Pre-routing: stackup and impedance (JLCPCB 4-layer)
 
-Before starting any routing, confirm fab house stackup and update KiCad net classes.
+JLCPCB JLC04161H-7628 standard 4-layer stackup (1.6mm):
 
-- [ ] Choose fab house (PCBWay or JLCPCB) and get exact 4-layer stackup
-- [ ] Calculate trace geometry using fab stackup (or request impedance control):
-  - 100Ω differential (PCIe, SATA, Ethernet): ~0.13mm trace, ~0.15mm gap (JLCPCB standard)
-  - 90Ω differential (USB): ~0.16mm trace, ~0.15mm gap
-  - 50Ω single-ended (clock, reset): ~0.22mm trace
+| Layer | Material | Thickness | Er |
+|---|---|---|---|
+| L1 (Top signal) | Copper | 35µm (1oz) | — |
+| Prepreg | 7628 | 0.2104mm | 4.6 |
+| L2 (GND plane) | Copper | 35µm (1oz) | — |
+| Core | — | 1.065mm | 4.6 |
+| L3 (Power plane) | Copper | 35µm (1oz) | — |
+| Prepreg | 7628 | 0.2104mm | 4.6 |
+| L4 (Bottom signal) | Copper | 35µm (1oz) | — |
+
+Calculated trace geometry (L1 signal, L2 GND reference, 0.2104mm dielectric):
+- 100Ω differential (PCIe, SATA, Ethernet): **0.127mm trace, 0.152mm gap**
+- 90Ω differential (USB): **0.160mm trace, 0.152mm gap**
+- 50Ω single-ended: **0.224mm trace**
+
+JLCPCB minimums: 0.09mm trace/space, 0.2mm drill, 0.13mm annular ring.
+
+- [x] Choose fab house: JLCPCB (prototype)
 - [ ] Update KiCad net classes with calculated values:
-  - PCIe: diff_pair_width, diff_pair_gap
-  - SATA: diff_pair_width, diff_pair_gap
-  - Ethernet: diff_pair_width, diff_pair_gap
-  - USB: diff_pair_width, diff_pair_gap
-- [ ] Verify fab minimum capabilities (min trace/space, min drill, min annular ring)
-- [ ] Decide PCB thickness (1.6mm standard or 1.0mm for SATA alignment)
+  - PCIe: diff_pair_width=0.127, diff_pair_gap=0.152
+  - SATA: diff_pair_width=0.127, diff_pair_gap=0.152
+  - Ethernet: diff_pair_width=0.127, diff_pair_gap=0.152
+  - USB: diff_pair_width=0.160, diff_pair_gap=0.152
+- [ ] Select impedance control when ordering (+~$10)
+- [ ] PCB thickness: 1.6mm (standard)
 
 ### Checklist
 PCB standoff height must match HDD SATA connector vertical position (~3.5mm above belly plate).
