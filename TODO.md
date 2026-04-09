@@ -61,7 +61,8 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
   - Both share 103mm width — PCB is cross-compatible
   - 1455L: zero clearance with 3.5" HDD — mount PCB + HDD to belly plate
   - 1455N: 20mm+ extra height — fits 40mm fan or tall CM4 heatsink
-- [ ] Design end panel cutouts (barrel jack, RJ45, USB-C, button, LED)
+- [ ] CNC belly plate: drill M3 holes for PCB standoffs + M4 holes for HDD mounts
+- [ ] CNC end plate: cutouts for RJ45, USB-C, barrel jack, button, LED
 - [ ] Thermal pad from CM4 SoC to enclosure lid
 - [ ] Include Hammond 1455L2201 as default 3D reference model in KiCad
 
