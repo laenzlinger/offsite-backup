@@ -48,7 +48,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
   - 1.6mm PCB + 2.7mm standoff = 3.5mm ✓ (non-standard standoff)
   - 1.0mm PCB + 3.0mm standoff = 3.5mm ✓ (standard standoff, thinner PCB)
   - 1.6mm PCB + 3.0mm standoff = 3.8mm (0.3mm off, likely within tolerance)
-- [ ] CR2032 holder on top side (doesn't fit under 3mm standoffs)
+- [ ] CR2032 holder on top side (fallback: CR1220 on bottom side if space is tight — fits under 3mm standoffs, ~4.5 years DS3231 backup)
 - [ ] Place ASM1061 near SATA connector (short differential pairs)
 - [ ] HDD mounting holes: M4 (4.3mm drill, `MountingHole:MountingHole_4.3mm_M4_Pad_Via`)
 - [ ] PCB standoff holes: M3 (3.2mm drill, `MountingHole:MountingHole_3.2mm_M3_Pad_Via`)
