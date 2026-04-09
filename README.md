@@ -18,7 +18,7 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 | Raspberry Pi CM4 | Compute module (PCIe Gen 2 x1). CM5 mechanically compatible but not validated for power budget |
 | ASM1061 | PCIe Gen 2 x1 to 2-port SATA III controller (no firmware blob required) |
 | 2.5" or 3.5" SATA HDD/SSD | Backup storage |
-| Molex 87779-1001 | 22-pin SATA connector (data 7-pin + power 15-pin), vertical mount |
+| Amphenol 10029364-001LF | 22-pin SATA connector (data 7-pin + power 15-pin), right-angle |
 | RJ45 + Ethernet magnetics | Gigabit Ethernet |
 | DS3231 RTC | Battery-backed real-time clock with alarm wake (I2C) |
 | CR2032 coin cell | RTC backup battery |
