@@ -24,7 +24,7 @@ for obj in doc.Objects:
             continue
         # HDD: ~101.6 x ~26.1 x ~147
         if bb.YLength > 20 and bb.YLength < 30 and bb.ZLength > 100:
-            obj.ViewObject.ShapeColor = (0.25, 0.25, 0.25)
+            obj.ViewObject.ShapeColor = (0.7, 0.1, 0.1)
             continue
         # Screws: small parts
         if bb.XLength < 10 and bb.YLength < 10 and bb.ZLength < 10:
