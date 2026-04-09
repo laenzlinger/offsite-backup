@@ -5549,7 +5549,7 @@
 						(effects (font (size 1.27 1.27)))
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 12.7 12.7 180)
 					(length 2.54)
 					(name "+3.3V"
@@ -5613,7 +5613,7 @@
 						(effects (font (size 1.27 1.27)))
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 12.7 2.54 180)
 					(length 2.54)
 					(name "+5V"
@@ -5677,7 +5677,7 @@
 						(effects (font (size 1.27 1.27)))
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 12.7 -7.62 180)
 					(length 2.54)
 					(name "+12V"
