@@ -86,6 +86,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [ ] Raspberry Pi OS Lite base image
 - [ ] Device tree overlay for ASM1061
 - [ ] DS3231 RTC driver + alarm configuration
+- [ ] DS3231 OSF flag check on boot (warn if battery failed, report via healthcheck)
 - [ ] GPIO_HOLD (GPIO6) assertion on boot
 - [ ] SATA_PWR_EN (GPIO5) control
 - [ ] NeoPixel status daemon
