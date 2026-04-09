@@ -9352,7 +9352,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 92.71 165.1 0)
 			(hide yes)
 			(show_name no)

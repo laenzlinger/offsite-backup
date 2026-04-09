@@ -5610,7 +5610,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 68.58 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -6207,7 +6207,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -6402,7 +6402,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 82.55 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -6639,7 +6639,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 55.88 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -6958,7 +6958,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 83.82 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -8488,7 +8488,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 52.07 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -8840,7 +8840,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 87.63 121.92 0)
 			(hide yes)
 			(show_name no)
