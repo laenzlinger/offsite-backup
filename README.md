@@ -102,16 +102,18 @@ by a non-technical person: plug in Ethernet, plug in power, done.
 
 ### Hammond 1455 Series
 
-| | 1455T2201 (Default) |
-|---|---|
-| Dimensions | 220 × 160 × 51.5 mm |
-| Internal width | ~157 mm |
-| Internal height | ~48 mm |
-| Material | Extruded aluminium |
-| HDD clearance | Fits 3.5" HDD (101.6mm) with 55mm spare width |
-| Colors | Natural, Black, Blue, Red |
+Same PCB (71 × 99mm) fits both cases:
 
-Side-by-side layout: PCB (71 × 155mm) at one end, HDD (147mm) at the other, SATA connector direct-mates between them.
+| | 1455L2201 (Slim) | 1455T2201 (Wide) |
+|---|---|---|
+| Dimensions | 220 × 103 × 30.5 mm | 220 × 160 × 51.5 mm |
+| Internal width | ~100 mm | ~157 mm |
+| Internal height | ~27 mm | ~48 mm |
+| HDD support | 2.5" only | 2.5" or 3.5" |
+| Material | Extruded aluminium | Extruded aluminium |
+| Colors | Natural, Black, Blue, Red | Natural, Black, Blue, Red |
+
+Side-by-side layout: PCB at one end, HDD at the other, SATA connector direct-mates between them.
 
 ### Requirements
 
