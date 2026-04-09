@@ -12,6 +12,9 @@ pcb-step: ## Export PCB STEP from KiCad
 assembly: pcb-step ## Build FreeCAD assembly (STEP + FCStd)
 	cd .. && freecadcmd mechanical/assembly.py
 
+screenshot: assembly ## Render assembly screenshot
+	cd .. && xvfb-run -a -s "-screen 0 1920x1080x24" freecad mechanical/screenshot.py
+
 clean:
 	rm -f granit-pcb.step assembly.step assembly.FCStd
 
