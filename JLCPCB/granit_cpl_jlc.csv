@@ -39,6 +39,7 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "C37","100n","C_0805_2012Metric",55.0000,-30.5000,90.0000,top
 "C38","100n","C_0805_2012Metric",109.0000,-58.0000,0.0000,top
 "C39","100n","C_0805_2012Metric",57.0000,-30.5000,90.0000,top
+"C40","100uF/25V","CP_Elec_6.3x5.8",87.9900,-104.8700,270.0000,top
 "CM1","CM4","Raspberry-Pi-4-Compute-Module",85.5000,-37.5000,180.0000,top
 "D1","SK6812MINI-E","LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",109.0000,-32.0000,90.0000,top
 "D2","LED R","LED_0805_2012Metric",91.5000,-35.5500,90.0000,top
