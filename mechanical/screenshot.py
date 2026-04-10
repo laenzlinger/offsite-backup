@@ -52,7 +52,7 @@ cam = view.getCameraNode()
 
 # Angled view showing inside and front (connector) edge
 rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), 0.45)    # tilt down
-rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), -0.4)    # rotate to show front edge
+rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 0.4)     # rotate to show connector edge (+Z)
 cam.orientation.setValue(rot)
 view.fitAll()
 

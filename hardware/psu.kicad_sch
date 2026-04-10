@@ -1563,7 +1563,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
+			(property "Footprint" "granit:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2998,6 +2998,18 @@
 		(uuid "640f39f2-5c4b-4bf0-969d-b4c041fca750")
 	)
 	(junction
+		(at 118.11 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "656b7996-3ff0-408c-a799-94ea5280268b")
+	)
+	(junction
+		(at 102.87 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70cd629e-06e2-4d4f-8a51-f274409e37a7")
+	)
+	(junction
 		(at 102.87 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3008,12 +3020,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83b1ddd4-f63e-4e2e-950c-3e0cd0102759")
-	)
-	(junction
-		(at 116.84 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85a09902-1ac8-4507-8acd-70c7ef861cc2")
 	)
 	(junction
 		(at 212.09 48.26)
@@ -3154,16 +3160,6 @@
 			(type solid)
 		)
 		(uuid "0139cd82-a699-4ce9-a0bf-b7f8103e8d6c")
-	)
-	(wire
-		(pts
-			(xy 116.84 44.45) (xy 133.35 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "024afd53-cc50-4212-8dd0-fdcc07038be6")
 	)
 	(wire
 		(pts
@@ -3444,6 +3440,16 @@
 			(type default)
 		)
 		(uuid "2f275311-49eb-4b1c-884a-313d4b936631")
+	)
+	(wire
+		(pts
+			(xy 102.87 77.47) (xy 118.11 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3141af5b-80ef-4352-b7d1-b6ad25e336be")
 	)
 	(wire
 		(pts
@@ -3887,7 +3893,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 44.45) (xy 116.84 44.45)
+			(xy 102.87 44.45) (xy 118.11 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3974,6 +3980,16 @@
 			(type default)
 		)
 		(uuid "91e2902c-b69a-447f-acd6-b622d6055c38")
+	)
+	(wire
+		(pts
+			(xy 118.11 44.45) (xy 118.11 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92594b52-9cf3-4ee6-a364-67188b561e23")
 	)
 	(wire
 		(pts
@@ -4237,6 +4253,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 64.77) (xy 118.11 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4174d8d-987a-461c-bf7c-ac03e7e271dc")
+	)
+	(wire
+		(pts
 			(xy 222.25 48.26) (xy 212.09 48.26)
 		)
 		(stroke
@@ -4334,6 +4360,16 @@
 			(type solid)
 		)
 		(uuid "d7b85771-66bc-4eac-9248-df9f97cf346a")
+	)
+	(wire
+		(pts
+			(xy 118.11 44.45) (xy 133.35 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d92661da-7114-4d52-a62a-88668c1ac360")
 	)
 	(polyline
 		(pts
@@ -4630,7 +4666,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 116.84 44.45 0)
+		(at 118.11 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4641,7 +4677,7 @@
 		(fields_autoplaced yes)
 		(uuid "1bed7f93-b3e8-4744-8668-526943a1b14c")
 		(property "Reference" "#FLG01"
-			(at 116.84 42.545 0)
+			(at 118.11 42.545 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4652,7 +4688,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 116.84 39.37 0)
+			(at 118.11 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4662,7 +4698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 44.45 0)
+			(at 118.11 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4673,7 +4709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 44.45 0)
+			(at 118.11 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4684,7 +4720,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 116.84 44.45 0)
+			(at 118.11 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5405,7 +5441,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
+		(property "Footprint" "granit:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
 			(at 142.24 127 0)
 			(hide yes)
 			(show_name no)
@@ -6924,6 +6960,88 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/5c34f141-50d5-4609-a101-f9d94643eff8"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 118.11 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9253c2d7-12cf-4b93-93b3-f01efb49551e")
+		(property "Reference" "C40"
+			(at 121.92 58.8009 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_Polarized"
+			(at 121.92 61.3409 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.0752 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 118.11 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "956b6c72-a917-4476-aa81-d06d73769726")
+		)
+		(pin "1"
+			(uuid "6a7e3f9a-c1c8-4af2-ac2e-402efadb4e30")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/5c34f141-50d5-4609-a101-f9d94643eff8"
+					(reference "C40")
 					(unit 1)
 				)
 			)
