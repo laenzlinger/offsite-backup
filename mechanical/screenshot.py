@@ -38,8 +38,8 @@ for obj in doc.Objects:
         if vol < 50000 and bb.XLength < 60 and bb.ZLength < 60:
             obj.ViewObject.ShapeColor = (0.2, 0.2, 0.2)
             continue
-        # Case end panels: hide the one at +Z (connector side) to see inside
-        if bb.YLength > 40 and bb.ZLength < 20 and bb.XLength > 100:
+        # Case end panels: tall-ish Y, thin Z, wide X
+        if bb.YLength > 20 and bb.ZLength < 20 and bb.XLength > 80:
             if bb.ZMin > 0:
                 obj.ViewObject.Visibility = False  # hide connector-side end panel
             else:
