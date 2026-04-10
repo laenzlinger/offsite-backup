@@ -62,6 +62,25 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
   to LUKS-encrypted backup storage only. HDD can spin down when idle. No SD card — eMMC is
   more reliable for a deploy-and-forget device. Reflashing via `nRPIBOOT` + USB-C if needed.
 
+### Power Routing & Netclasses
+
+PCB is fabricated with JLCPCB standard 4-layer stackup (1oz / 35µm copper on all layers).
+Track widths are sized per IPC-2221 for outer-layer traces with 20°C temperature rise.
+
+| Netclass | Track Width | Via (pad/drill) | Capacity (1oz, 20°C rise) | Worst-case Load | Nets |
+|---|---|---|---|---|---|
+| Power 12V | 3.0mm | 1.6mm / 0.8mm | ~3.5A | ~2.5A | `+12V*`, `fused`, `unfused` |
+| Power 5V | 2.5mm | 1.6mm / 0.8mm | ~3.2A | ~2.8A | `+5VP`, `VBUS`, `switch` |
+| Power 3V3 | 1.0mm | 0.8mm / 0.4mm | ~1.5A | ~0.6A | `+3V3` |
+
+**Routing guidelines:**
+- Netclass widths are the default for main runs. Neck down to pad width over the last 1–2mm at component pads.
+- Use copper pours for 12V and 5V in the PSU area where space allows.
+- Use 2–3 parallel vias where power traces change layers.
+- Place GND return vias near every power via.
+- Keep 12V and 5V routing on top/bottom layers — do not break the inner GND planes.
+- Do not route power traces under or parallel to PCIe/SATA/Ethernet differential pairs.
+
 ## Software
 
 The device runs Raspberry Pi OS Lite (headless).
