@@ -50,9 +50,9 @@ view = FreeCADGui.ActiveDocument.ActiveView
 from pivy import coin
 cam = view.getCameraNode()
 
-# Angled view from above-front to clearly show the gap between PCB and HDD
-rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), 0.6)    # look down
-rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 0.15)   # slight twist
+# Angled view showing inside and front (connector) edge
+rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), 0.45)    # tilt down
+rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), -0.4)    # rotate to show front edge
 cam.orientation.setValue(rot)
 view.fitAll()
 
