@@ -61,18 +61,22 @@ outputs:
     type: render_3d
     dir: 3D
     options:
-      ray_tracing: true
+      ray_tracing: false
       orthographic: true
       view: top
+      download: true
+      no_virtual: true
 
   - name: 3d_bottom
     comment: 3D render bottom view
     type: render_3d
     dir: 3D
     options:
-      ray_tracing: true
+      ray_tracing: false
       orthographic: true
       view: bottom
+      download: true
+      no_virtual: true
 
   - name: basic_navigate
     comment: Web page to navigate the outputs
