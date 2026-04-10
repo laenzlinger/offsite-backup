@@ -108,7 +108,7 @@ min 0.09mm trace/space, 0.2mm drill, 0.13mm annular ring.
 
 PCB standoff height must match HDD SATA connector vertical position (~3.5mm above belly plate).
 
-- [ ] Board outline: 71 × 99mm (fits 1455L slim and 1455T wide cases)
+- [ ] Board outline: 92 × 100mm (fits 1455L slim and 1455T2601 wide cases)
 - [ ] Verify PCB standoff height aligns SATA connector with HDD receptacle
 - [ ] 4-layer stackup (signal/GND/power/signal)
 - [x] SATA connector: replaced J4+J5 with single 22-pin Amphenol 10029364-001LF (horizontal/right-angle)
@@ -158,6 +158,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [x] ERC check in KiBot preflight
 - [ ] Enable DRC check when PCB layout is complete
 - [ ] Switch to kicad10_auto container when available
+- [ ] Add 3D renders (blender_export) once ghcr.io/inti-cmnb/kicad10_auto_full image exists (see pedalboard-hw)
 
 ## Software
 

@@ -56,6 +56,9 @@ outputs:
         - layers: [B.Cu, B.SilkS, Edge.Cuts]
           sheet: Back copper
 
+  # FIXME: Add 3D renders (blender_export) once ghcr.io/inti-cmnb/kicad10_auto_full image is available
+  # See pedalboard-hw for reference: https://github.com/pedalboard/pedalboard-hw
+
   - name: basic_navigate
     comment: Web page to navigate the outputs
     type: navigate_results
