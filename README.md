@@ -27,7 +27,7 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 | Hirose DF40C-100DS-0.4V(51) | 2x CM4 board-to-board connectors |
 | AP64501SP-13 | 3.5A DC-DC buck converter (reused from [pedalboard-hw](https://github.com/pedalboard/pedalboard-hw)) |
 | USB-C | USB 2.0 OTG connector with USBLC6-2SC6 ESD protection |
-| 2N7002 + 74AHCT1G32 | Hardware wake circuit (RTC alarm → GLOBAL_EN) |
+| 2N7002 + 74AHCT1G32 | Hardware wake circuit (RTC alarm → GLOBAL_EN) and SATA power gate drivers |
 
 ### Block Diagram
 
@@ -56,7 +56,16 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 - **PCIe routing**: 100Ω differential impedance for PCIe Gen 2 lanes, matched length,
   minimize vias and stubs. 4-layer PCB recommended (signal/GND/power/signal).
 - **Ethernet**: CM4 has built-in Ethernet PHY — route differential pairs to RJ45 with magnetics
-- **SATA power**: 12V passthrough for 3.5" HDD, 5V from buck converter, 3.3V from LDO
+- **SATA power**: 12V and 5V to the SATA connector are switched by P-channel MOSFETs
+  (Q2, Q3 — FDS4435BZ). GPIO17 (`SATA_PWR_EN`) drives N-channel level shifters
+  (Q5, Q6 — 2N7002) which pull the P-FET gates low to turn them on. Two 3-pad solder
+  jumpers (JP5 `SATA_12V_PWR`, JP6 `SATA_5V_PWR`) select the boot default:
+  - **Pads 1-2 bridged (default):** 100K pull-up to source → FETs OFF → HDD powered on by software
+  - **Pads 2-3 bridged:** 100K pull-down to GND → FETs ON → HDD powered at boot
+
+  GPIO17 high → N-FET on → P-FET gate low → SATA power on.
+  GPIO17 low or high-Z (boot default) → N-FET off → pull-up holds P-FET off.
+  This allows full software-controlled HDD lifecycle without a PCB respin.
 - **Power budget**: 12V @ 2A (3.5" HDD spin-up) + 5V @ 2.3A peak (CM4 + electronics) — use a 12V/3A+ PSU
 - **Boot and storage strategy**: Full OS on CM4 eMMC (no SD card slot), SATA HDD dedicated
   to LUKS-encrypted backup storage only. HDD can spin down when idle. No SD card — eMMC is
@@ -96,6 +105,45 @@ The device runs Raspberry Pi OS Lite (headless).
   Hardware power-off wake via MOSFET latch on `GLOBAL_EN` planned for v2.)
 - LUKS full-disk encryption on the backup drive
 - Automatic drive mount and health monitoring
+
+### HDD Power Control
+
+GPIO17 (`SATA_PWR_EN`) controls the P-FET power switches for the SATA 12V and 5V rails.
+The boot default is selected by solder jumpers JP5 and JP6 (see Design Considerations above).
+
+**Connect sequence** (power on → detect → mount):
+```bash
+#!/bin/bash
+# Power on SATA rails (GPIO high → N-FET on → P-FET gate low → P-FET on)
+gpioset gpiochip0 17=1
+sleep 2
+
+# Rescan AHCI bus (ASM1061 hot-plug)
+echo "- - -" > /sys/class/scsi_host/host0/scan
+sleep 3
+
+# Unlock and mount
+cryptsetup luksOpen /dev/sda1 backup
+mount /dev/mapper/backup /mnt/backup
+```
+
+**Disconnect sequence** (unmount → spin down → power off):
+```bash
+#!/bin/bash
+# Unmount and close LUKS
+umount /mnt/backup
+cryptsetup luksClose backup
+
+# Spin down platters
+hdparm -Y /dev/sda
+sleep 1
+
+# Remove SCSI device before power cut
+echo 1 > /sys/block/sda/device/delete
+
+# Power off SATA rails (GPIO low → N-FET off → pull-up → P-FET off)
+gpioset gpiochip0 17=0
+```
 
 ### Deployment
 
