@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-"""Render assembly screenshot with software OpenGL.
-Run with: LIBGL_ALWAYS_SOFTWARE=1 ASSEMBLY_FILE=... xvfb-run -a -s "-screen 0 3840x2160x24" freecad screenshot.py
+"""Render assembly screenshot with original 3D model colors.
+
+Run with:
+  LIBGL_ALWAYS_SOFTWARE=1 ASSEMBLY_FILE=... \
+    xvfb-run -a -s "-screen 0 3840x2160x24" freecad screenshot.py
 """
 
 import os
@@ -8,6 +11,7 @@ import sys
 import FreeCAD
 import FreeCADGui
 import Import
+import Part
 
 assembly_file = os.environ.get("ASSEMBLY_FILE", "mechanical/assembly-wide.step")
 output_png = assembly_file.replace(".step", ".png")
@@ -21,43 +25,53 @@ for obj in doc.Objects:
         continue
     bb = obj.Shape.BoundBox
     try:
-        # PCB: 92mm X, 100mm Z, very thin Y (<5mm)
-        if bb.YLength < 5 and bb.XLength > 80 and bb.XLength < 100 and bb.ZLength > 90 and bb.ZLength < 110:
-            obj.ViewObject.ShapeColor = (0.0, 0.8, 0.0)
+        # PCB board (thin, ~100x92): green
+        if bb.YLength < 5 and bb.XLength > 80 and bb.ZLength > 80:
+            obj.ViewObject.ShapeColor = (0.0, 0.55, 0.15)
             continue
-        # HDD: distinguish from case — HDD Y height is 9-27mm and Z < 150mm
+        # HDD: red-ish, Y height 9-27mm, not as wide as case
         if bb.ZLength > 90 and bb.ZLength < 150 and bb.YLength > 5 and bb.YLength < 40 and bb.XLength < 110:
-            obj.ViewObject.ShapeColor = (0.9, 0.15, 0.1)
+            obj.ViewObject.ShapeColor = (0.75, 0.75, 0.78)
             continue
-        # Screws/small parts
-        if bb.XLength < 15 and bb.YLength < 15 and bb.ZLength < 15:
-            obj.ViewObject.ShapeColor = (0.4, 0.4, 0.4)
-            obj.ViewObject.Transparency = 60
+        # Components on PCB: dark gray (small-ish parts)
+        vol = bb.XLength * bb.YLength * bb.ZLength
+        if vol < 50000 and bb.XLength < 60 and bb.ZLength < 60:
+            obj.ViewObject.ShapeColor = (0.2, 0.2, 0.2)
             continue
-        # Hide lid (thin piece near Y=0)
-        if bb.YMax > -5 and bb.YLength < 6 and bb.XLength > 80 and bb.ZLength > 80:
+        # Case end panels: hide the one at +Z (connector side) to see inside
+        if bb.YLength > 40 and bb.ZLength < 20 and bb.XLength > 100:
+            if bb.ZMin > 0:
+                obj.ViewObject.Visibility = False  # hide connector-side end panel
+            else:
+                obj.ViewObject.ShapeColor = (0.7, 0.7, 0.72)
+                obj.ViewObject.Transparency = 70
+            continue
+        # Case lid (thin, near Y=0): hide
+        if bb.YLength < 6 and bb.XLength > 100 and bb.ZLength > 100 and bb.YMax > -5:
             obj.ViewObject.Visibility = False
             continue
-        # Everything else is case — gray, very transparent
-        obj.ViewObject.ShapeColor = (0.6, 0.6, 0.6)
-        obj.ViewObject.Transparency = 88
-    except:
+        # Case body: light gray, transparent
+        if bb.XLength > 100 and bb.ZLength > 100:
+            obj.ViewObject.ShapeColor = (0.7, 0.7, 0.72)
+            obj.ViewObject.Transparency = 85
+            continue
+        # Fallback: medium gray
+        obj.ViewObject.ShapeColor = (0.4, 0.4, 0.4)
+    except Exception:
         pass
 
 view = FreeCADGui.ActiveDocument.ActiveView
-
-# Enable anti-aliasing
 from pivy import coin
 cam = view.getCameraNode()
 
-# Angled view showing inside and front (connector) edge
-rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), 0.45)    # tilt down
-rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 0.4)     # rotate to show connector edge (+Z)
+# Camera: from HDD end looking toward connectors, tilted to see PCB top
+rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), 0.65)     # tilt down ~37°
+rot *= coin.SbRotation(coin.SbVec3f(0, 1, 0), 0.35)     # slight side angle
+rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 3.14)     # face opposite direction
 cam.orientation.setValue(rot)
 view.fitAll()
 
-# Render at high resolution
 view.saveImage(output_png, 3840, 2160, "White")
-
-print(f"Screenshot saved to {output_png}")
+sys.stdout.write(f"saved {output_png}\n")
+sys.stdout.flush()
 sys.exit(0)
