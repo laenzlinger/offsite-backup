@@ -64,10 +64,10 @@ view = FreeCADGui.ActiveDocument.ActiveView
 from pivy import coin
 cam = view.getCameraNode()
 
-# Camera: from HDD end looking toward connectors, tilted to see PCB top
-rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), 0.65)     # tilt down ~37°
-rot *= coin.SbRotation(coin.SbVec3f(0, 1, 0), 0.35)     # slight side angle
-rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 3.14)     # face opposite direction
+# Camera: on a table, lid removed, looking down from above-rear, PCB components visible
+rot = coin.SbRotation(coin.SbVec3f(1, 0, 0), -0.65)    # look down from above
+rot *= coin.SbRotation(coin.SbVec3f(0, 1, 0), -0.35)    # slight side angle
+rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 0.0)      # HDD at back, PCB toward viewer
 cam.orientation.setValue(rot)
 view.fitAll()
 
