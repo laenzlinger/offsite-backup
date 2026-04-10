@@ -83,7 +83,7 @@ def build_variant(name, cfg):
     # 90Z, -90X, 180Y → X=0..W, Y=0..H, Z=0..L, recess at Z=L (high Z)
     hdd_rot = rot(RZ(90), RX(-90), RY(180))
     hdd_x = -hdd_width / 2             # X=0..W → center
-    hdd_y = belly_y + STANDOFF         # Y=0..H, bottom at belly+standoff
+    hdd_y = belly_y + STANDOFF + 4     # HDD raised to align SATA with PCB connector
     hdd_z = hdd_z_sata - hdd_length    # Z=L (recess) → hdd_z_sata
     place(doc, cfg["hdd_file"], "HDD",
           FreeCAD.Placement(FreeCAD.Vector(hdd_x, hdd_y, hdd_z), hdd_rot))
