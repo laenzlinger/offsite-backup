@@ -48,9 +48,31 @@ outputs:
     options:
       pages:
         - layers: [F.Cu, F.SilkS, Edge.Cuts]
-          sheet: Front
+          sheet: Front copper
+        - layers: [In1.Cu, Edge.Cuts]
+          sheet: Inner 1 (GND)
+        - layers: [In2.Cu, Edge.Cuts]
+          sheet: Inner 2 (GND)
         - layers: [B.Cu, B.SilkS, Edge.Cuts]
-          sheet: Back
+          sheet: Back copper
+
+  - name: 3d_top
+    comment: 3D render top view
+    type: render_3d
+    dir: 3D
+    options:
+      ray_tracing: true
+      orthographic: true
+      view: top
+
+  - name: 3d_bottom
+    comment: 3D render bottom view
+    type: render_3d
+    dir: 3D
+    options:
+      ray_tracing: true
+      orthographic: true
+      view: bottom
 
   - name: basic_navigate
     comment: Web page to navigate the outputs
