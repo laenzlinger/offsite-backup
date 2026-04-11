@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: test step pdf clean
+.PHONY: test step pdf render clean
 
 GIT_HASH = $(shell git rev-parse --short HEAD)
 PROJECT_NAME = granit
@@ -47,6 +47,23 @@ pdf: ## Export PDF (schematic and PCB)
 		--define-var GIT_HASH=$(GIT_HASH) \
 		--output out/$(PROJECT_NAME)-schematic.pdf \
 		$(PROJECT_NAME).kicad_sch
+
+render: ## Render 3D board images for README
+	mkdir -p out
+	kicad-cli pcb render \
+		--define-var GIT_HASH=$(GIT_HASH) \
+		--output out/$(PROJECT_NAME)-3d-top.png \
+		--width 1600 --height 900 \
+		--side top --perspective --quality high \
+		--background opaque \
+		$(PROJECT_NAME).kicad_pcb
+	kicad-cli pcb render \
+		--define-var GIT_HASH=$(GIT_HASH) \
+		--output out/$(PROJECT_NAME)-3d-bottom.png \
+		--width 1600 --height 900 \
+		--side bottom --perspective --quality high \
+		--background opaque \
+		$(PROJECT_NAME).kicad_pcb
 
 clean:
 	rm -rf out
