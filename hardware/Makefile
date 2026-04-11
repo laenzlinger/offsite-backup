@@ -55,7 +55,7 @@ render: ## Render 3D board image for README
 		--output out/$(PROJECT_NAME)-3d.png \
 		--width 1600 --height 900 \
 		--side top --perspective --quality high \
-		--rotate 45,0,0 \
+		--rotate -45,0,0 \
 		--background opaque \
 		$(PROJECT_NAME).kicad_pcb
 
