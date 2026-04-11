@@ -33,10 +33,9 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 
 ![Architecture Diagram](images/architecture.drawio.svg)
 
-### PCB 3D Renders
+### PCB 3D Render
 
-![PCB Top](images/granit-3d-top.png)
-![PCB Bottom](images/granit-3d-bottom.png)
+![PCB 3D](images/granit-3d.png)
 
 ### Key Design Decisions
 

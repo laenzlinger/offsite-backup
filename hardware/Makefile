@@ -48,20 +48,14 @@ pdf: ## Export PDF (schematic and PCB)
 		--output out/$(PROJECT_NAME)-schematic.pdf \
 		$(PROJECT_NAME).kicad_sch
 
-render: ## Render 3D board images for README
+render: ## Render 3D board image for README
 	mkdir -p out
 	kicad-cli pcb render \
 		--define-var GIT_HASH=$(GIT_HASH) \
-		--output out/$(PROJECT_NAME)-3d-top.png \
+		--output out/$(PROJECT_NAME)-3d.png \
 		--width 1600 --height 900 \
 		--side top --perspective --quality high \
-		--background opaque \
-		$(PROJECT_NAME).kicad_pcb
-	kicad-cli pcb render \
-		--define-var GIT_HASH=$(GIT_HASH) \
-		--output out/$(PROJECT_NAME)-3d-bottom.png \
-		--width 1600 --height 900 \
-		--side bottom --perspective --quality high \
+		--rotate 45,0,0 \
 		--background opaque \
 		$(PROJECT_NAME).kicad_pcb
 
