@@ -5309,6 +5309,16 @@
 		)
 		(uuid "fb9be88d-8bc2-4d47-bd8a-b3c35f7b48f8")
 	)
+	(label "+12V_S"
+		(at 41.91 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0a02b7f9-6c83-4866-8cdd-41a242e9bdeb")
+	)
 	(label "SATA_A_RX_N"
 		(at 193.04 120.65 0)
 		(effects
@@ -5338,6 +5348,16 @@
 			(justify left bottom)
 		)
 		(uuid "565222e1-f6df-4134-a15b-20ce205e15db")
+	)
+	(label "+5V_S"
+		(at 78.74 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c22a990-9096-4576-ad71-cdf564f16bce")
 	)
 	(label "SATA_A_RX_P"
 		(at 140.97 165.1 180)
