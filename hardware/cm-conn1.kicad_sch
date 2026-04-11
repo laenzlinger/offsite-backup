@@ -9094,7 +9094,7 @@
 			)
 		)
 	)
-	(global_label "GPIO_HOLD"
+	(global_label "SATA_PWR_EN"
 		(shape bidirectional)
 		(at 41.91 76.2 180)
 		(fields_autoplaced yes)
@@ -9106,7 +9106,7 @@
 		)
 		(uuid "33330fb1-3ad8-422b-bdf2-e2d1532a7a20")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 27.4115 76.2 0)
+			(at 25.0531 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9358,7 +9358,7 @@
 			)
 		)
 	)
-	(global_label "SATA_PWR_EN"
+	(global_label "GPIO_HOLD"
 		(shape bidirectional)
 		(at 41.91 81.28 180)
 		(fields_autoplaced yes)
@@ -9370,7 +9370,7 @@
 		)
 		(uuid "92ce42df-7546-47ff-b862-cdf9c3b11b71")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.0531 81.28 0)
+			(at 27.4115 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
