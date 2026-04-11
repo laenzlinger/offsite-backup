@@ -262,6 +262,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/26583acf-8c73-4065-bbf7-a60c94ab3927")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -414,6 +420,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/42a8e4c1-7434-4947-8e21-8cabc5b382bc")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -571,6 +583,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/d9694e53-9e94-420c-b780-63712bc3bc51")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -819,7 +837,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -842,6 +860,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/d20fb5c1-99ec-4a59-b0e5-2ee2e212a923")
+		(sheetname "/")
+		(sheetfile "granit.kicad_sch")
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1051,6 +1074,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/841a9ec6-4e5d-4767-9118-388c5f33367c")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1229,6 +1258,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/2d45bf34-865b-4406-9359-ba44fddac9bc")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1420,6 +1455,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/58491123-da60-454c-a237-f881b90661a5")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1574,6 +1615,12 @@
 		(path "/425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16/e86366fc-2aab-47ef-97b2-b320bf126ab3")
 		(sheetname "/CM4 Connector 1/")
 		(sheetfile "cm-conn1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1726,6 +1773,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/1a11cff6-92e0-4607-896e-b86021155b3a")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "8" "7" "4" "6" "2" "5" "1" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2141,6 +2194,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/4982bbac-37d0-4712-bec7-87d4e5f8cbf5")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2319,6 +2378,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/811433f0-2b03-4e0c-82b0-70e7f546cae8")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2510,6 +2575,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/4a5158b2-a0ac-4b0e-8e68-9f15791a69b0")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2690,6 +2761,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/a004013d-3ecb-4b16-9308-cf63f45a6764")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2868,6 +2945,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/f4513802-28b5-48f1-8681-6274de6f2067")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3020,6 +3103,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/c028bd6c-43b7-4088-a7f8-c1084f4d2e5b")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3198,6 +3287,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/d7ad26d3-da1c-4010-a645-12265144d7b5")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3350,6 +3445,12 @@
 		(path "/425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16/9c8eb4e0-d7e0-4c0d-ba6c-82b4cfee27f7")
 		(sheetname "/CM4 Connector 1/")
 		(sheetfile "cm-conn1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3541,6 +3642,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/90f52438-7727-49e9-a71b-339bc7af8a52")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3686,6 +3793,14 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/2160c653-9b44-4cea-a408-3549d06ca88e")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S1" "S2" "S3" "S4" "S5" "S6" "S7" "P1" "P3" "P2" "P6" "P5" "P4"
+					"P8" "P9" "P7" "P10" "P11" "P12" "P13" "P14" "P15" "MP"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4509,6 +4624,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/acac43f5-66f7-42be-a5f6-9046045dc86c")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(net_tie_pad_groups "1, 2")
@@ -4767,6 +4888,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/97e25539-ba8c-4a19-9db8-e1921e32ed85")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4919,6 +5046,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/2ea78e29-dde6-4e61-b6af-4bbe674dff6b")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5071,6 +5204,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/3bee2fbe-be2b-4a21-9040-b59fd2f97d52")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "9" "8" "7" "6" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5513,6 +5652,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/51be11b4-5b5c-4863-85e3-43b29e354d33")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5915,6 +6060,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/48d87eae-5df6-409e-8586-021f121f4d64")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6093,6 +6244,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/96faba6a-4b57-4634-a6d1-19bb193aa1cd")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6245,6 +6402,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/9253c2d7-12cf-4b93-93b3-f01efb49551e")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6725,6 +6888,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/1ee5231a-62c4-4fed-bc82-fd563902d495")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6877,6 +7046,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/cd098055-b157-4bf3-a094-ec3780ff871a")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7055,6 +7230,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/da32e6ee-1467-4882-8b31-0098253c7ae0")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7246,6 +7427,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/f61040c5-9f0d-4f2b-a42d-e83ff796cea7")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7392,6 +7579,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/4647f209-f83b-4c82-ab99-e201dd437291")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -7572,6 +7765,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/810e51a6-d289-4ad5-a7a3-288d7f0f5dc2")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7765,6 +7964,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/5295f770-2ab2-4d92-82b6-ebb4e53c4b02")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7937,6 +8142,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/e89d441a-9f0a-4f15-a0c4-fe10ca923bf8")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8179,6 +8390,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/6e5d5dc8-6109-4780-9d97-d95ec19be247")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "3" "1" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8494,6 +8711,12 @@
 		(path "/425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16/bdb0e3b5-af9a-496d-b4a7-8c19b10400c9")
 		(sheetname "/CM4 Connector 1/")
 		(sheetfile "cm-conn1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8685,6 +8908,12 @@
 		(path "/425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16/2142562e-e402-4eef-9dde-825aeeb2b7bb")
 		(sheetname "/CM4 Connector 1/")
 		(sheetfile "cm-conn1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8837,6 +9066,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/6a547ab4-54dc-4946-a408-46518f346ad1")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9111,6 +9346,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/34339892-11be-4fdd-83fe-966781e8992f")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9293,6 +9534,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/7985714d-8c61-49c0-bee8-5f4535cc8936")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9844,6 +10091,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/51b13502-54c3-4abe-b521-151662dce018")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.2 -1.2)
@@ -10013,6 +10266,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/3f20ec05-9891-41a1-8c55-bba3bb09a8b3")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10389,6 +10648,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/44d88353-ae03-4afb-a27f-7895d3ee95dd")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10532,6 +10797,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/654c218d-828c-4d69-9b6e-5a64e49339a7")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10922,6 +11193,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/f7816a3d-d765-466f-8580-00d4bef35886")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11115,6 +11392,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/77e31f5e-3ca5-475b-b28e-08120ed088ef")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11267,6 +11550,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/9cd5a1cf-ff36-4878-9e3a-41f9285168f7")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11421,6 +11710,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/5a5b7b44-6e3f-422a-96fc-c618e87cf51a")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11599,6 +11894,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/0a8c52c2-0d09-43c2-9000-fdb5d0e2dbd1")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11751,6 +12052,12 @@
 		(path "/6d57c69b-cb35-49cb-87ee-ab2d226014ce")
 		(sheetname "/")
 		(sheetfile "granit.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -11862,6 +12169,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/96403052-46cd-4778-a5fd-1a091f7b9f95")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12014,6 +12327,12 @@
 		(path "/425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16/bd97ac20-67ca-4adf-b766-2e567b3c71e1")
 		(sheetname "/CM4 Connector 1/")
 		(sheetfile "cm-conn1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12205,6 +12524,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/f64d7396-4f6d-47ca-b24b-64fe2c797b58")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12351,6 +12676,14 @@
 		(path "/425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16/9b86d711-958f-4d06-aa5e-55d78c8cf519")
 		(sheetname "/CM4 Connector 1/")
 		(sheetfile "cm-conn1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "L3" "R10" "L4" "L1" "SH" "L2" "R1" "R2" "R3" "R4" "R5" "R6" "R7"
+					"R8" "R9"
+				)
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13359,6 +13692,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/5e8526da-da1c-401a-a840-4b540092b6d5")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13511,6 +13850,12 @@
 		(path "/ec685965-b38c-4f8d-ba20-9ea6f6a3597c")
 		(sheetname "/")
 		(sheetfile "granit.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -13623,6 +13968,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/9ba49c42-d859-4f2e-a45e-90a44f41a45a")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "5-8" "1-3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -14011,6 +14362,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/ae556176-6bfb-42ec-86e7-3411e7394b1d")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14387,6 +14744,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/93edea57-08cb-464e-a476-d82faa4a0734")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14646,6 +15009,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/d2ba6597-1713-443f-9a12-be45c667ae6f")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14841,6 +15210,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/7e473139-be82-4db6-9647-860359ccf720")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15077,6 +15452,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/75a10f91-c80a-44cd-9426-1bb201bd1346")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15230,6 +15611,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/51c218fb-f516-48bc-9081-bbb0e4e2eb85")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "5-8" "1-3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -15644,6 +16031,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/cc0fc0dd-be99-4481-b33f-e75afb53a97b")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15788,6 +16181,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/e2aa3c43-984b-4400-a892-4c3cfde63b94")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(net_tie_pad_groups "1, 2")
@@ -15981,6 +16380,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/3b756d86-f920-4743-84fd-493e18d59053")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "5" "3" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16366,6 +16771,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/5ec9d700-8ad9-48c6-a06c-eb8d604d9ce9")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.2 -1.2)
@@ -16529,6 +16940,14 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/d6758909-51e9-40bc-a34a-b59bba72eba7")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "SH" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
+					"A6" "B6"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16902,6 +17321,12 @@
 		(path "/7ff40d73-d426-474c-be0f-f8ff29196cd0")
 		(sheetname "/")
 		(sheetfile "granit.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -17052,6 +17477,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/9e5a6c2b-90aa-4735-93a5-6e487ecdcff3")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17208,6 +17639,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/eb40ffa5-388c-46d7-9a21-ec7d41b43a79")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17579,6 +18016,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/b908b496-8c9e-4fba-b35f-5cbc71051c89")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17731,6 +18174,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/c017bfd0-7724-488c-87a8-2237a78e7402")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17909,6 +18358,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/73c39315-445b-49e1-97dc-44a8db615c73")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18061,6 +18516,12 @@
 		(path "/916a4611-eff2-4c63-978f-49b9d05d843a")
 		(sheetname "/")
 		(sheetfile "granit.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -18198,6 +18659,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/1e23a9bc-8eda-4ee6-a3e8-99608b7f94a6")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18399,6 +18866,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/8c0f7153-d263-4a4e-81ed-935cd891215e")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18543,6 +19016,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/bbe0115a-008f-4ae0-a7d8-a206777b36fe")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.2 -1.2)
@@ -18738,6 +19217,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/6a55a486-e5ee-459e-a193-dd37d76cdc85")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18890,6 +19375,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/1e494488-fa79-4faf-a29f-9312253cd81a")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "2" "6" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19246,6 +19737,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/ef57453f-2ed9-440c-a9e8-16b65c750497")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19411,6 +19908,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/810c6fe4-0288-45cb-8f26-2e43db88dace")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19640,6 +20143,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/66996a34-7fef-498a-a6d7-34939c59e90e")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19872,6 +20381,16 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/978d5e37-acac-47c7-98a6-c83560ee4769")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "49" "13" "48"
+					"14" "47" "15" "46" "16" "45" "17" "44" "18" "43" "19" "42" "20" "41"
+					"21" "40" "22" "39" "23" "38" "24" "37" "36" "35" "34" "33" "32" "31"
+					"30" "29" "28" "27" "26" "25"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -20520,6 +21039,33 @@
 		(path "/425bdf56-ee3a-43f6-b6d9-8fa9cc85dc16/6cf00f21-9594-4941-b49d-6ba77e7bf3bf")
 		(sheetname "/CM4 Connector 1/")
 		(sheetfile "cm-conn1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "4" "6" "8" "10" "12" "14" "16" "18" "20" "22" "24" "26" "28"
+					"30" "32" "34" "36" "38" "40" "42" "44" "46" "48" "50" "52" "54" "56"
+					"58" "60" "62" "64" "66" "68" "70" "72" "74" "76" "78" "80" "82" "84"
+					"86" "88" "90" "92" "94" "96" "98" "100" "1" "3" "5" "7" "9" "11" "13"
+					"15" "17" "19" "21" "23" "25" "27" "29" "31" "33" "35" "37" "39" "41"
+					"43" "45" "47" "49" "51" "53" "55" "57" "59" "61" "63" "65" "67" "69"
+					"71" "73" "75" "77" "79" "81" "83" "85" "87" "89" "91" "93" "95" "97"
+					"99"
+				)
+			)
+			(unit
+				(name "B")
+				(pins "102" "104" "106" "108" "110" "112" "114" "116" "118" "120" "122"
+					"124" "126" "128" "130" "132" "134" "136" "138" "140" "142" "144" "146"
+					"148" "150" "152" "154" "156" "158" "160" "162" "164" "166" "168" "170"
+					"172" "174" "176" "178" "180" "182" "184" "186" "188" "190" "192" "194"
+					"196" "198" "200" "101" "103" "105" "107" "109" "111" "113" "115" "117"
+					"119" "121" "123" "125" "127" "129" "131" "133" "135" "137" "139" "141"
+					"143" "145" "147" "149" "151" "153" "155" "157" "159" "161" "163" "165"
+					"167" "169" "171" "173" "175" "177" "179" "181" "183" "185" "187" "189"
+					"191" "193" "195" "197" "199"
+				)
+			)
+		)
 		(solder_paste_margin_ratio -0.1)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -22757,6 +23303,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/f86c9f11-e82e-4503-9ab0-1ddf1212c7b6")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22909,6 +23461,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/fb2b6d1d-574d-4a4d-915f-99eee98d0840")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23100,6 +23658,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/546cdffa-38ab-4cd8-85fe-022ad8d271de")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23293,6 +23857,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/a3763a51-b557-4a9b-94df-61d909a99603")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23486,6 +24056,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/e1be0fb9-4941-430c-8a99-938046aa4a64")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23666,6 +24242,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/d66a8e1a-38fa-49e3-9b33-ce1ad288f3ad")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23810,6 +24392,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/87fad16c-2456-47ea-ac68-d048a7c201fa")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -23982,6 +24570,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/55862acc-6eb3-40da-8659-2a68c16d464a")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -24201,6 +24795,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/ce5e5270-6eb1-4c31-82b4-421c3eb1a419")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24355,6 +24955,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/804b5f05-1c9e-4bc0-8626-7842153f3878")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24533,6 +25139,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/41da4630-be1a-47b4-a19c-e04006a1fbbb")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24659,7 +25271,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24682,6 +25294,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/4ae9be09-802f-4b81-a477-677f38e91256")
+		(sheetname "/")
+		(sheetfile "granit.kicad_sch")
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -24865,6 +25482,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/c4a69e2f-6d3e-4086-9c83-f1baf304c9a3")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "5" "3" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25284,6 +25907,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/e5545c17-baf8-4ad9-bdc6-3bd8f178ebc6")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25437,6 +26066,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/c40f4694-ea90-4978-b482-36d2afcca00d")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "5-8" "1-3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -25825,6 +26460,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/09efa284-44d6-4b64-ae84-13738812776b")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25977,6 +26618,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/535df317-c910-48cc-b403-b7967ed00289")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26103,7 +26750,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26126,6 +26773,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/69ce386d-c229-48d6-a05e-3b86f8061018")
+		(sheetname "/")
+		(sheetfile "granit.kicad_sch")
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -26335,6 +26987,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/9356b06e-4db8-4098-87de-4a48b13e2a68")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26526,6 +27184,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/a92dd5d9-8ce8-4e35-985e-e35fba78582c")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26704,6 +27368,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/cf4048fd-77c6-4d30-9b25-418a6fa17adb")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26830,7 +27500,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26853,6 +27523,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/ba9ea112-1dbe-45f5-b876-af8cf181eb7a")
+		(sheetname "/")
+		(sheetfile "granit.kicad_sch")
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -27075,6 +27750,12 @@
 		(path "/d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80/0f5cfd0c-6cfa-435d-a910-f324f5abb178")
 		(sheetname "/Peripherals/")
 		(sheetfile "peripherals.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27240,6 +27921,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/ae92f83e-113d-474d-89d4-3aaaec7da85f")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27626,6 +28313,12 @@
 		(path "/5c34f141-50d5-4609-a101-f9d94643eff8/977e600e-26d1-46cc-9862-2b2e71cb57c5")
 		(sheetname "/Power Supply/")
 		(sheetfile "psu.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27770,6 +28463,12 @@
 		(path "/b486f39b-2401-4245-9dd6-e411236f99dc/20876810-7bd6-4655-aa79-4a3db036d0e8")
 		(sheetname "/SATA Bridge/")
 		(sheetfile "sata.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(zone_connect 1)
 		(attr exclude_from_bom allow_soldermask_bridges)
 		(net_tie_pad_groups "1, 2")

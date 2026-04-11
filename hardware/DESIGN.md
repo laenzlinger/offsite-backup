@@ -80,16 +80,3 @@ Track widths are sized per IPC-2221 for outer-layer traces with 20°C temperatur
 
 Realistic steady state: ~1.5A (CM4) + 0.5A (HDD) = 2.0A on 5V rail.
 HDD spin-up and CM4 peak don't occur simultaneously — SATA power is software-controlled.
-
-## DRC Exclusions
-
-The following DRC violations are accepted and excluded from checks:
-
-- **Copper edge clearance on SW1 (tactile button):** The button mounting pads intentionally
-  touch the board edge — the button is edge-mounted for external access through the enclosure.
-- **Clearance on U2 pads 2/3 vs pad 9 (AP64501):** The Power 12V netclass requires 0.3mm
-  clearance, but the SOIC-8 exposed pad is physically 0.2mm from the VIN pins. IC package
-  constraint — cannot be changed.
-- **Solder mask bridges on IC1 (ASM1061):** Fine-pitch QFN-48 package has solder mask
-  apertures that bridge between adjacent pads. Normal for 0.5mm pitch QFN — manufacturer
-  handles this during stencil generation.
