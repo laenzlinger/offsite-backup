@@ -57,51 +57,159 @@
       "drc_exclusions": [
         [
           "clearance|33310392|60911611|b1d27f5a-5f40-4901-bae5-8b8eb88ea770|56686b26-aeea-494d-a8b1-0d6692c32a18",
-          ""
+          "ASM1061 QFN-48 fine-pitch pad clearance \u2014 IC package constraint"
         ],
         [
           "clearance|37411611|56810392|f1bacb01-696a-41f4-af42-084120841eb9|760efc5a-3487-46fb-a475-6ad40ad9dc1a",
-          ""
+          "ASM1061 QFN-48 fine-pitch pad clearance \u2014 IC package constraint"
         ],
         [
           "clearance|37411611|65189608|7e2fc9fc-2764-49f3-9f85-217568f04cd1|4350857f-74f0-4783-9056-b03407c8db13",
-          ""
+          "ASM1061 QFN-48 fine-pitch pad clearance \u2014 IC package constraint"
         ],
         [
           "clearance|41689608|61088389|98174c87-23f2-4583-9640-b15a5a5699ea|8007627b-82b8-4fde-94a0-fef5bfc41621",
-          ""
+          "ASM1061 QFN-48 fine-pitch pad clearance \u2014 IC package constraint"
+        ],
+        [
+          "clearance|78275000|110734106|3d856eda-65d7-46a8-9fa1-b65cc2f51732|7ac67449-aaf6-4edf-a3bd-4a72ee435064",
+          "AP64501 SOIC-8 exposed pad 0.2mm from VIN pins \u2014 IC package constraint, Power 12V netclass 0.3mm cannot be met"
+        ],
+        [
+          "clearance|78275000|112004106|7d36fc30-25e3-4483-ac37-084bd555ddeb|7ac67449-aaf6-4edf-a3bd-4a72ee435064",
+          "AP64501 SOIC-8 exposed pad 0.2mm from VIN pins \u2014 IC package constraint, Power 12V netclass 0.3mm cannot be met"
         ],
         [
           "copper_edge_clearance|111779000|54575000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|5373c981-0268-46f8-89ed-8dad55c92806",
-          ""
+          "SW1 tactile button mounting pads intentionally touch board edge for external access"
         ],
         [
           "copper_edge_clearance|111779000|58275000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|a3018200-19c6-4d6e-91fa-992db743ecee",
-          ""
+          "SW1 tactile button mounting pads intentionally touch board edge for external access"
         ],
         [
           "courtyards_overlap|100420412|96805000|94fdb30b-b6a6-4faf-b05d-d601b23245a8|f8224914-9596-4375-916a-3fc095e5a4a8",
-          ""
+          "Intentional courtyard overlap \u2014 components placed close by design"
         ],
         [
           "pth_inside_courtyard|102148000|101264500|df62f708-0660-486a-b836-d2b91ccf7ee2|94fdb30b-b6a6-4faf-b05d-d601b23245a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ],
         [
           "pth_inside_courtyard|102909063|98200000|8f78de47-da1f-43d7-b210-a5ce4a956d1d|f8224914-9596-4375-916a-3fc095e5a4a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ],
         [
           "pth_inside_courtyard|105709063|103000000|0d42b103-d52b-4ff9-8fc3-e756afd7526f|f8224914-9596-4375-916a-3fc095e5a4a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ],
         [
           "pth_inside_courtyard|107148000|101264500|b97a1f3e-350b-4490-ae97-b08c9ace521e|94fdb30b-b6a6-4faf-b05d-d601b23245a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ],
         [
           "pth_inside_courtyard|99909063|103000000|28088891-f94b-4953-988c-36bd3b550df9|f8224914-9596-4375-916a-3fc095e5a4a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
+        ],
+        [
+          "solder_mask_bridge|110316500|54587500|624ffdac-5418-4144-b110-337f5e857565|3f7eaae7-de36-4208-8fb6-98fd9f1b7481",
+          "SW1 tactile button NPTH mounting pin close to signal pad \u2014 footprint constraint"
+        ],
+        [
+          "solder_mask_bridge|110316500|57412500|f132dac8-61f3-4898-9a93-a4d3b618d287|3398d47d-a994-4a38-abad-f13892a298d3",
+          "SW1 tactile button NPTH mounting pin close to signal pad \u2014 footprint constraint"
+        ],
+        [
+          "solder_mask_bridge|32921484|61901561|56686b26-aeea-494d-a8b1-0d6692c32a18|4a5dc39c-d35b-4b38-b6a1-a01ce633c0cb",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|33310392|60911611|b1d27f5a-5f40-4901-bae5-8b8eb88ea770|56686b26-aeea-494d-a8b1-0d6692c32a18",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|33628591|62608668|f7ebba0a-502f-490b-920f-b617e42733b1|b7b8c05a-001c-4620-8acf-f014ff5afeca",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|33770012|59249911|c5d6c044-6f72-4f62-a151-656790e029d7|a6c979e0-05f1-4879-9669-e79cb9ca11d3",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|34689251|63669328|523daee6-e4f8-4b71-b1bb-949de992ccba|6f9813dc-2bf6-4761-a1cd-afaca6e221ae",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|34830672|58189251|55032088-015f-4a1f-8b69-d6f0d196f7ea|7e9af483-68a8-4746-8751-0119995bea51",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|35749911|64729988|b2b63696-0f53-4ccc-bddb-0298c056b0bc|491f0d02-1d04-48b0-9dd9-1e2b90448ced",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|35891332|57128591|2051f7da-457e-4df2-bca6-3e965886e618|362d3b0c-0d34-4e75-8475-a3f21c0e85f7",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|36457018|65437095|94057a04-1d95-4469-80dc-3fd5b25099de|7e2fc9fc-2764-49f3-9f85-217568f04cd1",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|36598439|56421484|f1bacb01-696a-41f4-af42-084120841eb9|0dab79a7-c45a-46ba-beb2-3c2b43bae033",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|37411611|56810392|f1bacb01-696a-41f4-af42-084120841eb9|760efc5a-3487-46fb-a475-6ad40ad9dc1a",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|37411611|65189608|7e2fc9fc-2764-49f3-9f85-217568f04cd1|4350857f-74f0-4783-9056-b03407c8db13",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|37800521|64977476|4350857f-74f0-4783-9056-b03407c8db13|c93baf93-f4a2-491f-8e11-9504b6470471",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|37941942|57163945|42df25da-ba27-4b0e-b5bb-f04ab6e2a9a8|760efc5a-3487-46fb-a475-6ad40ad9dc1a",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|38507628|64270369|8418a112-88f5-4f81-bdb6-44d642f2a5fa|b6124e65-3ac1-4a74-b096-2b425b8ba0f0",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|38649049|57871052|f977580c-98ba-4c2a-bd1b-564ce7e1b900|4f3eb249-bd4d-4854-93af-26dba373c9b5",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|39568288|63209709|75924218-f4cc-4fd4-8aa6-4884726278cf|3db7bd91-c44a-49cd-9ec8-13d11b3eaa64",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|39709709|58931712|ba3d6e3d-5f0f-4e95-9821-0571db2193de|29b7a1e4-98d7-4bc6-9d13-c64d8b9a50a7",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|40628948|62149049|d99c924e-f318-44fb-8e17-bd2c5210ef1d|b4a648b1-5432-4361-8711-c2ec6b993d16",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|40770369|59992372|787eb7d1-3a61-4493-9b31-4cf0999c550e|12d7eaa2-0437-472b-8aee-6a710d930f35",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|41336055|61441942|a7ddb68e-dbe4-49d2-95e2-2295c2a90e45|98174c87-23f2-4583-9640-b15a5a5699ea",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|41477476|60699479|8007627b-82b8-4fde-94a0-fef5bfc41621|762b4b65-e946-49d4-a811-685c3334f206",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "solder_mask_bridge|41689608|61088389|98174c87-23f2-4583-9640-b15a5a5699ea|8007627b-82b8-4fde-94a0-fef5bfc41621",
+          "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
         ]
       ],
       "meta": {
