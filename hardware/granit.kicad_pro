@@ -57,43 +57,51 @@
       "drc_exclusions": [
         [
           "clearance|33310392|60911611|b1d27f5a-5f40-4901-bae5-8b8eb88ea770|56686b26-aeea-494d-a8b1-0d6692c32a18",
-          ""
+          "ASM1061 QFN-48 fine-pitch pad clearance \u2014 IC package constraint"
         ],
         [
           "clearance|37411611|56810392|f1bacb01-696a-41f4-af42-084120841eb9|760efc5a-3487-46fb-a475-6ad40ad9dc1a",
-          ""
+          "ASM1061 QFN-48 fine-pitch pad clearance \u2014 IC package constraint"
         ],
         [
           "clearance|37411611|65189608|7e2fc9fc-2764-49f3-9f85-217568f04cd1|4350857f-74f0-4783-9056-b03407c8db13",
-          ""
+          "ASM1061 QFN-48 fine-pitch pad clearance \u2014 IC package constraint"
         ],
         [
           "clearance|41689608|61088389|98174c87-23f2-4583-9640-b15a5a5699ea|8007627b-82b8-4fde-94a0-fef5bfc41621",
-          ""
+          "ASM1061 QFN-48 fine-pitch pad clearance \u2014 IC package constraint"
+        ],
+        [
+          "copper_edge_clearance|111779000|54575000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|5373c981-0268-46f8-89ed-8dad55c92806",
+          "SW1 tactile button mounting pads intentionally touch board edge for external access"
+        ],
+        [
+          "copper_edge_clearance|111779000|58275000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|a3018200-19c6-4d6e-91fa-992db743ecee",
+          "SW1 tactile button mounting pads intentionally touch board edge for external access"
         ],
         [
           "courtyards_overlap|100420412|96805000|94fdb30b-b6a6-4faf-b05d-d601b23245a8|f8224914-9596-4375-916a-3fc095e5a4a8",
-          ""
+          "Intentional courtyard overlap \u2014 components placed close by design"
         ],
         [
           "pth_inside_courtyard|102148000|101264500|df62f708-0660-486a-b836-d2b91ccf7ee2|94fdb30b-b6a6-4faf-b05d-d601b23245a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ],
         [
           "pth_inside_courtyard|102909063|98200000|8f78de47-da1f-43d7-b210-a5ce4a956d1d|f8224914-9596-4375-916a-3fc095e5a4a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ],
         [
           "pth_inside_courtyard|105709063|103000000|0d42b103-d52b-4ff9-8fc3-e756afd7526f|f8224914-9596-4375-916a-3fc095e5a4a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ],
         [
           "pth_inside_courtyard|107148000|101264500|b97a1f3e-350b-4490-ae97-b08c9ace521e|94fdb30b-b6a6-4faf-b05d-d601b23245a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ],
         [
           "pth_inside_courtyard|99909063|103000000|28088891-f94b-4953-988c-36bd3b550df9|f8224914-9596-4375-916a-3fc095e5a4a8",
-          ""
+          "Via inside component courtyard \u2014 acceptable for dense routing"
         ]
       ],
       "meta": {
