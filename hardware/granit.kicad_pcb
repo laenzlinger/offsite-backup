@@ -11148,7 +11148,7 @@
 			(uuid "5373c981-0268-46f8-89ed-8dad55c92806")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010.step"
+		(model "${KIPRJMOD}/3d-models/SW_Alps_SKRTLAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12282,7 +12282,7 @@
 			(uuid "53945754-ebd5-4340-8cf3-72dbf237e5d9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_2512_6332Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13647,7 +13647,7 @@
 			(uuid "8344f655-ac94-4420-9d5b-f0eecea24225")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_UDE_RB1-125B8G1A.step"
+		(model "${KIPRJMOD}/3d-models/RJ45_UDE_RB1-125B8G1A.step"
 			(offset
 				(xyz 0 0 0)
 			)
