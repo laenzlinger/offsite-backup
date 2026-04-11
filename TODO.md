@@ -102,39 +102,39 @@ min 0.09mm trace/space, 0.2mm drill, 0.13mm annular ring.
   - Ethernet: diff_pair_width=0.2205, diff_pair_gap=0.2032
   - USB: diff_pair_width=0.2860, diff_pair_gap=0.2032
 - [ ] Select impedance control when ordering (+~$10)
-- [ ] PCB thickness: 1.6mm (standard)
+- [x] PCB thickness: 1.6mm (standard)
 
 ### Checklist
 
 PCB standoff height must match HDD SATA connector vertical position (~3.5mm above belly plate).
 
-- [ ] Board outline: 92 × 100mm (fits 1455L slim and 1455T2601 wide cases)
-- [ ] Verify PCB standoff height aligns SATA connector with HDD receptacle
-- [ ] 4-layer stackup (signal/GND/power/signal)
+- [x] Board outline: 92 × 100mm (fits 1455L slim and 1455T2601 wide cases)
+- [x] Verify PCB standoff height aligns SATA connector with HDD receptacle
+- [x] 4-layer stackup (signal/GND/power/signal)
 - [x] SATA connector: replaced J4+J5 with single 22-pin Amphenol 10029364-001LF (horizontal/right-angle)
   - Footprint: `Connector_SATA_SAS:SATA_Amphenol_10029364-001LF_Horizontal`
   - Symbol: `granit:SATA_22pin`
-- [ ] External connectors (RJ45, USB-C, barrel jack, button, LED) on opposite edge
-- [ ] Place CM4 module and all components on top side (facing lid, for thermal contact)
-- [ ] SATA connector vertical alignment: HDD connector center is 3.50mm above mounting surface (SFF-8301)
+- [x] External connectors (RJ45, USB-C, barrel jack, button, LED) on opposite edge
+- [x] Place CM4 module and all components on top side (facing lid, for thermal contact)
+- [x] SATA connector vertical alignment: HDD connector center is 3.50mm above mounting surface (SFF-8301)
   - Use matching standoff height for PCB and HDD (e.g. 5mm) — keeps SATA aligned
   - 5mm standoffs: CR2032 (3.4mm) fits on bottom side ✅
   - 1455L: 5mm + 9.5mm (2.5" HDD) = 14.5mm, 12.5mm to ceiling ✅
   - 1455T: 5mm + 26.1mm (3.5" HDD) = 31.1mm, 17mm to ceiling ✅
-- [ ] CR2032 holder on bottom side (fits under 5mm standoffs)
-- [ ] Place ASM1061 near SATA connector (short differential pairs)
+- [x] CR2032 holder on bottom side (fits under 5mm standoffs)
+- [x] Place ASM1061 near SATA connector (short differential pairs)
 - [ ] HDD mounting holes: M4 (4.3mm drill, `MountingHole:MountingHole_4.3mm_M4_Pad_Via`)
-- [ ] PCB standoff holes: M3 (3.2mm drill, `MountingHole:MountingHole_3.2mm_M3_Pad_Via`)
+- [x] PCB standoff holes: M3 (3.2mm drill, `MountingHole:MountingHole_3.2mm_M3_Pad_Via`)
 - [ ] Mounting hole keepout: 7.0mm clearance on pads (prevent screw heads shorting 12V traces)
-- [ ] Route PCIe differential pairs (100Ω impedance)
-- [ ] Route SATA differential pairs
-- [ ] Route Ethernet differential pairs
-- [ ] Route USB differential pairs
-- [ ] Power trace width: ≥1.0mm (40 mil) for short branches to pads
+- [x] Route PCIe differential pairs (100Ω impedance)
+- [x] Route SATA differential pairs
+- [x] Route Ethernet differential pairs
+- [x] Route USB differential pairs
+- [x] Power trace width: ≥1.0mm (40 mil) for short branches to pads
 - [ ] Power planes on L3: split into 5V and 3.3V zones
 - [ ] 12V: copper pour on L4 from barrel jack to SATA power (2A+ spin-up)
-- [ ] GND: solid plane on L2, stitching vias throughout
-- [ ] DRC clean
+- [x] GND: solid plane on L2, stitching vias throughout
+- [x] DRC clean (0 violations, 46 justified exclusions)
 
 ## Enclosure
 
@@ -156,7 +156,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [x] KiBot artifact generation with KiCad 10
 - [x] GitHub Pages deployment (<https://laenzlinger.github.io/granit/>)
 - [x] ERC check in KiBot preflight
-- [ ] Enable DRC check when PCB layout is complete
+- [x] Enable DRC check when PCB layout is complete
 - [ ] Switch to kicad10_auto container when available
 - [ ] Add 3D renders (blender_export) once ghcr.io/inti-cmnb/kicad10_auto_full image exists (see pedalboard-hw)
 
@@ -167,7 +167,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [ ] DS3231 RTC driver + alarm configuration
 - [ ] DS3231 OSF flag check on boot (warn if battery failed, report via healthcheck)
 - [ ] GPIO_HOLD (GPIO6) assertion on boot
-- [ ] SATA_PWR_EN (GPIO5) control
+- [ ] SATA_PWR_EN (GPIO17) control
 - [ ] NeoPixel status daemon
 - [ ] Button handler (shutdown/backup/maintenance)
 - [ ] WireGuard VPN configuration
