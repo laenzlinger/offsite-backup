@@ -88,6 +88,54 @@
           "SW1 tactile button mounting pads intentionally touch board edge for external access"
         ],
         [
+          "silk_edge_clearance|112000000|107600000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|1c24f32c-ff13-4da9-ad80-8af2599d075b",
+          "Edge-mounted connector silkscreen extends past board edge \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_edge_clearance|112000000|67210000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|cbdb0a14-57ff-40a5-adfe-ffab3b78d758",
+          "Edge-mounted connector silkscreen extends past board edge \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_edge_clearance|112000000|83360000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|5abb5d8e-2d94-4b2d-b597-de440a2f681b",
+          "Edge-mounted connector silkscreen extends past board edge \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_edge_clearance|112000000|98400000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|8f2d50be-4d62-4a1d-9954-1af91744648b",
+          "Edge-mounted connector silkscreen extends past board edge \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_edge_clearance|20000000|48760000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|35d8a9d0-16e3-434d-ba07-3a27e9adeeb0",
+          "Edge-mounted connector silkscreen extends past board edge \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_edge_clearance|20000000|91240000|bb2ac6ed-d893-49fd-9c91-d27ec86db95b|69444362-275f-46fc-ae9d-3f942c064bf2",
+          "Edge-mounted connector silkscreen extends past board edge \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_over_copper|40872093|66297828|240360e5-4a89-444a-80ed-948c021ee7af|00000000-0000-0000-0000-000000000000",
+          "Footprint silkscreen overlaps exposed copper \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_over_copper|42109530|67535265|e7513800-b021-4f79-85f4-1ed5477986f0|00000000-0000-0000-0000-000000000000",
+          "Footprint silkscreen overlaps exposed copper \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_over_copper|66503283|112729105|089c916a-5883-4ee4-a8ef-fb5e285cc968|00000000-0000-0000-0000-000000000000",
+          "Footprint silkscreen overlaps exposed copper \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_over_copper|66503696|117923468|58154cfe-f804-4e96-9495-ceea54b61815|00000000-0000-0000-0000-000000000000",
+          "Footprint silkscreen overlaps exposed copper \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_over_copper|72703879|112729840|50e8beba-6310-43ac-a7d7-4d2bb07137a1|00000000-0000-0000-0000-000000000000",
+          "Footprint silkscreen overlaps exposed copper \u2014 cosmetic, fab clips automatically"
+        ],
+        [
+          "silk_over_copper|72703943|117927146|25b699f8-db01-4b24-9e81-39b0d0808da6|00000000-0000-0000-0000-000000000000",
+          "Footprint silkscreen overlaps exposed copper \u2014 cosmetic, fab clips automatically"
+        ],
+        [
           "solder_mask_bridge|110316500|54587500|624ffdac-5418-4144-b110-337f5e857565|3f7eaae7-de36-4208-8fb6-98fd9f1b7481",
           "SW1 tactile button NPTH mounting pin close to signal pad \u2014 footprint constraint"
         ],
@@ -186,6 +234,10 @@
         [
           "solder_mask_bridge|41689608|61088389|98174c87-23f2-4583-9640-b15a5a5699ea|8007627b-82b8-4fde-94a0-fef5bfc41621",
           "ASM1061 QFN-48 0.5mm pitch \u2014 normal solder mask bridge, fab handles during stencil generation"
+        ],
+        [
+          "starved_thermal|74237500|112154106|67b197a4-91e7-4a22-ae73-74210dd9666e|ec7b0173-e9fa-4dd1-888d-a018b5ff3ffe|F.Cu",
+          "This can not be solved, will always have only a single spike, but I manually added one now"
         ]
       ],
       "meta": {
