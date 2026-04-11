@@ -50,45 +50,16 @@ This PCB is designed with [KiCad 10](https://www.kicad.org/blog/2026/03/Version-
 - **USB-C OTG**: Single USB-C connector for eMMC flashing (`rpiboot`) and USB mass storage
   gadget mode (initial backup seeding over USB). USB 2.0 device mode only, with USBLC6-2SC6
   ESD protection.
-
-### Design Considerations
-
-- **PCIe routing**: 100Ω differential impedance for PCIe Gen 2 lanes, matched length,
-  minimize vias and stubs. 4-layer PCB recommended (signal/GND/power/signal).
-- **Ethernet**: CM4 has built-in Ethernet PHY — route differential pairs to RJ45 with magnetics
-- **SATA power**: 12V and 5V to the SATA connector are switched by P-channel MOSFETs
-  (Q2, Q3 — FDS4435BZ). GPIO17 (`SATA_PWR_EN`) drives N-channel level shifters
-  (Q5, Q6 — 2N7002) which pull the P-FET gates low to turn them on. Two 3-pad solder
-  jumpers (JP5 `SATA_12V_PWR`, JP6 `SATA_5V_PWR`) select the boot default:
-  - **Pads 1-2 bridged (default):** 100K pull-up to source → FETs OFF → HDD powered on by software
-  - **Pads 2-3 bridged:** 100K pull-down to GND → FETs ON → HDD powered at boot
-
-  GPIO17 high → N-FET on → P-FET gate low → SATA power on.
-  GPIO17 low or high-Z (boot default) → N-FET off → pull-up holds P-FET off.
-  This allows full software-controlled HDD lifecycle without a PCB respin.
-- **Power budget**: 12V @ 2A (3.5" HDD spin-up) + 5V @ 2.3A peak (CM4 + electronics) — use a 12V/3A+ PSU
+- **SATA power control**: 12V and 5V to the SATA connector are software-controlled via
+  GPIO17. HDD is off by default at boot — powered on explicitly by software. Solder jumpers
+  (JP5, JP6) allow changing the default to power-on at boot without a PCB respin.
+- **Power budget**: 12V @ 2A (3.5" HDD spin-up) + 5V @ 2.3A peak (CM4 + electronics) — use a 12V/3A+ PSU.
 - **Boot and storage strategy**: Full OS on CM4 eMMC (no SD card slot), SATA HDD dedicated
   to LUKS-encrypted backup storage only. HDD can spin down when idle. No SD card — eMMC is
   more reliable for a deploy-and-forget device. Reflashing via `nRPIBOOT` + USB-C if needed.
 
-### Power Routing & Netclasses
-
-PCB is fabricated with JLCPCB standard 4-layer stackup (1oz / 35µm copper on all layers).
-Track widths are sized per IPC-2221 for outer-layer traces with 20°C temperature rise.
-
-| Netclass | Track Width | Via (pad/drill) | Capacity (1oz, 20°C rise) | Worst-case Load | Nets |
-|---|---|---|---|---|---|
-| Power 12V | 3.0mm | 1.6mm / 0.8mm | ~3.5A | ~2.5A | `+12V*`, `fused`, `unfused` |
-| Power 5V | 2.5mm | 1.6mm / 0.8mm | ~3.2A | ~2.8A | `+5VP`, `VBUS`, `switch` |
-| Power 3V3 | 1.0mm | 0.8mm / 0.4mm | ~1.5A | ~0.6A | `+3V3` |
-
-**Routing guidelines:**
-- Netclass widths are the default for main runs. Neck down to pad width over the last 1–2mm at component pads.
-- Use copper pours for 12V and 5V in the PSU area where space allows.
-- Use 2–3 parallel vias where power traces change layers.
-- Place GND return vias near every power via.
-- Keep 12V and 5V routing on top/bottom layers — do not break the inner GND planes.
-- Do not route power traces under or parallel to PCIe/SATA/Ethernet differential pairs.
+For detailed circuit design notes, PCB routing guidelines, and netclass definitions,
+see [hardware/DESIGN.md](hardware/DESIGN.md).
 
 ## Software
 
