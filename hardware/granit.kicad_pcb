@@ -28761,18 +28761,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(gr_text "${TITLE}\n${COMPANY}\nv${REVISION} (${GIT_HASH})"
-		(at 66 70)
-		(layer "F.SilkS")
-		(uuid "a1b2c3d4-0001-4000-8000-000000000001")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-			(justify bottom)
-		)
-	)
 	(gr_rect
 		(start 20 20)
 		(end 112 120)
@@ -28783,6 +28771,18 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "bb2ac6ed-d893-49fd-9c91-d27ec86db95b")
+	)
+	(gr_text "${TITLE}\n${COMPANY}\nv${REVISION} (${GIT_HASH})"
+		(at 70.24 28.46 0)
+		(layer "F.SilkS")
+		(uuid "a1b2c3d4-0001-4000-8000-000000000001")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+			(justify bottom)
+		)
 	)
 	(segment
 		(start 29.882156 59.748687)
