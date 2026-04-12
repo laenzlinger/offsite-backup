@@ -3941,6 +3941,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 119.38) (xy 193.04 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024a88f0-cfdf-448c-ad7d-7c8daa7cda4b")
+	)
+	(wire
+		(pts
 			(xy 205.74 67.31) (xy 224.79 67.31)
 		)
 		(stroke
@@ -3951,6 +3961,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 119.38) (xy 220.98 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05a6adba-767b-47a5-b3f6-2e08b1796170")
+	)
+	(wire
+		(pts
 			(xy 181.61 147.32) (xy 181.61 148.59)
 		)
 		(stroke
@@ -3958,6 +3978,16 @@
 			(type default)
 		)
 		(uuid "0606438b-226d-498e-b754-b2aa876e5dee")
+	)
+	(wire
+		(pts
+			(xy 187.96 129.54) (xy 200.66 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06b84ff0-5d8e-4224-911e-c64cb0a21df9")
 	)
 	(wire
 		(pts
@@ -3978,6 +4008,16 @@
 			(type default)
 		)
 		(uuid "09d77603-4a1e-4354-a309-bfa9b6e5baee")
+	)
+	(wire
+		(pts
+			(xy 193.04 119.38) (xy 209.55 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0231ec-9bbf-4cea-82a6-c43f451f255e")
 	)
 	(wire
 		(pts
@@ -4051,6 +4091,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 132.08) (xy 205.74 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b920a84-ef19-4c0f-bfe0-cc80230ce326")
+	)
+	(wire
+		(pts
 			(xy 147.32 64.77) (xy 147.32 67.31)
 		)
 		(stroke
@@ -4068,6 +4118,16 @@
 			(type default)
 		)
 		(uuid "222b7fda-d62c-4e23-99b0-e863e4eaba9a")
+	)
+	(wire
+		(pts
+			(xy 205.74 129.54) (xy 220.98 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22b342d4-feb2-4d2b-910b-dca5dadf5b3a")
 	)
 	(wire
 		(pts
@@ -4161,13 +4221,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 110.49) (xy 185.42 128.27)
+			(xy 223.52 77.47) (xy 250.19 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41eb44e2-586a-4a0e-91cd-deb9e5e92a0c")
+		(uuid "43629703-b979-4877-8137-e373fddefb56")
 	)
 	(wire
 		(pts
@@ -4188,6 +4248,16 @@
 			(type default)
 		)
 		(uuid "451fd886-f0c7-4a3a-aa9a-2a7ccb4613e4")
+	)
+	(wire
+		(pts
+			(xy 209.55 116.84) (xy 220.98 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ba53e1-0392-4371-bca4-4722c7c0670a")
 	)
 	(wire
 		(pts
@@ -4331,6 +4401,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 77.47) (xy 218.44 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b74ec3-a836-468d-b640-b886dd310d8a")
+	)
+	(wire
+		(pts
 			(xy 86.36 102.87) (xy 86.36 119.38)
 		)
 		(stroke
@@ -4428,16 +4508,6 @@
 			(type default)
 		)
 		(uuid "6eb7096e-317b-4568-82d7-df3ffd6277b4")
-	)
-	(wire
-		(pts
-			(xy 193.04 110.49) (xy 193.04 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "703c0a63-6ecd-4636-a21a-31d87e85d22d")
 	)
 	(wire
 		(pts
@@ -4551,16 +4621,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 74.93) (xy 224.79 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7effbd9e-acf2-40f8-a8ea-7050acf4f47e")
-	)
-	(wire
-		(pts
 			(xy 180.34 20.32) (xy 180.34 21.59)
 		)
 		(stroke
@@ -4601,6 +4661,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 74.93) (xy 210.82 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89148be7-a388-4644-9926-afb076277fc2")
+	)
+	(wire
+		(pts
 			(xy 182.88 35.56) (xy 265.43 35.56)
 		)
 		(stroke
@@ -4618,16 +4688,6 @@
 			(type default)
 		)
 		(uuid "8975a3e3-78d5-4eaa-b688-9cb4a8d4bb76")
-	)
-	(wire
-		(pts
-			(xy 195.58 110.49) (xy 195.58 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cf8f82e-00ba-4fce-a1c7-3ca137654e3b")
 	)
 	(wire
 		(pts
@@ -4821,6 +4881,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 116.84) (xy 204.47 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae0f0b4b-3680-4364-8f7a-4df0bb7d4a6f")
+	)
+	(wire
+		(pts
 			(xy 124.46 167.64) (xy 144.78 167.64)
 		)
 		(stroke
@@ -4861,6 +4931,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 132.08) (xy 185.42 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bacb2e04-0a62-406a-b173-c619305bc6d2")
+	)
+	(wire
+		(pts
 			(xy 46.99 77.47) (xy 46.99 133.35)
 		)
 		(stroke
@@ -4868,6 +4948,16 @@
 			(type default)
 		)
 		(uuid "bc2d7c34-0e85-4412-947b-291acc34e481")
+	)
+	(wire
+		(pts
+			(xy 195.58 116.84) (xy 195.58 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc70a95-d06b-4aa3-9d0d-491833be4b77")
 	)
 	(wire
 		(pts
@@ -4901,6 +4991,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 74.93) (xy 250.19 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c17dab85-cff0-4b0b-9647-546fed66b345")
+	)
+	(wire
+		(pts
 			(xy 39.37 125.73) (xy 39.37 128.27)
 		)
 		(stroke
@@ -4908,16 +5008,6 @@
 			(type default)
 		)
 		(uuid "c188064f-7e4b-425d-9a8e-07f18ec907d3")
-	)
-	(wire
-		(pts
-			(xy 187.96 110.49) (xy 187.96 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1cefb2d-3a9a-4570-bc5e-e1296ca58f72")
 	)
 	(wire
 		(pts
@@ -4948,16 +5038,6 @@
 			(type default)
 		)
 		(uuid "c411bb2a-d6e7-4d59-8e88-12e959d10db2")
-	)
-	(wire
-		(pts
-			(xy 205.74 77.47) (xy 224.79 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5e600fd-e4ac-41d0-ad59-b96a3a54e6b4")
 	)
 	(wire
 		(pts
@@ -5118,6 +5198,16 @@
 			(type default)
 		)
 		(uuid "e19f326c-e488-4e38-b8ea-31cfcc591b0d")
+	)
+	(wire
+		(pts
+			(xy 210.82 132.08) (xy 220.98 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2ee87f5-1f3c-4fb0-baaf-6fb9b6ed3d73")
 	)
 	(wire
 		(pts
@@ -5309,6 +5399,16 @@
 		)
 		(uuid "fb9be88d-8bc2-4d47-bd8a-b3c35f7b48f8")
 	)
+	(wire
+		(pts
+			(xy 187.96 129.54) (xy 187.96 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc964094-0875-4782-94e9-0cd795a2b906")
+	)
 	(label "+12V_S"
 		(at 41.91 172.72 0)
 		(effects
@@ -5320,7 +5420,7 @@
 		(uuid "0a02b7f9-6c83-4866-8cdd-41a242e9bdeb")
 	)
 	(label "SATA_A_RX_N"
-		(at 193.04 120.65 0)
+		(at 220.98 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5330,7 +5430,7 @@
 		(uuid "1200127e-dbfe-46c7-8b0e-458d99398bbd")
 	)
 	(label "SATA_A_RX_P"
-		(at 195.58 118.11 0)
+		(at 220.98 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5340,7 +5440,7 @@
 		(uuid "2034eef4-8a38-422c-a6ba-fba0989ed3cf")
 	)
 	(label "SATA_A_TX_N"
-		(at 187.96 125.73 0)
+		(at 220.98 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5370,7 +5470,7 @@
 		(uuid "a3bc0377-161a-458a-8e52-c25625d493e2")
 	)
 	(label "SATA_A_TX_P"
-		(at 185.42 128.27 0)
+		(at 220.98 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5411,7 +5511,7 @@
 	)
 	(global_label "PCIE_RX_P"
 		(shape bidirectional)
-		(at 224.79 77.47 0)
+		(at 250.19 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5421,7 +5521,7 @@
 		)
 		(uuid "0f3930c5-227f-4063-b79d-38644653fe11")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.865 77.47 0)
+			(at 264.265 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5579,7 +5679,7 @@
 	)
 	(global_label "PCIE_RX_N"
 		(shape bidirectional)
-		(at 224.79 74.93 0)
+		(at 250.19 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5589,7 +5689,7 @@
 		)
 		(uuid "9f592406-7c31-4af5-8d3c-76c4a81831e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.9255 74.93 0)
+			(at 264.3255 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5907,6 +6007,120 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 212.09 119.38 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "144946b4-eed3-41eb-8c71-a75c7f3d9ce1")
+		(property "Reference" "C42"
+			(at 215.9 115.062 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 215.392 113.284 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 215.9 118.4148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 212.09 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 212.09 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 212.09 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 212.09 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 212.09 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d8cfb42-1a7f-4e96-ae59-082d7a9aa41d")
+		)
+		(pin "2"
+			(uuid "25efd0bf-acb5-459c-b6a8-1d847ca4d48b")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -7411,6 +7625,234 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 213.36 74.93 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "58d5ce2b-1f22-4894-a54a-6af87ec1ead5")
+		(property "Reference" "C45"
+			(at 211.582 72.898 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 211.074 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 217.17 73.9648 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 213.36 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 213.36 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 213.36 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 213.36 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b180cabb-1c83-45bf-a630-4bd66ed2f03d")
+		)
+		(pin "2"
+			(uuid "6f6ece63-2e50-486f-8db9-3ee05eb82b1f")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
+					(reference "C45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 207.01 116.84 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "59197f22-a933-4b67-a0f1-5b3bae05eefb")
+		(property "Reference" "C41"
+			(at 207.518 112.522 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 207.01 110.744 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 210.82 115.8748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 207.01 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 207.01 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 207.01 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 207.01 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c299b28-95db-4695-b994-27f8c3183f67")
+		)
+		(pin "2"
+			(uuid "edc6a42d-3fc2-466b-9134-d7a3c57044ee")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 86.36 121.92 0)
 		(unit 1)
@@ -8123,6 +8565,120 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 203.2 129.54 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8dec872e-8dac-4747-965c-399b4e166298")
+		(property "Reference" "C43"
+			(at 203.2 135.382 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 202.692 133.604 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 207.01 128.5748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 203.2 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 203.2 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 203.2 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 203.2 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1104a0af-6ca3-4a72-8582-139401190293")
+		)
+		(pin "2"
+			(uuid "a3a15187-0756-4f7f-8a65-a40531f6bd6f")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
+					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 182.88 24.13 0)
 		(unit 1)
 		(body_style 1)
@@ -8230,6 +8786,120 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
 					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 220.98 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91b4ab94-858e-40ce-8b84-8334dc1428f1")
+		(property "Reference" "C46"
+			(at 217.678 72.644 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 218.186 74.422 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 224.79 76.5048 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 220.98 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 220.98 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 220.98 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 220.98 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "77d4f20c-edcc-4c18-8eee-33b7bf363cac")
+		)
+		(pin "2"
+			(uuid "94b7dd34-f47d-4f28-98ee-f7f27d0409ba")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -9331,6 +10001,120 @@
 			(project "granit"
 				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 208.28 132.08 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa20b242-0107-4a98-8ccb-bdb3e630a619")
+		(property "Reference" "C44"
+			(at 211.582 137.922 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 211.074 136.144 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 212.09 131.1148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+			(at 208.28 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
+			(at 208.28 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "10% 16V Ceramic Capacitor X7R"
+			(at 208.28 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1180-1-ND"
+			(at 208.28 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c70184b-e71a-43fd-904e-a19b15162794")
+		)
+		(pin "2"
+			(uuid "8e8db70f-bd4a-4811-88b1-f0f089ff2556")
+		)
+		(instances
+			(project "granit"
+				(path "/d2c135e3-a983-4cd4-8cff-b50ca3c7671a/b486f39b-2401-4245-9dd6-e411236f99dc"
+					(reference "C44")
 					(unit 1)
 				)
 			)
