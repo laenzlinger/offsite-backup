@@ -891,11 +891,11 @@
       },
       {
         "netclass": "SATA",
-        "pattern": "SATA_A_*"
+        "pattern": "*SATA_A_*"
       },
       {
         "netclass": "SATA",
-        "pattern": "SATA_B_*"
+        "pattern": "*SATA_B_*"
       }
     ]
   },
