@@ -1,5 +1,4 @@
 Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
-"BT1","CR2032","BatteryHolder_Keystone_103_1x20mm",38.0000,-32.5000,270.0000,top
 "C1","10u","C_0805_2012Metric",60.3000,-108.6500,90.0000,top
 "C2","10u","C_0805_2012Metric",60.3000,-103.7500,270.0000,top
 "C3","10u","C_0805_2012Metric",96.0000,-109.0500,90.0000,top
