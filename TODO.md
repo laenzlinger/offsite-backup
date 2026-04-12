@@ -17,7 +17,8 @@
 - [x] Peripherals: USB-C OTG + USBLC6-2SC6 ESD protection + solder jumper
 - [x] Ethernet: RB1-125B8G1A Gigabit MagJack + LEDs
 - [x] SATA: ASM1061 PCIe-to-SATA bridge + 25MHz crystal
-- [ ] SATA: add 100nF AC coupling caps (0402) in series on SATA TX pair (STXP_A, STXN_A) — required by SATA spec (ASM1061 datasheet CTX = 75–200nF)
+- [ ] SATA: add 100nF AC coupling caps (0805) in series on SATA TX pair (STXP_A, STXN_A) — required by SATA spec (ASM1061 datasheet CTX = 75–200nF)
+- [ ] PCIe: add 100nF AC coupling caps (0805) in series on PCIe RX pair (PCIE_RX_P, PCIE_RX_N) — CM4 datasheet: "external AC coupling capacitor required"
 - [x] SATA: 7-pin data connector + 4-pin power connector
 - [x] SATA: power switching (FDS4435BZ on 5V/12V, GPIO5 controlled, solder jumper bypass)
 - [x] Wake: hardware power-off wake (2N7002 + 74AHCT1G32 OR gate, DNP for v1)
