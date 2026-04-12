@@ -12,8 +12,8 @@ preflight:
   erc:
     enabled: true
   drc:
-    enabled: false
-  check_zone_fills: false
+    enabled: true
+  check_zone_fills: true
   set_text_variables:
     name: GIT_HASH
     command: git rev-parse --short HEAD
@@ -48,16 +48,9 @@ outputs:
     options:
       pages:
         - layers: [F.Cu, F.SilkS, Edge.Cuts]
-          sheet: Front copper
-        - layers: [In1.Cu, Edge.Cuts]
-          sheet: Inner 1 (GND)
-        - layers: [In2.Cu, Edge.Cuts]
-          sheet: Inner 2 (GND)
+          sheet: Front
         - layers: [B.Cu, B.SilkS, Edge.Cuts]
-          sheet: Back copper
-
-  # FIXME: Add 3D renders (blender_export) once ghcr.io/inti-cmnb/kicad10_auto_full image is available
-  # See pedalboard-hw for reference: https://github.com/pedalboard/pedalboard-hw
+          sheet: Back
 
   - name: basic_navigate
     comment: Web page to navigate the outputs

@@ -4343,7 +4343,7 @@
 	)
 	(rectangle
 		(start 129.54 153.67)
-		(end 163.83 195.58)
+		(end 166.37 195.58)
 		(stroke
 			(width 0)
 			(type default)
@@ -9077,7 +9077,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "93edea57-08cb-464e-a476-d82faa4a0734")
 		(property "Reference" "J8"
 			(at 151.13 171.4499 0)
@@ -9091,7 +9090,7 @@
 			)
 		)
 		(property "Value" "BM03B-SRSS-TB"
-			(at 151.13 173.9899 0)
+			(at 146.812 178.308 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

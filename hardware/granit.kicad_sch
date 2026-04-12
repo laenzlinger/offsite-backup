@@ -570,7 +570,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "801584f7-f538-4a75-a941-4ab840fa035e")
+			(uuid "801584f7-f538-4a75-a941-4ab840fa035f")
 		)
 		(instances
 			(project "granit"
@@ -954,7 +954,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "801584f7-f538-4a75-a941-4ab840fa035e")
+			(uuid "801584f7-f538-4a75-a941-4ab840fa0360")
 		)
 		(instances
 			(project "granit"
@@ -1031,7 +1031,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "801584f7-f538-4a75-a941-4ab840fa035e")
+			(uuid "801584f7-f538-4a75-a941-4ab840fa0361")
 		)
 		(instances
 			(project "granit"
