@@ -7172,7 +7172,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse"
+		(property "Value" "3A"
 			(at 72.39 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)

@@ -7825,7 +7825,7 @@
 				)
 			)
 		)
-		(property "Value" "Crystal"
+		(property "Value" "25MHz"
 			(at 237.49 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
