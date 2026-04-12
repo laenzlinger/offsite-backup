@@ -63,6 +63,31 @@ if [ -e /dev/rtc0 ] || [ -e /dev/rtc1 ]; then
     else
         fail "RTC device exists but hwclock failed"
     fi
+
+    # Set/read roundtrip
+    hwclock -w --rtc "$rtc_dev" 2>/dev/null
+    readback=$(hwclock -r --rtc "$rtc_dev" 2>/dev/null || true)
+    if [ -n "$readback" ]; then
+        pass "RTC set/read roundtrip OK: $readback"
+    else
+        fail "RTC set/read roundtrip failed"
+    fi
+
+    # Temperature sensor (register 0x11-0x12, validates I2C data integrity)
+    if command -v i2cget &>/dev/null; then
+        temp_msb=$(i2cget -y 1 0x68 0x11 2>/dev/null || echo "err")
+        temp_lsb=$(i2cget -y 1 0x68 0x12 2>/dev/null || echo "err")
+        if [ "$temp_msb" != "err" ] && [ "$temp_lsb" != "err" ]; then
+            temp_c=$(python3 -c "print(int('$temp_msb',16) + (int('$temp_lsb',16)>>6)*0.25)" 2>/dev/null || echo "?")
+            if [ "$temp_c" != "?" ] && python3 -c "exit(0 if -10 < float('$temp_c') < 80 else 1)" 2>/dev/null; then
+                pass "DS3231 temperature: ${temp_c}°C (I2C data integrity OK)"
+            else
+                fail "DS3231 temperature out of range: ${temp_c}°C"
+            fi
+        else
+            fail "Cannot read DS3231 temperature registers"
+        fi
+    fi
 else
     fail "No /dev/rtc* device found (check dtoverlay=i2c-rtc,ds3231)"
 fi
@@ -111,6 +136,25 @@ section "5. SATA disk (ASM1061 via PCIe)"
 if lspci 2>/dev/null | grep -qi "ASM1061\|SATA"; then
     pass "ASM1061 detected on PCIe bus"
     lspci | grep -i "SATA\|ASM" | sed 's/^/    /'
+
+    # PCIe link speed and width
+    pcie_dev=$(lspci -d ::0106 -n 2>/dev/null | head -1 | cut -d' ' -f1)
+    if [ -n "$pcie_dev" ]; then
+        link_info=$(lspci -vvs "$pcie_dev" 2>/dev/null | grep "LnkSta:" || true)
+        if echo "$link_info" | grep -q "5GT/s"; then
+            pass "PCIe link: Gen 2 (5GT/s)"
+        elif echo "$link_info" | grep -q "2.5GT/s"; then
+            fail "PCIe link: Gen 1 (2.5GT/s) — expected Gen 2"
+        else
+            skip "Cannot determine PCIe link speed"
+        fi
+        if echo "$link_info" | grep -q "Width x1"; then
+            pass "PCIe width: x1"
+        else
+            fail "PCIe width unexpected: $link_info"
+        fi
+        echo "    $link_info" | sed 's/^\t*/    /'
+    fi
 else
     fail "ASM1061 not found on PCIe (check PCIe routing, crystal, power)"
 fi
@@ -139,6 +183,30 @@ if lsblk | grep -q "^sd"; then
     fi
 else
     skip "No SATA disk connected (or power-on delay too short)"
+fi
+
+# SATA read/write test (only if disk detected and user confirms)
+if lsblk | grep -q "^sd"; then
+    echo ""
+    echo -e "  ${YELLOW}WARNING: SATA read/write test writes to the last 1MB of the disk.${NC}"
+    echo "  This should be safe if the disk is empty or the end is unused."
+    read -rp "  Run SATA read/write test on /dev/sda? [y/N] " answer
+    if [[ "$answer" =~ ^[Yy] ]]; then
+        # Write a known pattern to the last 1MB, read back, compare
+        test_offset=$(blockdev --getsize64 /dev/sda)
+        test_offset=$((test_offset - 1048576))  # last 1MB
+        pattern=$(dd if=/dev/urandom bs=4096 count=1 2>/dev/null | base64)
+        echo "$pattern" | dd of=/dev/sda bs=4096 seek=$((test_offset / 4096)) count=1 conv=notrunc oflag=direct 2>/dev/null
+        sync
+        readback=$(dd if=/dev/sda bs=4096 skip=$((test_offset / 4096)) count=1 iflag=direct 2>/dev/null | base64)
+        if [ "$pattern" = "$readback" ]; then
+            pass "SATA read/write test: data integrity OK"
+        else
+            fail "SATA read/write test: data mismatch"
+        fi
+    else
+        skip "SATA read/write test skipped by user"
+    fi
 fi
 
 section "6. Button (GPIO17 — active low, pulled up)"
@@ -236,7 +304,25 @@ section "10. UART debug header (GPIO14 TX, GPIO15 RX)"
 if [ -e /dev/ttyAMA0 ] || [ -e /dev/serial0 ]; then
     serial_dev=$(ls /dev/serial0 /dev/ttyAMA0 2>/dev/null | head -1)
     pass "Serial device available: $serial_dev"
-    echo "  Connect USB-UART adapter to J8 (GND-TX-RX) at 115200 baud to verify"
+
+    # Loopback test: short TX to RX on J8, send byte, verify echo
+    echo -e "  ${YELLOW}UART loopback test: connect a jumper wire between TX and RX on J8${NC}"
+    read -rp "  Loopback connected? [y/N] " answer
+    if [[ "$answer" =~ ^[Yy] ]]; then
+        stty -F "$serial_dev" 115200 raw -echo -echoe -echok 2>/dev/null
+        # Flush input
+        dd if="$serial_dev" of=/dev/null bs=1 count=100 iflag=nonblock 2>/dev/null || true
+        # Send test byte, read back with timeout
+        echo -n "G" > "$serial_dev"
+        loopback=$(timeout 1 dd if="$serial_dev" bs=1 count=1 2>/dev/null || true)
+        if [ "$loopback" = "G" ]; then
+            pass "UART loopback: TX→RX echo OK"
+        else
+            fail "UART loopback: no echo (check J8 solder joints, GPIO14/15)"
+        fi
+    else
+        skip "UART loopback test skipped"
+    fi
 else
     fail "No serial device found (check enable_uart=1 in config.txt)"
 fi
@@ -259,6 +345,15 @@ if ls /sys/class/udc/ 2>/dev/null | grep -q .; then
     pass "USB UDC available (OTG capable)"
 else
     skip "No USB UDC found (may need dtoverlay=dwc2)"
+fi
+
+section "13. Kernel log check"
+errors=$(dmesg 2>/dev/null | grep -iE 'error|fail|timeout' | grep -iE 'sata|ahci|pcie|i2c|rtc|usb|eth' | grep -v "timeout=90" || true)
+if [ -z "$errors" ]; then
+    pass "No SATA/PCIe/I2C/USB/ETH errors in dmesg"
+else
+    fail "Errors found in dmesg:"
+    echo "$errors" | head -10 | sed 's/^/    /'
 fi
 
 # --- Summary ---
