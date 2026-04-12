@@ -8577,7 +8577,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Battery:BatteryHolder_Keystone_3034_1x20mm"
+		(property "Footprint" "Battery:BatteryHolder_Keystone_103_1x20mm"
 			(at 113.03 103.886 90)
 			(hide yes)
 			(show_name no)
