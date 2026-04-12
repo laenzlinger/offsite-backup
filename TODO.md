@@ -136,6 +136,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [ ] 12V: copper pour on L4 from barrel jack to SATA power (2A+ spin-up)
 - [x] GND: solid plane on L2, stitching vias throughout
 - [x] DRC clean (0 violations, 46 justified exclusions)
+- [ ] Silkscreen: add labels for switch positions (RUN/BOOT), jumper functions (JP1–JP6), connector pinouts (J8 UART), polarity markings, and board name/revision
 
 ## Enclosure
 
