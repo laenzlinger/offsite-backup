@@ -10,8 +10,9 @@
 - [x] Peripherals: SK6812MINI-E NeoPixel + 74AHCT1G32 level shifter
 - [x] Peripherals: status LEDs (nLED_PWR, nLED_ACT, DNP)
 - [x] Peripherals: tactile button (GPIO17) + pull-up
-- [x] Peripherals: nRPIBOOT 2-pin header
-- [x] Peripherals: UART debug 3-pin header
+- [x] Peripherals: nRPIBOOT PCM12SMTR slide switch
+- [x] Peripherals: UART debug JST-SH 3-pin (BM03B-SRSS-TB vertical)
+  - FIXME: pinout is TX-RX-GND (pins 1-2-3), standard convention is GND-TX-RX
 - [x] Peripherals: DS3231MZ RTC + CR2032 battery
 - [x] Peripherals: USB-C OTG + USBLC6-2SC6 ESD protection + solder jumper
 - [x] Ethernet: RB1-125B8G1A Gigabit MagJack + LEDs
