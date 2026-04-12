@@ -14,6 +14,17 @@ section() { echo -e "\n${YELLOW}=== $1 ===${NC}"; }
 
 if [ "$(id -u)" -ne 0 ]; then echo "Run as root"; exit 1; fi
 
+echo -e "${YELLOW}Granit Hardware Test${NC}"
+echo "──────────────────────────────────────────"
+echo "Before starting, ensure:"
+echo "  • CM4 is booted and you have SSH or serial access"
+echo "  • Ethernet cable connected"
+echo "  • SATA drive connected (optional — test will skip if absent)"
+echo "  • 12V power supply connected"
+echo "  • You can see the board (for visual LED checks)"
+echo ""
+read -rp "Press Enter to start tests..."
+
 # --- GPIO pin mapping ---
 # GPIO2  = SDA1 (I2C1)       GPIO3  = SCL1 (I2C1)
 # GPIO4  = RTC_INT            GPIO5  = SATA_PWR_EN
@@ -175,13 +186,25 @@ except Exception as e:
     if [ "${PIPESTATUS[0]}" -ne 0 ]; then
         skip "neopixel library not installed (pip install adafruit-circuitpython-neopixel)"
     fi
+    read -rp "  Did the NeoPixel flash Red-Green-Blue? [y/N] " answer
+    if [[ "$answer" =~ ^[Yy] ]]; then
+        pass "NeoPixel visually confirmed"
+    else
+        fail "NeoPixel not visible (check solder joints, level shifter U3)"
+    fi
 else
     skip "python3 not available"
 fi
 
 section "8. Status LEDs (active low from CM4)"
-echo "  nLED_ACT and nLED_PWR are directly driven by the CM4."
-echo "  Visual check: power LED should be on, activity LED should blink during disk access."
+echo "  Look at the board — the red power LED should be on."
+read -rp "  Is the red power LED on? [y/N] " answer
+if [[ "$answer" =~ ^[Yy] ]]; then
+    pass "Power LED (nLED_PWR) visually confirmed"
+else
+    fail "Power LED not visible (check D2, R17)"
+fi
+echo "  Now testing activity LED blink..."
 if [ -e /sys/class/leds/ACT ] || [ -e /sys/class/leds/led0 ]; then
     led_path=$(ls -d /sys/class/leds/{ACT,led0} 2>/dev/null | head -1)
     echo "none" > "$led_path/trigger" 2>/dev/null
@@ -191,6 +214,12 @@ if [ -e /sys/class/leds/ACT ] || [ -e /sys/class/leds/led0 ]; then
     echo 0 > "$led_path/brightness" 2>/dev/null
     echo "mmc0" > "$led_path/trigger" 2>/dev/null
     pass "Activity LED toggled (verify visually)"
+    read -rp "  Did the green activity LED blink? [y/N] " answer
+    if [[ "$answer" =~ ^[Yy] ]]; then
+        pass "Activity LED visually confirmed"
+    else
+        fail "Activity LED not visible (check D3, R18)"
+    fi
 else
     skip "LED sysfs not found"
 fi
