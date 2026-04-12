@@ -9090,7 +9090,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SM03B-SRSS-TB"
+		(property "Value" "BM03B-SRSS-TB"
 			(at 151.13 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9101,7 +9101,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
 			(at 148.59 172.72 0)
 			(hide yes)
 			(show_name no)
