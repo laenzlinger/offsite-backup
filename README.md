@@ -155,9 +155,7 @@ PCB and HDD sit side-by-side along the enclosure length, SATA connector direct-m
 | HDD support | 2.5" only | 2.5" or 3.5" |
 | Material | Extruded aluminium | Extruded aluminium |
 | Colors | Natural, Black, Blue, Red | Natural, Black, Blue, Red |
-
-![Slim Assembly — 1455L2201 + 2.5" HDD](mechanical/assembly-slim.png)
-![Wide Assembly — 1455T2601 + 3.5" HDD](mechanical/assembly-wide.png)
+| Assembly | ![Slim](mechanical/assembly-slim.png) | ![Wide](mechanical/assembly-wide.png) |
 
 ### Requirements
 

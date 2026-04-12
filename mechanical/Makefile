@@ -16,7 +16,7 @@ screenshot: assembly ## Render assembly screenshots
 	cd .. && unset WAYLAND_DISPLAY && \
 	for f in mechanical/assembly-slim.step mechanical/assembly-wide.step; do \
 		LIBGL_ALWAYS_SOFTWARE=1 ASSEMBLY_FILE=$$f \
-		xvfb-run -a -s "-screen 0 3840x2160x24" freecad mechanical/screenshot.py; \
+		xvfb-run -a -s "-screen 0 2160x2160x24" freecad mechanical/screenshot.py; \
 	done; true
 
 clean:

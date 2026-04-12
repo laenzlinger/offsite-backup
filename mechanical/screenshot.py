@@ -3,7 +3,7 @@
 
 Run with:
   LIBGL_ALWAYS_SOFTWARE=1 ASSEMBLY_FILE=... \
-    xvfb-run -a -s "-screen 0 3840x2160x24" freecad screenshot.py
+    xvfb-run -a -s "-screen 0 2160x2160x24" freecad screenshot.py
 """
 
 import os
@@ -71,7 +71,7 @@ rot *= coin.SbRotation(coin.SbVec3f(0, 0, 1), 0.0)      # HDD at back, PCB towar
 cam.orientation.setValue(rot)
 view.fitAll()
 
-view.saveImage(output_png, 3840, 2160, "White")
+view.saveImage(output_png, 2160, 2160, "White")
 sys.stdout.write(f"saved {output_png}\n")
 sys.stdout.flush()
 sys.exit(0)
