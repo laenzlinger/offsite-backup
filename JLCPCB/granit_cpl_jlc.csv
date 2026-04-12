@@ -1,5 +1,5 @@
 Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
-"BT1","Battery_Cell","BatteryHolder_Keystone_3034_1x20mm",38.0000,-32.5000,270.0000,top
+"BT1","CR2032","BatteryHolder_Keystone_3034_1x20mm",38.0000,-32.5000,270.0000,top
 "C1","10u","C_0805_2012Metric",60.3000,-108.6500,90.0000,top
 "C2","10u","C_0805_2012Metric",60.3000,-103.7500,270.0000,top
 "C3","10u","C_0805_2012Metric",96.0000,-109.0500,90.0000,top
@@ -44,13 +44,15 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "D1","WS2812B-5mm","LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",109.0000,-47.0000,270.0000,top
 "D2","LED R","LED_0805_2012Metric",98.2000,-56.2000,0.0000,top
 "D3","LED G","LED_0805_2012Metric",98.2000,-58.4000,0.0000,top
-"F1","Fuse","Fuse_2512_6332Metric",99.2000,-111.8500,270.0000,top
+"F1","3A","Fuse_2512_6332Metric",99.2000,-111.8500,270.0000,top
 "FID1","Fiducial","Fiducial_1mm_Mask2mm",29.0000,-22.0000,0.0000,top
 "FID2","Fiducial","Fiducial_1mm_Mask2mm",101.0000,-22.0000,0.0000,top
 "FID3","Fiducial","Fiducial_1mm_Mask2mm",29.3777,-117.2160,0.0000,top
 "FID4","Fiducial","Fiducial_1mm_Mask2mm",102.3183,-118.0090,0.0000,top
 "IC1","ASM1061","QFN50P700X700X90-49N-D",37.5000,-61.0000,315.0000,top
+"J6","PCM12SMTR","SW_SPDT_PCM12",94.5900,-44.9500,90.0000,top
 "J7","USB_C_Receptacle_USB2.0_14P","USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",109.8100,-34.0000,90.0000,top
+"J8","BM03B-SRSS-TB","JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical",94.2200,-52.7300,0.0000,top
 "J9","SATA_22pin","SATA_Amphenol_10029364-001LF_Horizontal",23.0000,-70.0000,90.0000,top
 "L1","SRN6045TA-3R3Y","L_Bourns_SRN6045TA",69.6039,-115.3271,180.0000,top
 "Q1","FDS4435BZ","SO08-E3",93.4553,-113.5691,270.0000,top
@@ -91,4 +93,4 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "U4","DS3231MZ","SOIC-8_3.9x4.9mm_P1.27mm",67.9500,-96.9875,0.0000,top
 "U5","USBLC6-2SC6","SOT-23-6",101.8794,-34.1415,180.0000,top
 "U6","74AHCT1G32","SOT-23-5",59.6125,-95.1500,0.0000,top
-"Y1","Crystal","Crystal_SMD_3215-2Pin_3.2x1.5mm",41.9858,-66.4216,225.0000,top
+"Y1","25MHz","Crystal_SMD_3215-2Pin_3.2x1.5mm",41.9858,-66.4216,225.0000,top
