@@ -151,6 +151,10 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 
 - [ ] TPM/crypto chip (e.g. ATECC608) for secure LUKS key storage (I2C)
 - [ ] Evaluate CM5 compatibility (power budget validation)
+- [ ] Power LED on fused 12V rail (troubleshooting: PSU present but buck failed)
+- [ ] Review fuse rating: 3A may be tight for 3.5" NAS drives (1.8–2.5A spin-up) + CM4 on same rail — consider 4A or inrush limiter
+- [ ] Verify ASM1061 exposed pad thermal vias to ground plane (0.5W under sustained SATA III)
+- [ ] Read-only root filesystem (overlayfs) to survive power loss — eMMC-only boot has no fallback
 
 ## CI/CD
 
@@ -164,6 +168,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 ## Software
 
 - [ ] Raspberry Pi OS Lite base image
+- [ ] Enable BCM2711 hardware watchdog (`bcm2835_wdt`) — critical for unattended remote device
 - [ ] Device tree overlay for ASM1061
 - [ ] DS3231 RTC driver + alarm configuration
 - [ ] DS3231 OSF flag check on boot (warn if battery failed, report via healthcheck)
