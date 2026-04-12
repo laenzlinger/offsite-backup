@@ -3961,7 +3961,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 119.38) (xy 220.98 119.38)
+			(xy 217.17 119.38) (xy 220.98 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4011,7 +4011,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 119.38) (xy 209.55 119.38)
+			(xy 193.04 119.38) (xy 212.09 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4221,7 +4221,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 77.47) (xy 250.19 77.47)
+			(xy 236.22 77.47) (xy 250.19 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4251,7 +4251,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 116.84) (xy 220.98 116.84)
+			(xy 213.36 116.84) (xy 220.98 116.84)
 		)
 		(stroke
 			(width 0)
@@ -4401,7 +4401,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 77.47) (xy 218.44 77.47)
+			(xy 205.74 77.47) (xy 231.14 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4661,7 +4661,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 74.93) (xy 210.82 74.93)
+			(xy 205.74 74.93) (xy 223.52 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4881,7 +4881,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 116.84) (xy 204.47 116.84)
+			(xy 195.58 116.84) (xy 208.28 116.84)
 		)
 		(stroke
 			(width 0)
@@ -4991,7 +4991,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 74.93) (xy 250.19 74.93)
+			(xy 228.6 74.93) (xy 250.19 74.93)
 		)
 		(stroke
 			(width 0)
@@ -5419,6 +5419,16 @@
 		)
 		(uuid "0a02b7f9-6c83-4866-8cdd-41a242e9bdeb")
 	)
+	(label "SATA_D_RX_N"
+		(at 193.04 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bc46e3b-2a50-4323-b68d-a24335013434")
+	)
 	(label "SATA_A_RX_N"
 		(at 220.98 119.38 0)
 		(effects
@@ -5428,6 +5438,16 @@
 			(justify left bottom)
 		)
 		(uuid "1200127e-dbfe-46c7-8b0e-458d99398bbd")
+	)
+	(label "SATA_D_TX_N"
+		(at 187.96 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "16cd2012-1957-4ef9-be39-fdd3930f74b0")
 	)
 	(label "SATA_A_RX_P"
 		(at 220.98 116.84 0)
@@ -5439,6 +5459,16 @@
 		)
 		(uuid "2034eef4-8a38-422c-a6ba-fba0989ed3cf")
 	)
+	(label "PCIE_D_RX_P"
+		(at 205.74 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41dd4461-eeb0-4ef8-8772-ea9ed4d40708")
+	)
 	(label "SATA_A_TX_N"
 		(at 220.98 129.54 0)
 		(effects
@@ -5448,6 +5478,26 @@
 			(justify left bottom)
 		)
 		(uuid "565222e1-f6df-4134-a15b-20ce205e15db")
+	)
+	(label "PCIE_D_RX_N"
+		(at 205.74 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76c6546c-042e-4555-a934-b7f3aff47d5a")
+	)
+	(label "SATA_D_TX_P"
+		(at 185.42 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "888eea81-9554-4898-bcbb-faefc0c92ff9")
 	)
 	(label "+5V_S"
 		(at 78.74 162.56 0)
@@ -5488,6 +5538,16 @@
 			(justify right bottom)
 		)
 		(uuid "c6dcffb8-fb7d-4aec-9520-2a6679a3cfeb")
+	)
+	(label "SATA_D_RX_P"
+		(at 195.58 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1024608-d9a5-4352-b66d-031f84b1256d")
 	)
 	(label "SATA_A_RX_N"
 		(at 140.97 162.56 180)
@@ -6014,7 +6074,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 212.09 119.38 90)
+		(at 214.63 119.38 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6024,7 +6084,7 @@
 		(dnp no)
 		(uuid "144946b4-eed3-41eb-8c71-a75c7f3d9ce1")
 		(property "Reference" "C42"
-			(at 215.9 115.062 90)
+			(at 218.44 115.062 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6035,7 +6095,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 215.392 113.284 90)
+			(at 217.932 113.284 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6046,7 +6106,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 215.9 118.4148 0)
+			(at 218.44 118.4148 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6057,7 +6117,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 212.09 119.38 0)
+			(at 214.63 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6068,7 +6128,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 119.38 0)
+			(at 214.63 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6079,7 +6139,7 @@
 			)
 		)
 		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
-			(at 212.09 119.38 0)
+			(at 214.63 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6090,7 +6150,7 @@
 			)
 		)
 		(property "Notes" "10% 16V Ceramic Capacitor X7R"
-			(at 212.09 119.38 0)
+			(at 214.63 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6101,7 +6161,7 @@
 			)
 		)
 		(property "Digikey" "1276-1180-1-ND"
-			(at 212.09 119.38 0)
+			(at 214.63 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7626,7 +7686,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 213.36 74.93 90)
+		(at 226.06 74.93 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7636,7 +7696,7 @@
 		(dnp no)
 		(uuid "58d5ce2b-1f22-4894-a54a-6af87ec1ead5")
 		(property "Reference" "C45"
-			(at 211.582 72.898 90)
+			(at 224.282 72.898 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7647,7 +7707,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 211.074 71.12 90)
+			(at 223.774 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7658,7 +7718,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 217.17 73.9648 0)
+			(at 229.87 73.9648 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7669,7 +7729,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 213.36 74.93 0)
+			(at 226.06 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7680,7 +7740,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 213.36 74.93 0)
+			(at 226.06 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7691,7 +7751,7 @@
 			)
 		)
 		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
-			(at 213.36 74.93 0)
+			(at 226.06 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7702,7 +7762,7 @@
 			)
 		)
 		(property "Notes" "10% 16V Ceramic Capacitor X7R"
-			(at 213.36 74.93 0)
+			(at 226.06 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7713,7 +7773,7 @@
 			)
 		)
 		(property "Digikey" "1276-1180-1-ND"
-			(at 213.36 74.93 0)
+			(at 226.06 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7740,7 +7800,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 207.01 116.84 90)
+		(at 210.82 116.84 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7750,7 +7810,7 @@
 		(dnp no)
 		(uuid "59197f22-a933-4b67-a0f1-5b3bae05eefb")
 		(property "Reference" "C41"
-			(at 207.518 112.522 90)
+			(at 211.328 112.522 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7761,7 +7821,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 207.01 110.744 90)
+			(at 210.82 110.744 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7772,7 +7832,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 210.82 115.8748 0)
+			(at 214.63 115.8748 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7783,7 +7843,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 207.01 116.84 0)
+			(at 210.82 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7794,7 +7854,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 207.01 116.84 0)
+			(at 210.82 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7805,7 +7865,7 @@
 			)
 		)
 		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
-			(at 207.01 116.84 0)
+			(at 210.82 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7816,7 +7876,7 @@
 			)
 		)
 		(property "Notes" "10% 16V Ceramic Capacitor X7R"
-			(at 207.01 116.84 0)
+			(at 210.82 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7827,7 +7887,7 @@
 			)
 		)
 		(property "Digikey" "1276-1180-1-ND"
-			(at 207.01 116.84 0)
+			(at 210.82 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8793,7 +8853,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 220.98 77.47 90)
+		(at 233.68 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8803,7 +8863,7 @@
 		(dnp no)
 		(uuid "91b4ab94-858e-40ce-8b84-8334dc1428f1")
 		(property "Reference" "C46"
-			(at 217.678 72.644 90)
+			(at 230.378 72.644 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8814,7 +8874,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 218.186 74.422 90)
+			(at 230.886 74.422 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8825,7 +8885,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 224.79 76.5048 0)
+			(at 237.49 76.5048 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8836,7 +8896,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 220.98 77.47 0)
+			(at 233.68 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8847,7 +8907,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 77.47 0)
+			(at 233.68 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8858,7 +8918,7 @@
 			)
 		)
 		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
-			(at 220.98 77.47 0)
+			(at 233.68 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8869,7 +8929,7 @@
 			)
 		)
 		(property "Notes" "10% 16V Ceramic Capacitor X7R"
-			(at 220.98 77.47 0)
+			(at 233.68 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8880,7 +8940,7 @@
 			)
 		)
 		(property "Digikey" "1276-1180-1-ND"
-			(at 220.98 77.47 0)
+			(at 233.68 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -896,6 +896,14 @@
       {
         "netclass": "SATA",
         "pattern": "*SATA_B_*"
+      },
+      {
+        "netclass": "SATA",
+        "pattern": "*SATA_D_*"
+      },
+      {
+        "netclass": "PCIe",
+        "pattern": "*PCIE_D_*"
       }
     ]
   },
