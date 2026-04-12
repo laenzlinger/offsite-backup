@@ -155,6 +155,7 @@ PCB standoff height must match HDD SATA connector vertical position (~3.5mm abov
 - [ ] Review fuse rating: 3A may be tight for 3.5" NAS drives (1.8–2.5A spin-up) + CM4 on same rail — consider 4A or inrush limiter
 - [ ] Verify ASM1061 exposed pad thermal vias to ground plane (0.5W under sustained SATA III)
 - [ ] Read-only root filesystem (overlayfs) to survive power loss — eMMC-only boot has no fallback
+- [ ] Second SATA data connector (7-pin) for ASM1061 port B — enables RAID1 or dual-drive backup
 
 ## CI/CD
 
