@@ -70,6 +70,23 @@ Track widths are sized per IPC-2221 for outer-layer traces with 20°C temperatur
 - **USB:** 90Ω differential impedance
 - Power traces crossing differential pairs must cross perpendicular (90°)
 
+### AC Coupling Capacitors
+
+6× 100nF 0805 in series on high-speed differential pairs, all placed near the ASM1061:
+
+- **SATA TX** (STXP_A, STXN_A): required by SATA spec (ASM1061 datasheet CTX = 75–200nF)
+- **SATA RX** (SRXP_A, SRXN_A): defensive — external interface, can't guarantee drive-side caps
+- **PCIe RX** (PCIE_RX_P, PCIE_RX_N): required by CM4 datasheet ("external AC coupling capacitor required")
+- **PCIe TX, CLK**: not needed — CM4 has internal AC coupling
+- **Ethernet**: not needed — MagJack provides galvanic isolation
+- **USB**: not needed — DC-coupled by spec
+
+### ESD Protection
+
+- **USB-C** (J7): USBLC6-2SC6 on D+/D− — user-facing external connector, required
+- **SATA** (J9): no ESD protection — internal connector inside metal enclosure, not user-accessible, AC coupling caps provide DC fault isolation
+- **Ethernet** (J3): RJ45 MagJack has integrated common-mode chokes and 2kV isolation
+
 ## Power Budget
 
 | Rail | Source | Capacity | Worst-case Load |
